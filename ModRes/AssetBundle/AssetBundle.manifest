@@ -1,0 +1,85 @@
+ManifestFileVersion: 0
+CRC: 1328252270
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: ab/modeffect/autofootyun.ab
+      Dependencies:
+        Dependency_0: assets/texture/effect/materials/yun_3.mat.ab
+        Dependency_1: assets/texture/effect/materials/yanwu03.mat.ab
+    Info_1:
+      Name: assets/texture/effect/materials/yun_3.mat.ab
+      Dependencies:
+        Dependency_0: assets/texture/effect/yun_3.png.ab
+    Info_2:
+      Name: assets/texture/effect/materials/yanwu03.mat.ab
+      Dependencies:
+        Dependency_0: assets/texture/effect/yanwu03.dds.ab
+    Info_3:
+      Name: assets/texture/effect/yun_3.png.ab
+      Dependencies: {}
+    Info_4:
+      Name: assets/texture/effect/yanwu03.dds.ab
+      Dependencies: {}
+    Info_5:
+      Name: ab/ui/autobattleinfo.ab
+      Dependencies:
+        Dependency_0: assets/texture/ui/shuangyupei.png.ab
+        Dependency_1: assets/animation/buttonautomating.controller.ab
+    Info_6:
+      Name: assets/animation/automating.anim.ab
+      Dependencies: {}
+    Info_7:
+      Name: assets/texture/ui/shuangyupei.png.ab
+      Dependencies: {}
+    Info_8:
+      Name: assets/animation/buttonautomating.controller.ab
+      Dependencies:
+        Dependency_0: assets/animation/automating.anim.ab
+    Info_9:
+      Name: ab/ui/autosetting.ab
+      Dependencies:
+        Dependency_0: assets/texture/ui/tiaojiebg.png.ab
+        Dependency_1: assets/texture/ui/wenhao_2.png.ab
+        Dependency_2: assets/texture/ui/adpic.png.ab
+        Dependency_3: assets/texture/ui/xianshigou.png.ab
+        Dependency_4: assets/texture/ui/ladongtiao.png.ab
+        Dependency_5: assets/texture/ui/tuichuicon.png.ab
+        Dependency_6: assets/texture/ui/tiaojieanniu.png.ab
+        Dependency_7: assets/texture/ui/huodebg.png.ab
+        Dependency_8: assets/texture/ui/kuang.png.ab
+    Info_10:
+      Name: assets/texture/ui/tiaojiebg.png.ab
+      Dependencies: {}
+    Info_11:
+      Name: assets/texture/ui/wenhao_2.png.ab
+      Dependencies: {}
+    Info_12:
+      Name: assets/texture/ui/adpic.png.ab
+      Dependencies: {}
+    Info_13:
+      Name: assets/texture/ui/xianshigou.png.ab
+      Dependencies: {}
+    Info_14:
+      Name: assets/texture/ui/ladongtiao.png.ab
+      Dependencies: {}
+    Info_15:
+      Name: assets/texture/ui/tuichuicon.png.ab
+      Dependencies: {}
+    Info_16:
+      Name: assets/texture/ui/tiaojieanniu.png.ab
+      Dependencies: {}
+    Info_17:
+      Name: assets/texture/ui/huodebg.png.ab
+      Dependencies: {}
+    Info_18:
+      Name: assets/texture/ui/kuang.png.ab
+      Dependencies: {}
+    Info_19:
+      Name: ab/ui/startautobattle.ab
+      Dependencies:
+        Dependency_0: assets/texture/ui/shuangyupei.png.ab
+        Dependency_1: assets/texture/ui/shuangyupei2.png.ab
+    Info_20:
+      Name: assets/texture/ui/shuangyupei2.png.ab
+      Dependencies: {}
