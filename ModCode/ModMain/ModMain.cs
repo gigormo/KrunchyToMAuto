@@ -38,8 +38,8 @@ namespace KrunchyToMAuto
         private int skillFlag;
 
         private int propGetDis = 1500;
-
-        private int autoDropDis = 5000;
+        private int propGetMaxDis = 1500;
+        private int autoDropDis = 10000;
 
         private GetPointsOnMovingArc getPointsOnMovingArc;
 
@@ -63,6 +63,10 @@ namespace KrunchyToMAuto
 
         private bool gameEnded;
 
+        private int count = 0;
+
+        private int originalCount = 20;
+        private bool tasksComplete;
 
         internal static bool IsEnableAutoSkills()
         {
@@ -81,9 +85,6 @@ namespace KrunchyToMAuto
             {
                 harmony = new HarmonyLib.Harmony("KrunchyToMAuto");
             }
-
-
-            //MelonLoader.MelonLogger.Msg($"BattleRoomNode type: {typeof(BattleRoomNode)}");
 
             harmony.PatchAll(Assembly.GetExecutingAssembly());
             corUpdate = g.timer.Frame((Il2CppSystem.Action)OnUpdate, 1, loop: true);
@@ -186,6 +187,7 @@ namespace KrunchyToMAuto
             }
         }
 
+        #region Auto Battler
         private void FixUIBattleExit()
         {
             UIBattleExit uI = g.ui.GetUI<UIBattleExit>(UIType.BattleExit);
@@ -738,7 +740,12 @@ namespace KrunchyToMAuto
             FootYanwu();
             AddEffectCloseCollider();
             propGetDis = SceneType.battle.battleMap.playerUnitCtrl.dropDis.value;
-            SceneType.battle.battleMap.playerUnitCtrl.dropDis = new DynInt(autoDropDis);
+            propGetMaxDis = SceneType.battle.battleMap.playerUnitCtrl.dropDis.maxValue;
+
+            SceneType.battle.battleMap.playerUnitCtrl.dropDis.mMaxValue = autoDropDis;
+            SceneType.battle.battleMap.playerUnitCtrl.dropDis.baseValue = autoDropDis;
+
+            //SceneType.battle.battleMap.playerUnitCtrl.dropDis = new DynInt(autoDropDis);
             if (SceneType.battle.battleMap.isPassRoom)
             {
                 if (g.world.battle.data.dungeonBaseItem.type == 55)
@@ -781,7 +788,8 @@ namespace KrunchyToMAuto
             moveFlag = 1;
             if (SceneType.battle != null && SceneType.battle.battleMap != null && SceneType.battle.battleMap.playerUnitCtrl != null)
             {
-                SceneType.battle.battleMap.playerUnitCtrl.dropDis = new DynInt(propGetDis);
+                SceneType.battle.battleMap.playerUnitCtrl.dropDis.baseValue = propGetDis;
+                SceneType.battle.battleMap.playerUnitCtrl.dropDis.mMaxValue = propGetMaxDis;
                 SceneType.battle.battleMap.playerUnitCtrl.move.StopMove();
             }
 
@@ -802,7 +810,10 @@ namespace KrunchyToMAuto
             }
 
             propGetDis = SceneType.battle.battleMap.playerUnitCtrl.dropDis.value;
-            SceneType.battle.battleMap.playerUnitCtrl.dropDis = new DynInt(autoDropDis);
+            propGetMaxDis = SceneType.battle.battleMap.playerUnitCtrl.dropDis.maxValue;
+
+            SceneType.battle.battleMap.playerUnitCtrl.dropDis.baseValue = autoDropDis;
+            SceneType.battle.battleMap.playerUnitCtrl.dropDis.mMaxValue = autoDropDis;
             if (SceneType.battle.battleMap.isPassRoom)
             {
                 if (g.world.battle.data.dungeonBaseItem.type == 55)
@@ -844,7 +855,8 @@ namespace KrunchyToMAuto
             moveFlag = 1;
             if (SceneType.battle != null && SceneType.battle.battleMap != null && SceneType.battle.battleMap.playerUnitCtrl != null)
             {
-                SceneType.battle.battleMap.playerUnitCtrl.dropDis = new DynInt(propGetDis);
+                SceneType.battle.battleMap.playerUnitCtrl.dropDis.baseValue = propGetDis;
+                SceneType.battle.battleMap.playerUnitCtrl.dropDis.mMaxValue = propGetMaxDis;
                 SceneType.battle.battleMap.playerUnitCtrl.move.StopMove();
             }
         }
@@ -1562,12 +1574,24 @@ namespace KrunchyToMAuto
                 },  Ease.Linear, isForceMoveEndCall: true);
             }
         }
+        #endregion
 
+
+        #region Auto Martial Study
         public void ClickBallsMartialLearn2()
         {
             UIMartialLearnGame uiLearn = g.ui.GetUI<UIMartialLearnGame>(UIType.MartialLearnGame);
             if (uiLearn != null && uiLearn.ballDatas != null && gameEnded == false)
             {
+                    
+                count = uiLearn.ballDatas.Count;
+                //Shitty fix...but it works? for loop starts before the initial ball data
+                //So check the count and retain the original...I bet a better way exists
+                if (count > 30)
+                {
+                    originalCount = count;
+                }
+                uiLearn.MoveS = 200f;
                 uiLearn.upRate = 100f;
                 for (int i = uiLearn.ballDatas.Count - 1; i >= 0; i--)
                 {
@@ -1576,7 +1600,6 @@ namespace KrunchyToMAuto
                     if (ball != null)
                     {
                         //MelonLogger.Msg($"Ball State: {ball.state} IsUp: {ball.isUp}");
-
                         if (ball.state == 1)
                         {
                             if (ball.isUp)
@@ -1584,7 +1607,7 @@ namespace KrunchyToMAuto
                                 uiLearn.OnUpClick(ball);
                                 GameObject goBall = ball.go;
                                 Object.Destroy(goBall);
-                                uiLearn.ballDatas.RemoveAt(i); // Only remove if state is 1 and button is active
+                                uiLearn.ballDatas.RemoveAt(i);
                             }
                             else
                             {
@@ -1596,7 +1619,7 @@ namespace KrunchyToMAuto
                         }
                     }
                 }
-                if (uiLearn.upCount >= 50 && uiLearn.ballDatas.Count <= 0)
+                if (uiLearn.upCount >= originalCount && uiLearn.ballDatas.Count <= 0)
                 {
                     gameEnded = true;
                     uiLearn.GameEnd();
@@ -1605,13 +1628,17 @@ namespace KrunchyToMAuto
             if (uiLearn.upCount == 0)
             {
                 gameEnded = false;
+
             }
         }
+        #endregion
 
 
+        #region Task Master
         public Vector2Int GetPlayerTaskLocation()
         {
             Il2CppSystem.Collections.Generic.List<TaskBase> playerTasks = g.world.playerUnit.GetTask(TaskType.School);
+            
             if (playerTasks.Count > 0)
             {
                 var enumerator = playerTasks.GetEnumerator();
@@ -1624,11 +1651,20 @@ namespace KrunchyToMAuto
                         {
                             continue;
                         }
+                        if (enumerator.current.data.GetDesc().Contains("Progress: 1/1"))
+                        {
+                            continue;
+                        }
 
                         if (enumerator.current != null)
                         {
                             Vector2Int taskLocation = enumerator.current.data.destination;
                             enumerator.current.data.uiPath = true;
+                            MelonLogger.Msg($"Task Location : {taskLocation.ToString()}");
+                            MelonLogger.Msg($"Task Description : {enumerator.current.data.GetDesc()}");
+                            MelonLogger.Msg($"Task Title : {enumerator.current.data.GetTitle()}");
+                            MelonLogger.Msg($"Enum Data : {enumerator.current.data.ToString()}");
+
                             return taskLocation;
                         }
                     }
@@ -1638,23 +1674,33 @@ namespace KrunchyToMAuto
                     enumerator.Dispose();
                 }
             }
-            return Vector2Int.zero;
+            //return to school, assuming GetNamePoint gets your current schools point...
+            tasksComplete = true;
+            return g.world.playerUnit.data.school.GetNamePoint();
         }
 
 
-        public void OpenUITest()
+        public void MovePlayerToTask()
         {
             if (g.world == null || g.world.playerUnit == null) { return; }
-
             SceneType.map.world.MovePlayerPosi(GetPlayerTaskLocation());
         }
+
+        public void TaskStartBattle()
+        {
+            
+        }
+
+        #endregion
+
         public void LuckTesting()
         {
-            g.world.playerUnit.data.dynUnitData.playerView = new DynInt(20);
-            g.world.playerUnit.data.dynUnitData.luck = new DynInt(500);
-            g.world.playerUnit.data.dynUnitData.talent = new DynInt(500);
-            //g.world.playerUnit.data.dynUnitData.moveSpeed = new DynInt(8000);
-            
+            g.world.playerUnit.data.dynUnitData.talent.mMaxValue = 500;
+        }
+         
+
+        public void TestingHotkey()
+        {
         }
 
         public void Destroy()
@@ -1674,22 +1720,39 @@ namespace KrunchyToMAuto
             {
                 if (SceneType.map != null)
                 {
-                    //if (SceneType.map.world.playerMoveSpeed <= 5)
-                    if (SceneType.map.world.playerMoveSpeed <= 5)
+                    if ((SceneType.map.world.playerMoveSpeed < 5))
                     {
                         SceneType.map.world.playerMoveSpeed = 5f;
                     }
-                }
-            }
+                    if (g.world.playerUnit.data.dynUnitData.playerView.value < 20)
+                    {
+                        g.world.playerUnit.data.dynUnitData.playerView.baseValue = 20;
+                    }
+                    if (g.world.playerUnit.data.dynUnitData.luck.value < g.world.playerUnit.data.dynUnitData.luck.maxValue)
+                    {
+                        g.world.playerUnit.data.dynUnitData.luck.baseValue = g.world.playerUnit.data.dynUnitData.luck.maxValue;
+                    }
+                    if (g.world.playerUnit.data.dynUnitData.talent.value < g.world.playerUnit.data.dynUnitData.talent.maxValue)
+                    {
+                        g.world.playerUnit.data.dynUnitData.talent.baseValue = g.world.playerUnit.data.dynUnitData.talent.maxValue;
+                    }
 
-            if (Input.GetKeyDown(KeyCode.F7))
-            {
-                OpenUITest();
+                }
             }
             if (Input.GetKeyDown(KeyCode.F8))
             {
                 LuckTesting();
             }
+            if (Input.GetKeyDown(KeyCode.F7))
+            {
+                MovePlayerToTask();
+            } 
+
+            if (Input.GetKeyDown(KeyCode.F9))
+            {
+                TestingHotkey();
+            }
+
             if (SceneType.battle == null || SceneType.battle.battleMap == null)
             {
                 if (g.ui.GetUI<UIMartialLearnGame>(UIType.MartialLearnGame) != null)
