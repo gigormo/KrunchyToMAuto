@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using MelonLoader;
+using static SpecialBattle83;
 
 
 namespace KrunchyToMAuto
@@ -15,8 +16,6 @@ namespace KrunchyToMAuto
 
         private EffectBase effectCloseCollider;
 
-        private TimerCoroutine corUpdate;
-
         private static HarmonyLib.Harmony harmony;
 
         private Il2CppSystem.Action<ETypeData> callOpenUIEnd;
@@ -25,13 +24,17 @@ namespace KrunchyToMAuto
 
         private Il2CppSystem.Action<ETypeData> onBattleExit;
 
+        private TimerCoroutine taskMasterCoroutine;
+
         private TimerCoroutine corUpdateInBattleStart;
 
-        private UIBattleInfo uIBattleInfo;
+        private TimerCoroutine corUpdate;
 
         private TimerCoroutine corAutoPlayerMoveAndSkill;
 
         private TimerCoroutine corAutoMoveChecking;
+
+        private TimerCoroutine corTaskMaster;
 
         private GameObject goEffect;
 
@@ -55,6 +58,8 @@ namespace KrunchyToMAuto
 
         private BattleRoomNode firstRoomNode;
 
+        private UIBattleInfo uIBattleInfo;
+
         private int zhenlongCount;
 
         public static DataStruct<TimeScaleType, DataStruct<float>> changeSpeed;
@@ -66,7 +71,9 @@ namespace KrunchyToMAuto
         private int count = 0;
 
         private int originalCount = 20;
-        private bool tasksComplete;
+        private bool tasksComplete = false;
+        private bool getTasks = false;
+        private bool toggleTaskMaster = false;
 
         internal static bool IsEnableAutoSkills()
         {
@@ -1664,7 +1671,7 @@ namespace KrunchyToMAuto
                             MelonLogger.Msg($"Task Description : {enumerator.current.data.GetDesc()}");
                             MelonLogger.Msg($"Task Title : {enumerator.current.data.GetTitle()}");
                             MelonLogger.Msg($"Enum Data : {enumerator.current.data.ToString()}");
-
+                            
                             return taskLocation;
                         }
                     }
@@ -1674,21 +1681,60 @@ namespace KrunchyToMAuto
                     enumerator.Dispose();
                 }
             }
-            //return to school, assuming GetNamePoint gets your current schools point...
             tasksComplete = true;
+            getTasks = true;
+            //return to school, assuming GetNamePoint gets your current schools point...
             return g.world.playerUnit.data.school.GetNamePoint();
         }
 
 
         private void MovePlayerToTask()
         {
+            Vector2Int taskLocation = GetPlayerTaskLocation();
             if (g.world == null || g.world.playerUnit == null) { return; }
-            SceneType.map.world.MovePlayerPosi(GetPlayerTaskLocation());
-        }
+   
+            //Game/UIRoot/Canvas/Root/UI/DramaDialogue/Grid/Image/Image/LanguageGroup/G:goOption_En/G:goOptionRoot_En/G:goLayoutGroup(Clone)/G:goOptionItem_En(Clone)/
+            if (g.ui.GetUI<UIDramaDialogue>(UIType.DramaDialogue))
+            {
+                g.ui.GetUI<UIDramaDialogue>(UIType.DramaDialogue).goOptionRoot_En.transform.GetChild(0).GetChild(0).GetComponent<Button>().Press();
+            }   
+            //initial battle begin screen
+            if (g.ui.GetUI<UIMapBattle>(UIType.MapBattle))
+            {
+                g.ui.GetUI<UIMapBattle>(UIType.MapBattle).GetComponentInChildren<UIQuickOKClick>().Complete();
+            }
+            //Pre enter battle screen, starts battle
+            if (g.ui.GetUI<UIMapBattlePre>(UIType.MapBattlePre))
+            {
+                if (corTaskMaster != null)
+                {
+                    corTaskMaster.Stop();
+                }
+                g.ui.GetUI<UIMapBattlePre>(UIType.MapBattlePre).btnBattle.Press();
+            }
 
-        private void TaskStartBattle()
-        {
-            
+            //move grids, for battle start
+            if (GetPlayerTaskLocation() == SceneType.map.world.playerPoint)
+            {
+                if (getTasks)
+                {
+                    if (corTaskMaster != null)
+                    {
+                        corTaskMaster.Stop();
+                    }
+                    return;
+                
+                }
+                if (!g.ui.GetUI<UISchool>(UIType.School) && !getTasks)
+                {
+                    SceneType.map.world.MovePlayerPosi(taskLocation + new Vector2Int(1, 1));
+                }
+            }
+            else
+            {
+                SceneType.map.world.MovePlayerPosi(taskLocation);
+            }
+
         }
 
         private Transform OpenMissionHall(UISchool playerSchool)
@@ -1723,6 +1769,15 @@ namespace KrunchyToMAuto
 
         private void GetTaskFromHall(UISchoolTaskLobby taskLobby)
         {
+            //Game/UIRoot/Canvas/Root/UI/SchoolPubMessage/
+            if (g.ui.GetUI<UISchoolPubMessage>(UIType.SchoolPubMessage))
+            {
+                g.ui.GetUI<UISchoolPubMessage>(UIType.SchoolPubMessage).goPubRoot.transform.GetChild(0).FindChild("Button").GetComponent<Button>().Press();
+            }
+            if (g.ui.GetUI<UIGetReward>(UIType.GetReward))
+            {
+                g.ui.GetUI<UIGetReward>(UIType.GetReward).btnOK.Press();
+            }
             if (taskLobby != null)
             {
                 Il2CppSystem.Collections.Generic.Dictionary<SchoolDepartmentType, Il2CppSystem.Collections.Generic.List<UILobbyNormalTaskItemData>> normalTaskDic = taskLobby.normalTaskDic;
@@ -1750,10 +1805,11 @@ namespace KrunchyToMAuto
                                 }
                             }
                         }
+                        
                     }
-                    
                     taskLobby.btnClose.Press();
                     g.ui.GetUI<UISchool>(UIType.School).btnClose.Press();
+                    getTasks = false;
                 }
                 else
                 {
@@ -1761,6 +1817,8 @@ namespace KrunchyToMAuto
                 }
             }
         }
+
+
 
         private void GetTaskFromSchool()
         {
@@ -1785,6 +1843,45 @@ namespace KrunchyToMAuto
                 }
             }
         }
+
+        private void ToggleTaskMaster()
+        {
+            toggleTaskMaster = !toggleTaskMaster;
+            if (!toggleTaskMaster)
+            {
+                StopTaskMaster();
+            }
+        }
+
+        private void StartTaskMaster()
+        {
+            if (getTasks)
+            {
+                StopTaskMaster();
+                corTaskMaster = SceneType.map.timer.Time((System.Action)delegate
+                {
+                    GetTaskFromSchool();
+                }, 0.2f, true);
+            }
+            else
+            {
+                StopTaskMaster();
+                corTaskMaster = SceneType.map.timer.Time((System.Action)delegate
+                {
+                    MovePlayerToTask();
+                }, 0.2f, true);
+            }
+        }
+
+        private void StopTaskMaster()
+        {
+            if (corTaskMaster != null)
+            {
+                corTaskMaster.Stop();
+                corTaskMaster = null;
+            }
+        }
+
 
         #endregion
 
@@ -1835,14 +1932,20 @@ namespace KrunchyToMAuto
 
                 }
             }
+            if (toggleTaskMaster)
+            {
+                StartTaskMaster();  
+            }
+
+            if (Input.GetKeyDown(KeyCode.F7))
+            {
+                ToggleTaskMaster();
+            }
+
             if (Input.GetKeyDown(KeyCode.F8))
             {
                 LuckTesting();
             }
-            if (Input.GetKeyDown(KeyCode.F7))
-            {
-                MovePlayerToTask();
-            } 
 
             if (Input.GetKeyDown(KeyCode.F9))
             {
