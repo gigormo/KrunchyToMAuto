@@ -1635,7 +1635,7 @@ namespace KrunchyToMAuto
 
 
         #region Task Master
-        public Vector2Int GetPlayerTaskLocation()
+        private Vector2Int GetPlayerTaskLocation()
         {
             Il2CppSystem.Collections.Generic.List<TaskBase> playerTasks = g.world.playerUnit.GetTask(TaskType.School);
             
@@ -1680,15 +1680,110 @@ namespace KrunchyToMAuto
         }
 
 
-        public void MovePlayerToTask()
+        private void MovePlayerToTask()
         {
             if (g.world == null || g.world.playerUnit == null) { return; }
             SceneType.map.world.MovePlayerPosi(GetPlayerTaskLocation());
         }
 
-        public void TaskStartBattle()
+        private void TaskStartBattle()
         {
             
+        }
+
+        private Transform OpenMissionHall(UISchool playerSchool)
+        {
+            if (playerSchool != null)
+            {
+                //Game/UIRoot/Canvas/Root/UI/School/Root/Posi/G:goPosiRoot/G:goPosi(Clone)/Fix/1003/G:goBuildItem_En(Clone)/
+                Transform buildItemTransform = playerSchool.goPosiRoot.transform;
+                MelonLogger.Msg($"Game Object buildItem : {buildItemTransform.ToString()}");
+                Transform[] allTransforms = buildItemTransform.GetComponentsInChildren<Transform>();
+                MelonLogger.Msg($"Game Object buildItem : {buildItemTransform.FindChild("G:goPosi(Clone)").ToString()}");
+                foreach (Transform childTransform in allTransforms)
+                {
+                    
+                    if (childTransform.name == "Text" && childTransform.parent != null && childTransform.parent.name == "Name")
+                    {
+                        //Clone -> Icon -> Name
+                        Text textComponent = childTransform.GetComponent<Text>();
+                        MelonLogger.Msg($"Game Object buildItem : {textComponent.text}");
+
+                        if (textComponent != null && textComponent.m_Text == "Mission Hall")
+                        { 
+
+                            MelonLogger.Msg($"Game Object buildItem : {buildItemTransform.gameObject.ToString()}");
+                            return childTransform.parent.parent;
+                        }
+                    }
+                }
+            }
+            return null; // Return null if not found
+        }
+
+        private void GetTaskFromHall(UISchoolTaskLobby taskLobby)
+        {
+            if (taskLobby != null)
+            {
+                Il2CppSystem.Collections.Generic.Dictionary<SchoolDepartmentType, Il2CppSystem.Collections.Generic.List<UILobbyNormalTaskItemData>> normalTaskDic = taskLobby.normalTaskDic;
+
+                if (normalTaskDic != null)
+                {
+                    foreach (Il2CppSystem.Collections.Generic.KeyValuePair<SchoolDepartmentType, Il2CppSystem.Collections.Generic.List<UILobbyNormalTaskItemData>> pair in normalTaskDic)
+                    {
+                        SchoolDepartmentType departmentType = pair.Key;
+                        Il2CppSystem.Collections.Generic.List<UILobbyNormalTaskItemData> taskList = pair.Value;
+
+                        foreach (UILobbyNormalTaskItemData taskData in taskList)
+                        {
+
+                            if (taskData != null && !taskData.desc.Contains("Sect Arcane Manual") && !taskData.desc.Contains("geomancy"))
+                            {
+                                if (taskLobby.uINormalTask.goTaskListRoot.transform.GetChild(0).GetChild(0).Find("Toggle").gameObject.GetComponent<Toggle>() != null)
+                                {
+                                    Toggle goSelect = taskLobby.uINormalTask.goTaskListRoot.transform.GetChild(0).GetChild(0).Find("Toggle").gameObject.GetComponent<Toggle>();
+                                    goSelect.isOn = true;
+                                    taskLobby.uINormalTask.selectedTask = taskData;
+                                    taskLobby.uINormalTask.btnGetTask.Press();
+                                    //MelonLogger.Msg($"Task Data: {taskData.title.ToString()}");
+                                    //MelonLogger.Msg($"Task Data: {taskData.desc.ToString()}");
+                                }
+                            }
+                        }
+                    }
+                    
+                    taskLobby.btnClose.Press();
+                    g.ui.GetUI<UISchool>(UIType.School).btnClose.Press();
+                }
+                else
+                {
+                    MelonLogger.Msg("taskLobby.normalTaskDic is null.");
+                }
+            }
+        }
+
+        private void GetTaskFromSchool()
+        {
+            //if (g.world == null || g.world.playerUnit == null) { return; }
+            if (g.ui.GetUI<UISchool>(UIType.School))
+            {
+                if (g.ui.GetUI<UISchoolTaskLobby>(UIType.SchoolTaskLobby) == null)
+                {
+                    UISchool playerSchool = g.ui.GetUI<UISchool>(UIType.School);
+                    if (playerSchool != null)
+                    {
+                        if (OpenMissionHall(playerSchool) != null)
+                        {
+                            GameObject goMissionHall = OpenMissionHall(playerSchool).gameObject;
+                            goMissionHall.GetComponent<Button>().Press();
+                        }
+                    }
+                }
+                if (g.ui.GetUI<UISchoolTaskLobby>(UIType.SchoolTaskLobby) != null)
+                {
+                    GetTaskFromHall(g.ui.GetUI<UISchoolTaskLobby>(UIType.SchoolTaskLobby));
+                }
+            }
         }
 
         #endregion
@@ -1701,6 +1796,7 @@ namespace KrunchyToMAuto
 
         public void TestingHotkey()
         {
+            GetTaskFromSchool();
         }
 
         public void Destroy()
