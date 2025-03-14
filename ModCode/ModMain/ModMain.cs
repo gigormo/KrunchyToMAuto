@@ -5,10 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using MelonLoader;
-using static SpecialBattle83;
 using Il2CppSystem.Collections.Generic;
-using EBattleTypeData;
-using static UIMapMainBase;
 
 
 namespace KrunchyToMAuto
@@ -99,6 +96,10 @@ namespace KrunchyToMAuto
 
 
         private int missionRuns = 0;
+
+        private bool nextMonthPressed = false;
+        private bool nextMonthYesPressed = false;
+        private bool monthLogClosed = false;
 
         internal static bool IsEnableAutoSkills()
         {
@@ -491,16 +492,22 @@ namespace KrunchyToMAuto
                 {
                     if (g.ui.GetUI<UIBattleEnd>(UIType.BattleEnd))
                     {
+                        g.ui.GetUI<UIBattleEnd>(UIType.BattleEnd).isClickEnd = true;
                         if (g.ui.GetUI<UIBattleEnd>(UIType.BattleEnd).btnOK != null)
                         {
                             g.ui.GetUI<UIBattleEnd>(UIType.BattleEnd).btnOK.Press();
+
                         }
                     }
                     if (SceneType.map != null && g.world.playerUnit != null)
                     {
+                        if (corTaskMaster != null)
+                        {
+                            StopTaskMasterTimer();
+                        }
                         StartTaskMasterTimer();
                     }
-                }, 1, loop: true);
+                }, 10, loop: true);
             }
         }
 
@@ -1749,6 +1756,10 @@ namespace KrunchyToMAuto
             if (g.ui.GetUI<UIDramaDialogue>(UIType.DramaDialogue))
             {
                 HandleDramaDialogue(g.ui.GetUI<UIDramaDialogue>(UIType.DramaDialogue));
+            } 
+            if (g.ui.GetUI<UIActionCourseInfo>(UIType.ActionCourseInfo))
+            {
+                g.ui.GetUI<UIActionCourseInfo>(UIType.ActionCourseInfo).btnOK.Press();
             }
             if (g.ui.GetUI<UIDramaFortuitous>(UIType.DramaFortuitous))
             {
@@ -1771,34 +1782,37 @@ namespace KrunchyToMAuto
 
         private void HandleDramaDialogue(UIDramaDialogue uiDrama)
         {
-            if (uiDrama.activeOptionsData.Count == 0)
+            if (uiDrama.activeOptionsData != null)
             {
-                uiDrama.btnNext.Press();
-            }
-            List<ConfDramaOptionsItem> activeOptions = uiDrama.activeOptionsData;
-            if (activeOptions != null && activeOptions.Count > 0)
-            {
-                ConfDramaOptionsItem firstOption = activeOptions[0];
-                ConfDramaOptionsItem secondOption = activeOptions[1];
-                if (uiDrama.item.id == 81002)
+                if (uiDrama.activeOptionsData.Count == 0)
                 {
-                    uiDrama.ClickOption(secondOption);
+                    uiDrama.btnNext.Press();
                 }
-                else if (uiDrama.item.id == 8210136)
+                if (uiDrama.activeOptionsData.Count > 0)
                 {
-                    uiDrama.ClickOption(secondOption);
-                }
-                else if (uiDrama.item.id == 8180022)
-                {
-                    uiDrama.ClickOption(secondOption);
-                }
-                else if (uiDrama.item.id == 1720025)
-                {
-                    uiDrama.ClickOption(firstOption);
-                }
-                else
-                {
-                    uiDrama.ClickOption(firstOption);
+                    List<ConfDramaOptionsItem> activeOptions = uiDrama.activeOptionsData;
+                    ConfDramaOptionsItem firstOption = activeOptions[0];
+                    ConfDramaOptionsItem secondOption = activeOptions[1];
+                    if (uiDrama.item.id == 81002)
+                    {
+                        uiDrama.ClickOption(secondOption);
+                    }
+                    else if (uiDrama.item.id == 8210136)
+                    {
+                        uiDrama.ClickOption(secondOption);
+                    }
+                    else if (uiDrama.item.id == 8180022)
+                    {
+                        uiDrama.ClickOption(secondOption);
+                    }
+                    else if (uiDrama.item.id == 1720025)
+                    {
+                        uiDrama.ClickOption(firstOption);
+                    }
+                    else
+                    {
+                        uiDrama.ClickOption(firstOption);
+                    }
                 }
             }
         }
@@ -1817,10 +1831,6 @@ namespace KrunchyToMAuto
 
                 fortuitousUI.ClickOption(firstOption);
             }
-            if (g.ui.GetUI<UIMonthLogBig>(UIType.MonthLogBig))
-            {
-                g.ui.GetUI<UIMonthLogBig>(UIType.MonthLogBig).btnNext.Press();
-            }
         }
 
         private void HandleMovement(Vector2Int taskLocation)
@@ -1829,7 +1839,7 @@ namespace KrunchyToMAuto
             {
                 if (g.ui.GetUI<UICheckPopup>(UIType.CheckPopup).textTitle.text.Contains("Not enough days"))
                 {
-                   StartGoNextMonthTimer();
+                    StartGoNextMonthTimer();
                 }
             }
             if (GetPlayerTaskLocation() == SceneType.map.world.playerPoint)
@@ -1840,7 +1850,7 @@ namespace KrunchyToMAuto
                 }
                 else if (g.world.playerUnit.data.school.GetNamePoint() == taskLocation)
                 {
-                    SceneType.map.world.MovePlayerPosi(taskLocation + new Vector2Int(0,1));
+                    SceneType.map.world.MovePlayerPosi(taskLocation + new Vector2Int(0, 1));
                 }
                 if (getTasks) { return; }
 
@@ -1861,45 +1871,79 @@ namespace KrunchyToMAuto
             }
         }
 
+        private void GoNextMonth()
+        {
+            TimerCoroutine corGoNextMonth = null;
+            corGoNextMonth = SceneType.map.timer.Time((System.Action)delegate
+            {
+                if (g.ui.GetUI<UIMapMain>(UIType.MapMain).playerInfo.btnNextMonth && !nextMonthPressed)
+                {
+                    g.ui.GetUI<UIMapMain>(UIType.MapMain).playerInfo.btnNextMonth.Press();
+                    nextMonthPressed = true;
+                }
+                if (g.ui.GetUI<UICheckPopup>(UIType.CheckPopup) && nextMonthPressed && !nextMonthYesPressed)
+                {
+                    g.ui.GetUI<UICheckPopup>(UIType.CheckPopup).OnYesClick();
+                    nextMonthYesPressed = true;
+                    corGoNextMonth.Stop();
+                    corGoNextMonth = null;
+                    HandleMonthUI();
+                }
+                
+            }, 1.0f, true);
+        }
 
         private void HandleMonthUI()
         {
-            if (g.ui.GetUI<UILoading>(UIType.Loading) != null)
+            TimerCoroutine corWaitTimer = null;
+            System.Action action = delegate
             {
-                if (g.ui.GetUI<UIGetReward>(UIType.GetReward))
+                if (monthLogClosed && !g.ui.GetUI<UICheckPopup>(UIType.CheckPopup))
                 {
-                    g.ui.GetUI<UIGetReward>(UIType.GetReward).btnOK.Press();
-                } else if (g.ui.GetUI<UIDramaDialogue>(UIType.DramaDialogue))
-                {
-                    HandleDramaDialogue(g.ui.GetUI<UIDramaDialogue>(UIType.DramaDialogue));
-                } else if (g.ui.GetUI<UIDramaFortuitous>(UIType.DramaFortuitous))
-                {
-                    HandleFortuitousEvent(g.ui.GetUI<UIDramaFortuitous>(UIType.DramaFortuitous));
+                    noTasksLeft = false;
+                    missionRuns = 0;
+                    corWaitTimer.Stop();
+                    corWaitTimer = null;
+                    nextMonthYesPressed = false;
+                    nextMonthPressed = false;
+                    monthLogClosed = false;
+                    if (corTaskMaster != null)
+                    {
+                        StopTaskMasterTimer();
+                    }
+                    StartTaskMasterTimer();
                 }
-            }
-        }
-
-
-        private void GoNextMonth()
-        {
-            if (g.ui.GetUI<UIMapMain>(UIType.MapMain).playerInfo.btnNextMonth && g.ui.GetUI<UILoading>(UIType.Loading) == null)
-            {
-                g.ui.GetUI<UIMapMain>(UIType.MapMain).playerInfo.btnNextMonth.Press();
-                if (g.ui.GetUI<UICheckPopup>(UIType.CheckPopup))
+                else
                 {
-                    g.ui.GetUI<UICheckPopup>(UIType.CheckPopup).OnYesClick();
+                    if (g.ui.GetUI<UIGetReward>(UIType.GetReward))
+                    {
+                        g.ui.GetUI<UIGetReward>(UIType.GetReward).btnOK.Press();
+                    }
+                    if (g.ui.GetUI<UIDramaDialogue>(UIType.DramaDialogue))
+                    {
+                        HandleDramaDialogue(g.ui.GetUI<UIDramaDialogue>(UIType.DramaDialogue));
+                    }
+                    if (g.ui.GetUI<UIActionCourseInfo>(UIType.ActionCourseInfo))
+                    {
+                        g.ui.GetUI<UIActionCourseInfo>(UIType.ActionCourseInfo).btnOK.Press();
+                    }
+                    if (g.ui.GetUI<UIDramaFortuitous>(UIType.DramaFortuitous))
+                    {
+                        HandleFortuitousEvent(g.ui.GetUI<UIDramaFortuitous>(UIType.DramaFortuitous));
+                    }
+                    if (g.ui.GetUI<UIMonthLogBig>(UIType.MonthLogBig))
+                    {
+                        g.ui.GetUI<UIMonthLogBig>(UIType.MonthLogBig).btnClost.Press();
+                        if (g.ui.GetUI<UICheckPopup>(UIType.CheckPopup))
+                        {
+                            g.ui.GetUI<UICheckPopup>(UIType.CheckPopup).OnYesClick();
+                            monthLogClosed = true;
+                        }
+                        
+                    }
                 }
-            }
-            if (g.ui.GetUI<UILoading>(UIType.Loading) != null)
-            {
-                HandleMonthUI();
-            }
-            if (g.ui.GetUI<UILoading>(UIType.Loading) == null)
-            {
-                noTasksLeft = false;
-                missionRuns = 0;
-                StopGoNextMonthTimer();
-            }
+            };
+            corWaitTimer = SceneType.map.timer.Time(action, 1.0f, loop: true);
         }
 
         private void StartGoNextMonthTimer()
@@ -1907,16 +1951,11 @@ namespace KrunchyToMAuto
             corGoNextMonth = SceneType.map.timer.Time((System.Action)delegate
             {
                 GoNextMonth();
-            }, 0.2f, true);
-        }
-
-        private void StopGoNextMonthTimer()
-        {
-            if (corGoNextMonth != null)
-            {
-                SceneType.map.timer.Stop(corGoNextMonth);
-                corGoNextMonth = null;
-            }
+                if (corTaskMaster != null)
+                {
+                    StopTaskMasterTimer();
+                }
+            }, 0.6f, true);
         }
 
         private Transform OpenMissionHall(UISchool playerSchool)
@@ -1936,8 +1975,35 @@ namespace KrunchyToMAuto
                         //Clone -> Icon -> Name
                         Text textComponent = childTransform.GetComponent<Text>();
 
-                        if (textComponent != null && textComponent.m_Text == "Mission Hall")
+                        if (textComponent != null && textComponent.text == "Mission Hall")
                         { 
+                            return childTransform.parent.parent;
+                        }
+                    }
+                }
+            }
+            return null;
+        }
+
+        private Transform OpenHospital(UISchool playerSchool)
+        {
+            if (playerSchool != null)
+            {
+                //Game/UIRoot/Canvas/Root/UI/School/Root/Posi/G:goPosiRoot/G:goPosi(Clone)/Fix/1003/G:goBuildItem_En(Clone)/
+                Transform buildItemTransform = playerSchool.goPosiRoot.transform;
+
+                Transform[] allTransforms = buildItemTransform.GetComponentsInChildren<Transform>();
+
+                foreach (Transform childTransform in allTransforms)
+                {
+
+                    if (childTransform.name == "Text" && childTransform.parent != null && childTransform.parent.name == "Name")
+                    {
+                        //Clone -> Icon -> Name
+                        Text textComponent = childTransform.GetComponent<Text>();
+
+                        if (textComponent != null && textComponent.text == "Hospital")
+                        {
                             return childTransform.parent.parent;
                         }
                     }
@@ -1953,7 +2019,7 @@ namespace KrunchyToMAuto
             corGetTaskHall = SceneType.map.timer.Time((System.Action)delegate
             {
                 GetTaskFromHallAction();
-            }, 0.2f, true);
+            }, 0.8f, true);
         }
 
         private void StopGetTaskFromHallTimer()
@@ -1974,8 +2040,6 @@ namespace KrunchyToMAuto
                 case 0: // Close Pub Message
                     if (g.ui.GetUI<UISchoolPubMessage>(UIType.SchoolPubMessage))
                     {
-                        //MelonLogger.Msg($"PubMessage pub roob : {g.ui.GetUI<UISchoolPubMessage>(UIType.SchoolPubMessage).goPubRoot.ToString()}");
-
                         g.ui.GetUI<UISchoolPubMessage>(UIType.SchoolPubMessage).goPubRoot.transform.GetComponentInChildren<Button>().Press();
                     }
                     getTaskFromHallStep = 1;
@@ -2056,7 +2120,7 @@ namespace KrunchyToMAuto
             corGetSchoolTask = g.timer.Time((System.Action)delegate
             {
                 GetSchoolTaskAction();
-            }, 0.2f, true);
+            }, 0.8f, true);
         }
 
         private void StopGetSchoolTaskTimer()
@@ -2072,18 +2136,43 @@ namespace KrunchyToMAuto
         {
             if (g.ui.GetUI<UISchool>(UIType.School))
             {
+                UISchool playerSchool = g.ui.GetUI<UISchool>(UIType.School);
+
                 switch (getSchoolTaskStep)
                 {
-                    case 0: // Open Mission Hall
-                        if (g.ui.GetUI<UISchoolTaskLobby>(UIType.SchoolTaskLobby) == null)
+                    case 0:
+                        if (playerSchool != null && OpenHospital(playerSchool) != null)
                         {
-                            UISchool playerSchool = g.ui.GetUI<UISchool>(UIType.School);
-                            if (playerSchool != null && OpenMissionHall(playerSchool) != null)
+                            if (g.world.playerUnit.data.dynUnitData.health.value <= g.world.playerUnit.data.dynUnitData.health.maxValue / 4)
                             {
-                                GameObject goMissionHall = OpenMissionHall(playerSchool).gameObject;
-                                goMissionHall.GetComponent<Button>().Press();
+                                GameObject goHospital = OpenHospital(playerSchool).gameObject;
+                                goHospital.GetComponent<Button>().Press();
+                                getSchoolTaskStep = 4;
+                            } else if (g.world.playerUnit.data.dynUnitData.energy.value <= g.world.playerUnit.data.dynUnitData.energy.maxValue / 4)
+                            {
+                                GameObject goHospital = OpenHospital(playerSchool).gameObject;
+                                goHospital.GetComponent<Button>().Press();
+                                getSchoolTaskStep = 4;
+                            }
+                            else
+                            {
                                 getSchoolTaskStep = 1;
                             }
+                        }
+                        break;
+
+                    case 1:
+                        if (g.ui.GetUI<UISchoolTaskLobby>(UIType.SchoolTaskLobby) == null)
+                        {
+                            if (playerSchool != null && OpenMissionHall(playerSchool) != null)
+                                if (g.world.playerUnit.data.dynUnitData.energy.value >= g.world.playerUnit.data.dynUnitData.energy.maxValue / 4 && g.world.playerUnit.data.dynUnitData.health.value >= g.world.playerUnit.data.dynUnitData.health.maxValue / 4)
+                                {
+                                    {
+                                        GameObject goMissionHall = OpenMissionHall(playerSchool).gameObject;
+                                        goMissionHall.GetComponent<Button>().Press();
+                                        getSchoolTaskStep = 3;
+                                    }
+                                }
                         }
                         else
                         {
@@ -2091,18 +2180,36 @@ namespace KrunchyToMAuto
                         }
                         break;
 
-                    case 1: // Wait for Mission Hall to open
+                    case 2:
                         if (g.ui.GetUI<UISchoolTaskLobby>(UIType.SchoolTaskLobby) != null)
                         {
-                            getSchoolTaskStep = 2;
+                            getSchoolTaskStep = 3;
+                        }
+                        if (g.ui.GetUI<UISchoolHospital>(UIType.SchoolHospital) != null)
+                        {
+                            getSchoolTaskStep = 4;
+                        }
+                        if (g.world.playerUnit.data.dynUnitData.energy.value <= g.world.playerUnit.data.dynUnitData.energy.maxValue / 4 || g.world.playerUnit.data.dynUnitData.health.value <= g.world.playerUnit.data.dynUnitData.health.maxValue / 4)
+                        {
+                            getSchoolTaskStep = 0;
                         }
                         break;
-
-                    case 2: // Get Task From Hall
+                    case 3:
                         if (g.ui.GetUI<UISchoolTaskLobby>(UIType.SchoolTaskLobby) != null)
                         {
                             StopGetSchoolTaskTimer();
                             StartGetTaskFromHallTimer(g.ui.GetUI<UISchoolTaskLobby>(UIType.SchoolTaskLobby));
+                        }
+                        break;  
+                    case 4:
+                        if (g.ui.GetUI<UISchoolHospital>(UIType.SchoolHospital) != null)
+                        {
+
+                            g.ui.GetUI<UISchoolHospital>(UIType.SchoolHospital).btnOK.Press();
+
+                            g.ui.GetUI<UISchoolHospital>(UIType.SchoolHospital).btnClose1.Press();
+
+                            getSchoolTaskStep = 1;
                         }
                         break;
                 }
@@ -2141,7 +2248,7 @@ namespace KrunchyToMAuto
             corTaskMaster = g.timer.Time((System.Action)delegate
             {
                 TaskMasterAction();
-            }, 0.2f, true);
+            }, 1.2f, true);
         }
 
         private void StopTaskMasterTimer()
@@ -2169,7 +2276,7 @@ namespace KrunchyToMAuto
             if (corGoNextMonth != null)
             {
                 g.timer.Stop(corGoNextMonth);
-                corWaitBattleEndUI = null;
+                corGoNextMonth = null;
             }
         }
 
