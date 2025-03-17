@@ -6,5 +6,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <StartAction>Program</StartAction>
     <StartProgram>C:\Games\Tale of Immortal\guigubahuang.exe</StartProgram>
+    <StartArguments>-popupwindow -screen-width 1920 -screen-height 1080</StartArguments>
   </PropertyGroup>
 </Project>

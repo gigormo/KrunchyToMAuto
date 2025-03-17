@@ -1,0 +1,3906 @@
+招魂幡
+Soul-summoning Banner
+<y>每击杀一名修士炼化其灵魄为自己所用（攻击力+3）</y>
+<y>Every time a cultivator is killed, their soul is refined for your use (Attack +3)</y>
+招魂幡：租借
+Soul-summoning Banner: Rental
+阴阳眼
+Yin-Yang Eyes
+幸运+20，悟性+10，视野+1。双眼奇异，可以看到各种奇特的灵体。
+Luck +20, Comprehension +10, Vision +1. Strange eyes that can see various unique spirits.
+噬魂剑
+Soul-devouring Sword
+魔道值+200，幸运-10。噬魂剑，每隔一段时间必须吞噬修仙者的元魂，否则将遭到反噬。
+Demonic Path +200, Luck -10. The Soul-devouring Sword must consume a cultivator's soul periodically, or it will backlash.
+莲花剑意
+Lotus Sword Intent
+剑资质+30，攻击+2。拥有伴生光莲，可自动吸收天地灵气凝聚具有特殊效果的莲子。
+Sword Aptitude +30, Attack +2. Possesses a companion light lotus that automatically absorbs spiritual energy to form special-effect lotus seeds.
+避妖香囊
+Demon-repelling Sachet
+由妖兽讨厌的材料制作而成，对妖兽来说恶臭无比，但对人类修士来说却有一股好闻的香味，略微增加使用者的魅力。
+Made from materials hated by demonic beasts, it smells foul to them but pleasant to human cultivators, slightly increasing the user's charm.
+览物镜
+Object-viewing Mirror
+上古登仙大能所作，能够将对方修士携带的所有物品尽收眼底。
+Created by an ancient immortal, it allows you to see all items carried by another cultivator.
+览物镜：租借
+Object-viewing Mirror: Rental
+上古登仙大能所做，能够将对方修士携带的所有物品尽收眼底。
+Created by an ancient immortal, it allows you to see all items carried by another cultivator.
+千里遁行符：真符
+Thousand Miles Escape Talisman: Genuine
+由上古符箓大师历道长所制之真迹，一张千里遁行符可使用三年之久。
+A genuine talisman crafted by the ancient talisman master Li Daozhang, usable for three years.
+千里遁行符：临摹
+Thousand Miles Escape Talisman: Copy
+民间临摹仿制，一张千里遁行符仅使用一年。
+A folk-made copy, usable for one year.
+五千一年凭证
+Five Thousand Spirit Stones One-Year Voucher
+五千灵石存一年代金凭证
+Voucher for depositing 5,000 spirit stones for one year.
+一万一年凭证
+Ten Thousand Spirit Stones One-Year Voucher
+一万灵石存一年代金凭证
+Voucher for depositing 10,000 spirit stones for one year.
+五万一年凭证
+Fifty Thousand Spirit Stones One-Year Voucher
+五万灵石存一年代金凭证
+Voucher for depositing 50,000 spirit stones for one year.
+十万一年凭证
+One Hundred Thousand Spirit Stones One-Year Voucher
+十万灵石存一年代金凭证
+Voucher for depositing 100,000 spirit stones for one year.
+五千两年凭证
+Five Thousand Spirit Stones Two-Year Voucher
+五千灵石存两年代金凭证
+Voucher for depositing 5,000 spirit stones for two years.
+一万两年凭证
+Ten Thousand Spirit Stones Two-Year Voucher
+一万灵石存两年代金凭证
+Voucher for depositing 10,000 spirit stones for two years.
+五万两年凭证
+Fifty Thousand Spirit Stones Two-Year Voucher
+五万灵石存两年代金凭证
+Voucher for depositing 50,000 spirit stones for two years.
+十万两年凭证
+One Hundred Thousand Spirit Stones Two-Year Voucher
+十万灵石存两年代金凭证
+Voucher for depositing 100,000 spirit stones for two years.
+五千三年凭证
+Five Thousand Spirit Stones Three-Year Voucher
+五千灵石存三年代金凭证
+Voucher for depositing 5,000 spirit stones for three years.
+一万三年凭证
+Ten Thousand Spirit Stones Three-Year Voucher
+一万灵石存三年代金凭证
+Voucher for depositing 10,000 spirit stones for three years.
+五万三年凭证
+Fifty Thousand Spirit Stones Three-Year Voucher
+五万灵石存三年代金凭证
+Voucher for depositing 50,000 spirit stones for three years.
+十万三年凭证
+One Hundred Thousand Spirit Stones Three-Year Voucher
+十万灵石存三年代金凭证
+Voucher for depositing 100,000 spirit stones for three years.
+五千四年凭证
+Five Thousand Spirit Stones Four-Year Voucher
+五千灵石存四年代金凭证
+Voucher for depositing 5,000 spirit stones for four years.
+一万四年凭证
+Ten Thousand Spirit Stones Four-Year Voucher
+一万灵石存四年代金凭证
+Voucher for depositing 10,000 spirit stones for four years.
+五万四年凭证
+Fifty Thousand Spirit Stones Four-Year Voucher
+五万灵石存四年代金凭证
+Voucher for depositing 50,000 spirit stones for four years.
+十万四年凭证
+One Hundred Thousand Spirit Stones Four-Year Voucher
+十万灵石存四年代金凭证
+Voucher for depositing 100,000 spirit stones for four years.
+五千五年凭证
+Five Thousand Spirit Stones Five-Year Voucher
+五千灵石存五年代金凭证
+Voucher for depositing 5,000 spirit stones for five years.
+一万五年凭证
+Ten Thousand Spirit Stones Five-Year Voucher
+一万灵石五年代金凭证
+Voucher for depositing 10,000 spirit stones for five years.
+五万五年凭证
+Fifty Thousand Spirit Stones Five-Year Voucher
+五万灵石存五年代金凭证
+Voucher for depositing 50,000 spirit stones for five years.
+十万五年凭证
+One Hundred Thousand Spirit Stones Five-Year Voucher
+十万灵石存五年代金凭证
+Voucher for depositing 100,000 spirit stones for five years.
+五千六年凭证
+Five Thousand Spirit Stones Six-Year Voucher
+五千灵石存六年代金凭证
+Voucher for depositing 5,000 spirit stones for six years.
+一万六年凭证
+Ten Thousand Spirit Stones Six-Year Voucher
+一万灵石六年代金凭证
+Voucher for depositing 10,000 spirit stones for six years.
+五万六年凭证
+Fifty Thousand Spirit Stones Six-Year Voucher
+五万灵石存六年代金凭证
+Voucher for depositing 50,000 spirit stones for six years.
+十万六年凭证
+One Hundred Thousand Spirit Stones Six-Year Voucher
+十万灵石存六年代金凭证
+Voucher for depositing 100,000 spirit stones for six years.
+碧萤丹火
+Jade Glow Pill Flame
+在地脉中生成的稀有丹火，修士吸收后可辅助炼丹，每次炼丹产出丹药会多一倍。
+A rare pill flame generated in the earth's veins. Cultivators can absorb it to assist in alchemy, doubling the output of pills each time.
+八荒黑市
+Eight Desolates Black Market
+白源蝶仙小轩
+White Source Butterfly Fairy's Pavilion
+永宁蝶仙小轩
+Eternal Peace Butterfly Fairy's Pavilion
+华封蝶仙小轩
+Hua Feng Butterfly Fairy's Pavilion
+云陌蝶仙小轩
+Cloud Path Butterfly Fairy's Pavilion
+暮仙蝶仙小轩
+Dusk Immortal Butterfly Fairy's Pavilion
+赤幽蝶仙小轩
+Crimson Abyss Butterfly Fairy's Pavilion
+储物袋*练气
+Storage Bag [Qi Refining]
+此物由灵蚕丝编织而成，比储物戒指存储空间更大。
+This item is woven from spirit silkworm silk and has more storage space than a storage ring.
+储物袋*筑基
+Storage Bag [Foundation Establishment]
+储物袋*结晶
+Storage Bag [Crystallization]
+储物袋*金丹
+Storage Bag [Golden Core]
+储物袋*具灵
+Storage Bag [Spirit Awakening]
+储物袋*元婴
+Storage Bag [Nascent Soul]
+储物袋*化神
+Storage Bag [Divine Transformation]
+储物袋*悟道
+Storage Bag [Enlightenment]
+储物袋*羽化
+Storage Bag [Ascension]
+储物袋*登仙
+Storage Bag [Immortal Ascension]
+轩辕剑
+Xuanyuan Sword
+轩辕剑，传说中的神兵利刃。轩辕剑又名轩辕夏禹剑，是一把圣道之剑。由众仙采首山之铜为黄帝所铸，后传与夏禹。剑身一面刻日月星辰，一面刻山川草木。剑柄一面书农耕畜养之术，一面书四海一统之策。其内蕴藏无穷之力，为斩妖除魔的神剑。
+The Xuanyuan Sword, a legendary divine weapon. Also known as the Xuanyuan Xia Yu Sword, it is a sacred sword of the Dao. Forged by immortals using copper from Mount Shou for the Yellow Emperor, it was later passed to Xia Yu. One side of the blade is engraved with the sun, moon, and stars, while the other depicts mountains and rivers. The hilt bears inscriptions on farming and animal husbandry on one side, and strategies for unifying the world on the other. It contains infinite power and is a divine sword for slaying demons.
+轩辕帝采首山之铜铸剑，以天文古字题铭其上。帝崩葬乔山，五百年後，山崩，室空，惟剑在焉。一旦，亦失去。
+Emperor Xuanyuan used copper from Mount Shou to forge the sword, inscribing ancient astronomical characters on it. After his death, he was buried on Mount Qiao. Five hundred years later, the mountain collapsed, and the tomb was empty, leaving only the sword. Eventually, it too was lost.
+青竹蜂云剑
+Green Bamboo Bee Cloud Sword
+青元剑诀里记载的一种法宝，为木属性成套炼制的飞剑法宝，最初设计是十二把为一套，当然三十六、七十二把也是可以炼制出来的，只不过数量增加对修士的材料、真元等都是巨大的负担。
+A treasure recorded in the Green Origin Sword Art, it is a set of flying swords with wood attributes. Initially designed as a set of twelve, it is possible to forge sets of thirty-six or seventy-two, though the increased number places a heavy burden on the cultivator's materials and spiritual energy.
+蝶仙子的玉佩
+Butterfly Fairy's Jade Pendant
+蝶仙子的玉佩，凭此物可进出蝶轩小轩。
+The Butterfly Fairy's jade pendant allows entry and exit to the Butterfly Pavilion.
+中品灵石
+Medium-Grade Spirit Stone
+中品灵石较普通灵石灵气更加充沛，蕴含丰富的灵气，修士可以直接吸收灵石中的灵气来修炼。
+Medium-grade spirit stones are more abundant in spiritual energy than ordinary ones, containing rich spiritual energy that cultivators can directly absorb for cultivation.
+上品灵石
+High-Grade Spirit Stone
+上品灵石较中品灵石灵气更加充沛，蕴含丰富的灵气，修士可以直接吸收灵石中的灵气来修炼。
+High-grade spirit stones are even more abundant in spiritual energy than medium-grade ones, containing rich spiritual energy that cultivators can directly absorb for cultivation.
+极品灵石
+Top-Grade Spirit Stone
+极品灵石灵气最为丰富，修士可以直接吸收灵石中的灵气来修炼。
+Top-grade spirit stones contain the most abundant spiritual energy, which cultivators can directly absorb for cultivation.
+道极丹
+Dao Extreme Pill
+使用后增加一百点道心
+Increases Dao Heart by 100 points upon use.
+八荒中每个几年举报的黑市，其中或有帮助修行的法宝道具。
+A black market held every few years in the Eight Desolates, where treasures and tools to aid cultivation may be found.
+本小店无所不有，童叟无欺！道友想要些什么呢？
+This shop has everything, fair to all! What would you like, fellow Daoist?
+材料
+Materials
+坐骑
+Mounts
+功法
+Cultivation Techniques
+打工 <color=#00FFFF>（赚取灵石）</color>
+Work <color=#00FFFF>(Earn Spirit Stones)</color>
+宣传<B>(声望)</B> 
+Promotion<B>(Reputation)</B>
+灵坊 <color=#00FF00>（灵石兑换）</color>
+Spirit Exchange <color=#00FF00>(Spirit Stone Exchange)</color>
+法宝
+Treasures
+离开
+Leave
+道友~你要些什么材料呢？
+Fellow Daoist~ What materials do you need?
+突破材料
+Breakthrough Materials
+前中期突破材料
+Early to Mid-Stage Breakthrough Materials
+炼丹材料
+Alchemy Materials
+炼器材料
+Artifact Refining Materials
+符箓
+Talismans
+杂项
+Miscellaneous
+丹药
+Pills
+逆天改命
+Defy Heaven and Change Fate
+返回
+Return
+你要些什么突破材料呢？
+What breakthrough materials do you need?
+<color=#00FF00>筑基</color>
+<color=#00FF00>Foundation Establishment</color>
+<color=#FF69B4>结晶</color>
+<color=#FF69B4>Crystallization</color>
+<color=#000080><color=#0000FF><color=#FFFF00>金丹</color></color></color>
+<color=#000080><color=#0000FF><color=#FFFF00>Golden Core</color></color></color>
+<color=#87CEEB>具灵</color>
+<color=#87CEEB>Spirit Awakening</color>
+<color=#FFA07A>元婴</color>
+<color=#FFA07A>Nascent Soul</color>
+<color=#6A5ACD>化神</color>
+<color=#6A5ACD>Divine Transformation</color>
+<color=#FFD700>悟道</color>
+<color=#FFD700>Enlightenment</color>
+<color=#FF6347>羽化</color>
+<color=#FF6347>Ascension</color>
+下一页
+Next Page
+<color=#FF0000>登仙</color>*<color=#FFFF00>太</color><color=#00FFFF>初</color><color=#FF6347>仙</color><color=#6A5ACD>璃</color>
+<color=#FF0000>Immortal Ascension</color>*<color=#FFFF00>Tai</color><color=#00FFFF>Chu</color><color=#FF6347>Xian</color><color=#6A5ACD>Li</color>
+<color=#FFF8DC><color=#FF1493>月精魂丹</color></color>
+<color=#FFF8DC><color=#FF1493>Moon Essence Soul Pill</color></color>
+上一页
+Previous Page
+你要些什么筑基材料呢？
+What Foundation Establishment materials do you need?
+火灵气
+Fire Spiritual Energy
+水灵气
+Water Spiritual Energy
+雷灵气
+Thunder Spiritual Energy
+风灵气
+Wind Spiritual Energy
+土灵气
+Earth Spiritual Energy
+木灵气
+Wood Spiritual Energy
+葬沙骨
+Burial Sand Bone
+潮汐露
+Tidal Dew
+千年钟乳
+Millennium Stalactite
+一品筑基丹
+First-Grade Foundation Establishment Pill
+暖玉
+Warm Jade
+玉龙霜
+Jade Dragon Frost
+朱果
+Vermilion Fruit
+你要些什么结晶材料呢？
+What Crystallization materials do you need?
+夕颜
+Evening Glory
+绮罗幽香
+Exquisite Silk Fragrance
+鬼哭藤
+Ghost Cry Vine
+北冥摄魂
+North Sea Soul Capture
+星辰砂
+Star Sand
+天元茯苓
+Heavenly Origin Poria
+凤凰果
+Phoenix Fruit
+碧痕
+Jade Trace
+一品化晶丹
+First-Grade Crystallization Pill
+你要些什么金丹材料呢？
+What Golden Core materials do you need?
+火灵珠
+Fire Spirit Pearl
+水灵珠
+Water Spirit Pearl
+雷灵珠
+Thunder Spirit Pearl
+风灵珠
+Wind Spirit Pearl
+土灵珠
+Earth Spirit Pearl
+木灵珠
+Wood Spirit Pearl
+九彩铃兰
+Nine-Colored Lily of the Valley
+蚀心菇
+Heart-Eroding Mushroom
+冰葵
+Ice Sunflower
+荆棘血藤
+Thorny Blood Vine
+东海明珠
+East Sea Pearl
+玄黄母气
+Primordial Chaos Energy
+地心灵髓
+Earth's Heart Marrow
+魂婴果
+Soul Infant Fruit
+地脉龙晶
+Earth Vein Dragon Crystal
+天焱真火
+Heavenly Flame True Fire
+你要些什么具灵材料呢？
+What Spirit Awakening materials do you need?
+龙骨青金
+Dragon Bone Azure Gold
+妖血石
+Demon Blood Stone
+地火石
+Earth Fire Stone
+悟心珠
+Enlightenment Heart Pearl
+混元石
+Primordial Chaos Stone
+羊脂昊玉
+Sheep Fat White Jade
+玄冥水
+Mysterious Dark Water
+太阴真火
+Lunar True Fire
+一品化灵丹
+First-Grade Spirit Awakening Pill
+你要些什么元婴材料呢？
+What Nascent Soul materials do you need?
+红玉珊瑚
+Red Jade Coral
+弱水
+Weak Water
+阳炎精金
+Solar Flame Refined Gold
+碧落黄泉
+Azure Fall and Yellow Spring
+九幽冥泉水
+Nine Netherworld Spring Water
+九天断魂
+Nine Heavens Soul Severing
+大罗叶
+Great Luo Leaf
+鸩骨毒液
+Poisonous Bone Venom
+百蜕天蚕丝
+Hundred Molt Heavenly Silkworm Silk
+六翅金蝉羽
+Six-Winged Golden Cicada Feather
+镇魂之花
+Soul-Calming Flower
+五彩神石
+Five-Colored Divine Stone
+天道之气
+Heavenly Dao Energy
+地道之气
+Earthly Dao Energy
+一品结婴丹
+First-Grade Nascent Soul Pill
+你要些什么化神材料呢？
+What Divine Transformation materials do you need?
+蛟龙神魄
+Flood Dragon Divine Soul
+勾陈神魄
+Gou Chen Divine Soul
+玄龟神魄
+Mysterious Turtle Divine Soul
+陆吾神魄
+Lu Wu Divine Soul
+重明神魄
+Chong Ming Divine Soul
+化神之气（此气无属性加成，自用建议去封神天梯自打）
+Divine Transformation Energy (This energy has no attribute bonuses. It is recommended to obtain it yourself from the Divine Ascension Ladder.)
+下一页（剧情相关道具）
+Next Page (Plot-Related Items)
+唤醒五山五个神兽所需剧情相关材料（鬼谷秘卷剧情元婴期在雪原走一步李四会给予走剧情无需购买）
+Plot-related materials needed to awaken the five divine beasts of the five mountains (During the Ghost Valley Secret Scroll plot at the Nascent Soul stage, Li Si will provide the materials in the Snow Plains. No need to purchase.)
+鬼谷秘卷
+Ghost Valley Secret Scroll
+蕴仙芝
+Immortal Nurturing Mushroom
+碧桃
+Green Peach
+浴火石
+Bathing Fire Stone
+化神丹
+Divine Transformation Pill
+昆仑神木
+Kunlun Divine Wood
+你要些什么悟道材料呢？
+What Enlightenment materials do you need?
+道魂石
+Dao Soul Stone
+一品悟道丹
+First-Grade Enlightenment Pill
+随机道魂
+Random Dao Soul
+你要些什么羽化材料呢？
+What Ascension materials do you need?
+冥种·晦
+Nether Seed: Obscure
+冥种·灼
+Nether Seed: Scorch
+冥种·煞
+Nether Seed: Evil
+冥种·沌
+Nether Seed: Chaos
+冥种·幽
+Nether Seed: Abyss
+你要些什么炼丹材料呢？
+What alchemy materials do you need?
+永宁州药材
+Eternal Peace Province Medicinal Herbs
+华封州药材
+Hua Feng Province Medicinal Herbs
+云陌州药材
+Cloud Path Province Medicinal Herbs
+慕仙洲药材
+Admire Immortal Province Medicinal Herbs
+赤幽洲药材
+Crimson Abyss Province Medicinal Herbs
+丹炉
+Alchemy Furnace
+你要些什么永宁州炼丹材料呢？
+What Eternal Peace Province alchemy materials do you need?
+青须藤
+Green Beard Vine
+大蓟根茎
+Thistle Root
+玄灵液
+Mysterious Spirit Liquid
+赤精草
+Red Essence Grass
+双桂草
+Double Cassia Grass
+姜黄
+Turmeric
+茯神
+Poria Spirit
+霓裳草
+Rainbow Skirt Grass
+长脑参
+Long Brain Ginseng
+太玄松茸
+Tai Xuan Pine Mushroom
+你要些什么华封州炼丹材料呢？
+What Hua Feng Province alchemy materials do you need?
+炙炎血葵
+Scorching Flame Blood Sunflower
+寒天龙葵
+Cold Sky Sunflower
+赤灵荆
+Red Spirit Thorn
+土茯苓
+Earth Poria
+荨苎麻
+Nettle Hemp
+极寒鱼尾草
+Extreme Cold Fish Tail Grass
+山参
+Mountain Ginseng
+千叶露
+Thousand Leaf Dew
+你要些什么云陌州炼丹材料呢？
+What Cloud Path Province alchemy materials do you need?
+黄休地丁
+Yellow Rest Diding
+向天草
+Skyward Grass
+聚灵彩莲
+Spirit Gathering Colorful Lotus
+赤魂玫瑰
+Red Soul Rose
+固元凤仙
+Solid Origin Impatiens
+血莱菔花
+Blood Radish Flower
+细叶杯苋草
+Thin Leaf Cup Amaranth
+细叶雾水草
+Thin Leaf Mist Grass
+稀签曼
+Rare Sign Man
+土银花
+Earth Silver Flower
+深红矢车菊
+Crimson Cornflower
+胭脂安息香
+Rouge Benzoin
+月阳根
+Moon Sun Root
+五爪藤
+Five-Claw Vine
+固本肉苁蓉
+Solid Origin Cistanche
+天山雪莲
+Heavenly Mountain Snow Lotus
+你要些什么慕仙州炼丹材料呢？
+What Admire Immortal Province alchemy materials do you need?
+万年灵泉乳
+Ten Thousand Year Spirit Spring Milk
+火灵血芝
+Fire Spirit Blood Ganoderma
+温玉化灵草
+Warm Jade Spirit Grass
+万年白茯神
+Ten Thousand Year White Poria Spirit
+聚雷锦葵
+Thunder Gathering Hollyhock
+血魂麝香
+Blood Soul Musk
+谷箻桑
+Valley Reed Mulberry
+玄元紫萁
+Mysterious Origin Purple Fern
+融血阳芝
+Blood-Melting Sun Ganoderma
+炎莽仁
+Flame Python Seed
+九曲灵参
+Nine-Bend Spirit Ginseng
+幽冥草
+Netherworld Grass
+过江水虞草
+Crossing River Yu Grass
+无踪箭头风
+Traceless Arrowhead Wind
+天葵鸟尾草
+Heavenly Sunbird Tail Grass
+圣阳远志
+Sacred Sun Polygala
+金阳火榴果
+Golden Sun Fire Pomegranate
+天桂枝
+Heavenly Cassia Branch
+这都是最好的药材哦~
+These are the best medicinal herbs~
+聚灵天浆壳
+Spirit Gathering Heavenly Shell
+石髓冥土
+Stone Marrow Nether Soil
+蕴魂蒲阳
+Soul Nurturing Pu Yang
+九幽无义草
+Nine Netherworld Ungrateful Grass
+萝藦白麻头
+Luomo White Hemp Head
+赤雷紫晶
+Crimson Thunder Amethyst
+风雷梧桐子
+Wind Thunder Phoenix Seed
+复盆麦门冬
+Double Basin Ophiopogon
+紫精雷击木
+Purple Essence Lightning-Struck Wood
+神曲源晶叶
+Divine Song Source Crystal Leaf
+烈焰风雷藤
+Blazing Flame Wind Thunder Vine
+炎寒扶芳藤
+Scorching Cold Euonymus Vine
+朱砂金樱子
+Cinnabar Golden Cherry
+天元风灵花
+Heavenly Origin Wind Spirit Flower
+仁佑温神叶
+Benevolent Warm Spirit Leaf
+阴阳迷之花
+Yin-Yang Confusion Flower
+天光七叶莲
+Heavenly Light Seven-Leaf Lotus
+含光苍耳草
+Light-Containing Cocklebur Grass
+斜阳夜关门
+Slanting Sun Night Gate Grass
+歆飨盎然叶
+Joyful Feast Lush Leaf
+人参果
+Ginseng Fruit
+你要些什么炼器材料呢？
+What artifact refining materials do you need?
+炼器铸造
+Artifact Forging
+修缮材料
+Repair Materials
+真火
+True Fire
+精炼材料
+Refining Materials
+荒炎号角
+Desolate Flame Horn
+斩雷晶锤
+Thunder Slashing Crystal Hammer
+皇极天剑
+Imperial Zenith Heaven Sword
+青冥玄钟
+Azure Abyss Mystic Bell
+血纹假面
+Blood Pattern Mask
+炽阳之帜
+Blazing Sun Banner
+碧海凝珠
+Sapphire Sea Condensed Pearl
+噬影斗篷
+Shadow Devouring Cloak
+阴曲琴
+Dark Melody Zither
+吞天玺
+Sky Devouring Seal
+凝乾乳
+Condensed Heaven Milk
+缝坤乳
+Sewn Earth Milk
+下品锻尘魄
+Low-Grade Forged Dust Soul
+中品锻尘魄
+Medium-Grade Forged Dust Soul
+上品锻尘魄
+High-Grade Forged Dust Soul
+极品锻尘魄
+Top-Grade Forged Dust Soul
+修缮矿材
+Repair Ore
+核心材料
+Core Materials
+下品淬凝胶
+Low-Grade Tempering Gel
+中品淬凝胶
+Medium-Grade Tempering Gel
+上品淬凝胶
+High-Grade Tempering Gel
+极品淬凝胶
+Top-Grade Tempering Gel
+引群号
+Summoning Horn
+唤雷角
+Thunder Calling Horn
+星硫铁
+Star Sulfur Iron
+苍鸣磬
+Azure Singing Chime
+绝尘面
+Dustless Mask
+云焰尾
+Cloud Flame Tail
+泪玉瞳
+Tear Jade Eye
+风匿袍
+Wind Concealing Robe
+妖灵血晶
+Demon Spirit Blood Crystal
+天元玄石
+Heavenly Origin Mysterious Stone
+鸿蒙残璧
+Primordial Chaos Fragment
+天魂血精
+Heavenly Soul Blood Essence
+通天柏
+Sky-Reaching Cypress
+辰火仙骨
+Star Fire Immortal Bone
+贪恶玺
+Greed and Evil Seal
+这些可都是秘密宝贝
+These are all secret treasures
+城主令
+City Lord's Token
+宝箱抽取【刮刮乐】
+Treasure Box Draw [Scratch Card]
+修炼功法材料
+Cultivation Technique Materials
+领悟功法材料
+Comprehension Technique Materials
+器灵材料
+Artifact Spirit Materials
+果实
+Fruits
+六虚秘境
+Six Void Secret Realm
+储物袋
+Storage Bag
+你要些什么材料呢？
+What materials do you need?
+战功
+Battle Merit
+绝神砂
+Divine Severing Sand
+玄沧仙玉
+Mysterious Azure Immortal Jade
+噬魂石
+Soul Devouring Stone
+壶妖相关
+Pot Demon Related
+醍醐宝典
+Enlightenment Treasure Codex
+器物（恢复心情）
+Tools (Restore Mood)
+技能书
+Skill Books
+衣服染料
+Clothing Dye
+技能通论（生活技能加点）
+Skill Compendium (Life Skill Points)
+风水图
+Feng Shui Map
+太古残卷
+Ancient Fragment
+七彩莲子
+Seven-Colored Lotus Seed
+阴阳魂
+Yin-Yang Soul
+特殊萝卜
+Special Radish
+阴阳珠
+Yin-Yang Pearl
+正魔值
+Righteous and Demonic Value
+夸父剧情道具（水和食物）
+Kuafu Plot Items (Water and Food)
+宗门升级
+Sect Upgrade
+下品魂石
+Low-Grade Soul Stone
+中品魂石
+Medium-Grade Soul Stone
+上品魂石
+High-Grade Soul Stone
+下品魂晶
+Low-Grade Soul Crystal
+中品魂晶
+Medium-Grade Soul Crystal
+上品魂晶
+High-Grade Soul Crystal
+下品魂玉
+Low-Grade Soul Jade
+中品魂玉
+Medium-Grade Soul Jade
+上品魂玉
+High-Grade Soul Jade
+下品精魄之息
+Low-Grade Essence Breath
+中品精魄之息
+Medium-Grade Essence Breath
+上品精魄之息
+High-Grade Essence Breath
+下品圣灵之息
+Low-Grade Holy Spirit Breath
+中品圣灵之息
+Medium-Grade Holy Spirit Breath
+上品圣灵之息
+High-Grade Holy Spirit Breath
+凡品悟心砂
+Common-Grade Enlightenment Heart Sand
+良品悟心砂
+Good-Grade Enlightenment Heart Sand
+极品悟心砂
+Top-Grade Enlightenment Heart Sand
+仙品悟心砂
+Immortal-Grade Enlightenment Heart Sand
+圣品悟心砂
+Sacred-Grade Enlightenment Heart Sand
+凡品炼神璃
+Common-Grade Refined Spirit Glass
+良品炼神璃
+Good-Grade Refined Spirit Glass
+极品炼神璃
+Top-Grade Refined Spirit Glass
+仙品炼神璃
+Immortal-Grade Refined Spirit Glass
+圣品炼神璃
+Sacred-Grade Refined Spirit Glass
+一缕残魂
+A Wisp of Remnant Soul
+星斗露
+Star Dew
+云影露
+Cloud Shadow Dew
+月华露
+Moonlight Dew
+日精露
+Sun Essence Dew
+四大宝珠
+Four Great Treasures
+尘檀水
+Dust Sandalwood Water
+器灵礼物
+Artifact Spirit Gifts
+你要买什么品质的尘檀水？
+What grade of Dust Sandalwood Water do you want to buy?
+下品尘檀水
+Low-Grade Dust Sandalwood Water
+中品尘檀水
+Medium-Grade Dust Sandalwood Water
+上品尘檀水
+High-Grade Dust Sandalwood Water
+极品尘檀水
+Top-Grade Dust Sandalwood Water
+你要买什么器灵礼物？
+What artifact spirit gift do you want to buy?
+凝虹宝玉（霜狐）
+Condensed Rainbow Treasure (Frost Fox)
+云尘丝桐（玉鸾）
+Cloud Dust Silk Zither (Jade Luan)
+辰火硫骨（戾斑）
+Star Fire Sulfur Bone (Fierce Spot)
+苍雷焦铁（蛮豚）
+Azure Thunder Charred Iron (Savage Boar)
+血蕊花酿（岫兕）
+Blood Stamen Flower Brew (Xiù Sì)
+幽桂蜜胶 (罴蒙）
+Dark Osmanthus Honey Glue (Pí Méng)
+流光玄金（灼龙）
+Flowing Light Mysterious Gold (Blazing Dragon)
+赤血凝珠（兀蛇）
+Crimson Blood Condensed Pearl (Wù Snake)
+你要些什么灵果呢？
+What spirit fruits do you need?
+灵根果
+Spirit Root Fruit
+道心果
+Dao Heart Fruit
+灵器果
+Spirit Artifact Fruit
+火灵果
+Fire Spirit Fruit
+水灵果
+Water Spirit Fruit
+木灵果
+Wood Spirit Fruit
+土灵果
+Earth Spirit Fruit
+雷灵果
+Thunder Spirit Fruit
+风灵果
+Wind Spirit Fruit
+剑灵果
+Sword Spirit Fruit
+刀灵果
+Blade Spirit Fruit
+枪灵果
+Spear Spirit Fruit
+拳灵果
+Fist Spirit Fruit
+指灵果
+Finger Spirit Fruit
+掌灵果
+Palm Spirit Fruit
+一品剑灵果
+First-Grade Sword Spirit Fruit
+二品剑灵果
+Second-Grade Sword Spirit Fruit
+三品剑灵果
+Third-Grade Sword Spirit Fruit
+四品剑灵果
+Fourth-Grade Sword Spirit Fruit
+五品剑灵果
+Fifth-Grade Sword Spirit Fruit
+一品刀灵果
+First-Grade Blade Spirit Fruit
+二品刀灵果
+Second-Grade Blade Spirit Fruit
+三品刀灵果
+Third-Grade Blade Spirit Fruit
+四品刀灵果
+Fourth-Grade Blade Spirit Fruit
+五品刀灵果
+Fifth-Grade Blade Spirit Fruit
+一品枪灵果
+First-Grade Spear Spirit Fruit
+二品枪灵果
+Second-Grade Spear Spirit Fruit
+三品枪灵果
+Third-Grade Spear Spirit Fruit
+四品枪灵果
+Fourth-Grade Spear Spirit Fruit
+五品枪灵果
+Fifth-Grade Spear Spirit Fruit
+一品拳灵果
+First-Grade Fist Spirit Fruit
+二品拳灵果
+Second-Grade Fist Spirit Fruit
+三品拳灵果
+Third-Grade Fist Spirit Fruit
+四品拳灵果
+Fourth-Grade Fist Spirit Fruit
+五品拳灵果
+Fifth-Grade Fist Spirit Fruit
+一品指灵果
+First-Grade Finger Spirit Fruit
+二品指灵果
+Second-Grade Finger Spirit Fruit
+三品指灵果
+Third-Grade Finger Spirit Fruit
+四品指灵果
+Fourth-Grade Finger Spirit Fruit
+五品指灵果
+Fifth-Grade Finger Spirit Fruit
+一品掌灵果
+First-Grade Palm Spirit Fruit
+二品掌灵果
+Second-Grade Palm Spirit Fruit
+三品掌灵果
+Third-Grade Palm Spirit Fruit
+四品掌灵果
+Fourth-Grade Palm Spirit Fruit
+五品掌灵果
+Fifth-Grade Palm Spirit Fruit
+你要些什么真火呢？
+What true fire do you need?
+阳火
+Yang Fire
+幽火
+Abyss Fire
+云火
+Cloud Fire
+蛊火
+Gu Fire
+神火
+Divine Fire
+你选择哪种六虚秘境提升呢
+Which Six Void Secret Realm enhancement do you choose?
+六虚秘境（实）
+Six Void Secret Realm (Real)
+六虚密集（隐）
+Six Void Secret Realm (Hidden)
+六虚秘境（幻）
+Six Void Secret Realm (Illusion)
+六虚秘境（天）
+Six Void Secret Realm (Heaven)
+六虚秘境（升）
+Six Void Secret Realm (Ascension)
+六虚秘境（离）
+Six Void Secret Realm (Departure)
+你要哪只坐骑呢？
+Which mount do you want?
+飞剑
+Flying Sword
+璇龟
+Xuan Turtle
+祥云
+Auspicious Cloud
+飞舟
+Flying Boat
+圣阳羽毛
+Sacred Sun Feather
+鲤龙
+Carp Dragon
+荒角碧游鲲
+Desolate Horn Azure Roaming Kun
+九霄灵云
+Nine Heavens Spirit Cloud
+降晶异卵
+Crystal Descending Egg
+碧檀玄舟
+Azure Sandalwood Mysterious Boat
+当扈
+Dang Hu
+紫狐
+Purple Fox
+七彩祥云
+Seven-Colored Auspicious Cloud
+北辰冰虹
+North Star Ice Rainbow
+玄沧星盘
+Mysterious Azure Star Disk
+壶妖丹方
+Pot Demon Pill Recipe
+壶妖修为丹材料（一炉）
+Pot Demon Cultivation Pill Materials (One Batch)
+壶妖境界丹材料（一炉）
+Pot Demon Realm Pill Materials (One Batch)
+壶妖真气丹材料（一炉）
+Pot Demon True Qi Pill Materials (One Batch)
+壶妖化人丹材料（一炉）
+Pot Demon Human Transformation Pill Materials (One Batch)
+哦，让我去宣传你的威名？可以哦，但是得有灵石呢~
+Oh, you want me to spread your fame? Sure, but it'll cost spirit stones~
+声望
+Reputation
+宗门贡献
+Sect Contribution
+声望拾
+Reputation +10
+宗门贡献拾
+Sect Contribution +10
+声望壹佰
+Reputation +100
+宗门贡献壹佰
+Sect Contribution +100
+你可愿与我结为道侣
+Would you be willing to become my Dao companion?
+你之所想，亦是我心之所愿，我愿意。
+What you desire is also my heart's wish. I am willing.
+你我今后虽已结道侣，但我可不会给你打折哦~
+Although we are now Dao companions, I won't give you a discount~
+愿得你心，白首不分离
+I wish to win your heart and never part until our hair turns white.
+蝶道友，我开个玩笑罢了
+Fellow Daoist Butterfly, I was just joking.
+多情自古空余恨
+Since ancient times, excessive affection has only left regret.
+此恨绵绵无绝期
+This regret is endless and without cease.
+三阳生骨丹
+Triple Yang Bone Regeneration Pill
+五宝大还丹
+Five Treasures Great Recovery Pill
+七级固魂丹
+Seventh-Grade Soul Stabilization Pill
+九转还魂丹
+Nine Revolutions Soul Revival Pill
+聚气丸【练气初】
+Qi Gathering Pill [Early Qi Refining]
+集气丸【练气中】
+Qi Collection Pill [Mid Qi Refining]
+洗髓丸【筑基初】
+Marrow Cleansing Pill [Early Foundation Establishment]
+涤髓丸【筑基中】
+Marrow Purification Pill [Mid Foundation Establishment]
+锻体丸【结晶初】
+Body Forging Pill [Early Crystallization]
+炼体丸【结晶中】
+Body Refining Pill [Mid Crystallization]
+通脉丸【金丹初】
+Meridian Clearing Pill [Early Golden Core]
+顺脉丸【金丹中】
+Meridian Smoothing Pill [Mid Golden Core]
+融灵丸【具灵初】
+Spirit Fusion Pill [Early Spirit Awakening]
+合灵丸【具灵中】
+Spirit Harmony Pill [Mid Spirit Awakening]
+蕴血丸【元婴初】
+Blood Nurturing Pill [Early Nascent Soul]
+蓄血丸【元婴中】
+Blood Accumulation Pill [Mid Nascent Soul]
+凝神丸【化神初】
+Spirit Condensation Pill [Early Divine Transformation]
+结神丸【化神中】
+Spirit Formation Pill [Mid Divine Transformation]
+回元丸【悟道初】
+Origin Recovery Pill [Early Enlightenment]
+升元丸【悟道中】
+Origin Ascension Pill [Mid Enlightenment]
+混沌之息【羽化初】
+Chaos Breath [Early Ascension]
+上品混沌之息【羽化中】
+High-Grade Chaos Breath [Mid Ascension]
+先天一气*妖【登仙中】
+Innate Qi * Demon [Mid Immortal Ascension]
+先天一气*生【登仙后】
+Innate Qi * Life [Post Immortal Ascension]
+这种石头可以减少很多修行上的麻烦，平常可买不到哦。
+This kind of stone can reduce a lot of cultivation troubles. It's not usually available for purchase.
+界元石*练气
+Boundary Stone * Qi Refining
+界元石*冥屑
+Boundary Stone * Nether Dust
+界元石*结晶
+Boundary Stone * Crystallization
+界元石*星砾
+Boundary Stone * Star Gravel
+界元石*具灵
+Boundary Stone * Spirit Awakening
+界元石*羽圭
+Boundary Stone * Ascension Jade
+界元石*化神
+Boundary Stone * Divine Transformation
+界元石*仙琼
+Boundary Stone * Immortal Jade
+界元石*羽化
+Boundary Stone * Ascension
+界元石*启明
+Boundary Stone * Enlightenment
+人在修仙界，怎么能不准备些上好的法器。
+In the world of cultivation, how can one not prepare some top-quality magical tools?
+千里遁行符
+Thousand Miles Escape Talisman
+招魂幡：曾是一名大宗邪修所炼，看似普通的旗幡，却可以将修士元魂炼化,增强使用者的力量。（每击杀一名修士+3攻击力）
+Soul-summoning Banner: Once refined by a great evil cultivator, this seemingly ordinary banner can refine the souls of cultivators, enhancing the user's power. (+3 Attack for each cultivator killed)
+购买
+Purchase
+租借（为期一年）
+Rent (For One Year)
+阴阳眼：奇异眼眸，可以看到各种奇特灵体。
+Yin-Yang Eyes: Strange eyes that can see various unique spirits.
+噬魂剑：吞噬修仙者强化自身，但若长期喂养元魂将遭到反噬
+Soul-devouring Sword: Devours cultivators to strengthen itself, but prolonged feeding on souls will cause backlash.
+莲花剑意：光莲每月吸收天地灵气，吸收到一定灵气将凝结莲子。
+Lotus Sword Intent: The light lotus absorbs spiritual energy from heaven and earth each month. Once enough energy is absorbed, it will condense lotus seeds.
+你在找工作？正好我这里缺些人手，在这工作你不但可以获得报酬而且还可以锻炼能力，如果你干的出色的话，有额外的奖励也说不定哦~
+Looking for a job? I happen to need some help here. Working here not only earns you rewards but also hones your skills. If you perform well, there might even be extra rewards~
+<y>(各项工作的强度和相关资质有关，提升相关资质解锁更高级的职业。)
+门槛：零 五十 八十 一百 一百五 二百 三百 五百</y>
+<y>(The intensity of each job is related to the relevant qualifications. Improving your qualifications unlocks higher-level professions.)
+Thresholds: 0, 50, 80, 100, 150, 200, 300, 500</y>
+<color=#FF4500>炼丹</color>
+<color=#FF4500>Alchemy</color>
+<color=#00FFFF>炼器</color>
+<color=#00FFFF>Artifact Refining</color>
+<color=#00FF00>灵植</color>
+<color=#00FF00>Spirit Plant Cultivation</color>
+<color=#FFD700>灵兽</color>
+<color=#FFD700>Spirit Beast Taming</color>
+<color=#DAA520><color=#FFFF00>符箓</color></color>
+<color=#DAA520><color=#FFFF00>Talisman Crafting</color></color>
+<color=#C0C0C0>灵矿</color>
+<color=#C0C0C0>Spirit Mining</color>
+<color=#FF00FF>阵法</color>
+<color=#FF00FF>Formation Array</color>
+杂役
+Miscellaneous Work
+炼丹工作的强度和炼丹资质有关，提升炼丹资质解锁更高级的职业。
+The intensity of alchemy work is related to alchemy qualifications. Improving your alchemy qualifications unlocks higher-level professions.
+炼丹童子（精力-40）
+Alchemy Apprentice (Energy -40)
+学徒炼丹师（精力-80）
+Novice Alchemist (Energy -80)
+新手炼丹师（精力-40）
+Beginner Alchemist (Energy -40)
+挂牌炼丹师（精力-80）
+Licensed Alchemist (Energy -80)
+高级炼丹师（精力-100）
+Advanced Alchemist (Energy -100)
+大师级炼丹师（精力-100）
+Master Alchemist (Energy -100)
+宗师级炼丹师（精力-120）
+Grandmaster Alchemist (Energy -120)
+丹道巨擘（精力-150）
+Pinnacle Alchemist (Energy -150)
+体力不足,回客房休息（消耗5天）
+Insufficient stamina, return to the guest room to rest (Consumes 5 days)
+炼器工作的强度和炼器资质有关，提升炼器资质解锁更高级的职业。
+The intensity of artifact refining work is related to refining qualifications. Improving your refining qualifications unlocks higher-level professions.
+炼器剑侍（精力-40）
+Sword Servant Refiner (Energy -40)
+学徒炼器师（精力-80）
+Novice Artifact Refiner (Energy -80)
+新手炼器师（精力-80）
+Beginner Artifact Refiner (Energy -80)
+挂牌炼器师（精力-80）
+Licensed Artifact Refiner (Energy -80)
+高级炼器师（精力-100）
+Advanced Artifact Refiner (Energy -100)
+大师级炼器师（精力-100）
+Master Artifact Refiner (Energy -100)
+宗师炼器师（精力-120）
+Grandmaster Artifact Refiner (Energy -120)
+炼器巨擘（精力-150）
+Pinnacle Artifact Refiner (Energy -150)
+灵植工作的强度和药材资质有关，提升药材资质解锁更高级的职业。
+The intensity of spirit plant cultivation work is related to herbal qualifications. Improving your herbal qualifications unlocks higher-level professions.
+人形稻草人（精力-40）
+Human Scarecrow (Energy -40)
+学徒灵农（精力-80）
+Novice Spirit Farmer (Energy -80)
+新手灵农（精力-80）
+Beginner Spirit Farmer (Energy -80)
+灵田老手（精力-80）
+Experienced Spirit Farmer (Energy -80)
+精英灵农（精力-100）
+Elite Spirit Farmer (Energy -100)
+大师级灵农（精力-100）
+Master Spirit Farmer (Energy -100)
+宗师级灵农（精力-120）
+Grandmaster Spirit Farmer (Energy -120)
+灵植巨擘（精力-150）
+Pinnacle Spirit Farmer (Energy -150)
+灵兽培育工作和雷灵根有关，提升雷灵根资质解锁更高级的职业。
+Spirit beast taming work is related to thunder spiritual roots. Improving your thunder spiritual roots unlocks higher-level professions.
+灵兽铲屎官（精力-40）
+Spirit Beast Poop Scooper (Energy -40)
+虫级饲养员（精力-80）
+Insect-Level Keeper (Energy -80)
+蛇级饲养员（精力-80）
+Snake-Level Keeper (Energy -80)
+蟒级饲养员（精力-80）
+Python-Level Keeper (Energy -80)
+蚺级饲养员（精力-100）
+Anaconda-Level Keeper (Energy -100)
+蛟级饲养员（精力-100）
+Flood Dragon-Level Keeper (Energy -100)
+龙级饲养员（精力-120）
+Dragon-Level Keeper (Energy -120)
+御兽巨擘（精力-150）
+Pinnacle Beast Tamer (Energy -150)
+符箓工作的强度和画符资质有关，提升画符资质解锁更高级的职业。
+The intensity of talisman crafting work is related to talisman qualifications. Improving your talisman qualifications unlocks higher-level professions.
+人体素描（精力-40）
+Human Sketch (Energy -40)
+学徒制符师（精力-80）
+Novice Talisman Maker (Energy -80)
+新人制符师（精力-80）
+Beginner Talisman Maker (Energy -80)
+挂牌制符师（精力-80）
+Licensed Talisman Maker (Energy -80)
+专业制符师（精力-100）
+Professional Talisman Maker (Energy -100)
+大师级制符师（精力-100）
+Master Talisman Maker (Energy -100)
+宗师级制符师（精力-120）
+Grandmaster Talisman Maker (Energy -120)
+画符巨擘（精力-150）
+Pinnacle Talisman Maker (Energy -150)
+灵矿工作的强度和矿材资质有关，提升矿材资质解锁更高级的职业。
+The intensity of spirit mining work is related to mining qualifications. Improving your mining qualifications unlocks higher-level professions.
+大理石矿工（精力-40）
+Marble Miner (Energy -40)
+青铜矿工（精力-80）
+Bronze Miner (Energy -80)
+黑铁矿工（精力-80）
+Black Iron Miner (Energy -80)
+秘银矿工（精力-80）
+Mithril Miner (Energy -80)
+黄金矿工（精力-100）
+Gold Miner (Energy -100)
+钻石矿工（精力-100）
+Diamond Miner (Energy -100)
+黑曜石矿工（精力-120）
+Obsidian Miner (Energy -120)
+挖矿巨擘（精力-150）
+Pinnacle Miner (Energy -150)
+阵法工作的强度和风水资质有关，提升风水资质解锁更高级的职业。
+The intensity of formation array work is related to feng shui qualifications. Improving your feng shui qualifications unlocks higher-level professions.
+摆摊算命（精力-40）
+Fortune Telling Stall (Energy -40)
+学徒布阵师（精力-80）
+Novice Formation Master (Energy -80)
+新人布阵师（精力-80）
+Beginner Formation Master (Energy -80)
+挂牌布阵师（精力-80）
+Licensed Formation Master (Energy -80)
+专业布阵师（精力-100）
+Professional Formation Master (Energy -100)
+大师级布阵师（精力-100）
+Master Formation Master (Energy -100)
+宗师级布阵师（精力-120）
+Grandmaster Formation Master (Energy -120)
+阵法巨擘（精力-150）
+Pinnacle Formation Master (Energy -150)
+避妖香囊：由妖兽讨厌的材料制作而成，对妖兽来说恶臭无比，但对人类修士来说却有一股好闻的香味。（使用后不在遇到特殊地形妖物，但3个月后香囊的气味就会挥发掉）
+Demon-repelling Sachet: Made from materials hated by demonic beasts, it smells foul to them but pleasant to human cultivators. (After use, you won't encounter special terrain demons, but the scent will dissipate after 3 months.)
+览物镜：一片透明的镜片，注入灵力后可化为无形，对方无法察觉，可悄无声息查看对方修士身上所携带的所有物品。
+Object-viewing Mirror: A transparent lens that becomes invisible after injecting spiritual energy, allowing you to silently inspect all items carried by another cultivator.
+租借
+Rent
+这里的醍醐宝典都是<r>天道</r>的哦
+The Enlightenment Codexes here are all <r>Heavenly Dao</r> treasures.
+练气醍醐宝典
+Qi Refining Enlightenment Codex
+结晶醍醐宝典
+Crystallization Enlightenment Codex
+具灵醍醐宝典
+Spirit Awakening Enlightenment Codex
+化神醍醐宝典
+Divine Transformation Enlightenment Codex
+羽化醍醐宝典
+Ascension Enlightenment Codex
+杂役：干一些杂活既能锻炼又能赚取一些灵石，何乐而不为呢。
+Miscellaneous Work: Doing odd jobs not only trains you but also earns you some spirit stones. Why not?
+采伐灵木（精力-80）
+Harvest Spirit Wood (Energy -80)
+灵泉打水（精力-80）
+Draw Water from Spirit Spring (Energy -80)
+道侣送花（精力-80）
+Send Flowers to Dao Companion (Energy -80)
+书阁门引（精力-80）
+Library Gate Guide (Energy -80)
+宗门宣传（精力-80）
+Sect Promotion (Energy -80)
+洞府打扫（精力-80）
+Clean the Cave Abode (Energy -80)
+站岗门卫（精力-80）
+Guard Duty (Energy -80)
+人体沙包（精力-80）
+Human Punching Bag (Energy -80)
+你要买那些回复<color=#00FF00>心情</color>或者用来<color=#FF6347><color=#FF69B4>礼物</color></color>的</color>器物？注意哦，我们这只卖<color=#FF0000>最高品质</color>器物。
+Do you want to buy items that restore <color=#00FF00>mood</color> or are used as <color=#FF6347><color=#FF69B4>gifts</color></color>? Note, we only sell <color=#FF0000>top-quality</color> items here.
+石器（一套）
+Stone Tools (Set)
+玉器（一套）
+Jade Tools (Set)
+琴（一套）
+Qin (Set)
+笛子（一支）
+Flute (One)
+箫（一支）
+Xiao (One)
+钟（一口）
+Bell (One)
+饰品（一套）
+Accessories (Set)
+陶器（一套）
+Pottery (Set)
+图册（一套）
+Picture Book (Set)
+骨器（一付）
+Bone Tools (Set)
+你要买哪本技能书？
+Which skill book do you want to buy?
+风水技能书
+Feng Shui Skill Book
+药材药谱
+Herbal Medicine Manual
+矿材鉴识
+Ore Identification
+炼器谱
+Artifact Refining Manual
+你要买哪本风水技能书呢？
+Which feng shui skill book do you want to buy?
+寻风
+Wind Seeking
+九星连珠
+Nine Stars Alignment
+阴阳
+Yin-Yang
+定岳
+Mountain Stabilization
+巽风
+Xun Wind
+天魂鬼契
+Heavenly Soul Ghost Contract
+你要买 九星连珠 哪一本呢？
+Which volume of Nine Stars Alignment do you want to buy?
+九星连珠（一）
+Nine Stars Alignment (1)
+九星连珠（二）
+Nine Stars Alignment (2)
+九星连珠（三）
+Nine Stars Alignment (3)
+九星连珠（四）
+Nine Stars Alignment (4)
+九星连珠（终）
+Nine Stars Alignment (Final)
+你要买 寻风 哪一本呢？
+Which volume of Wind Seeking do you want to buy?
+寻风（一）
+Wind Seeking (1)
+寻风（二）
+Wind Seeking (2)
+寻风（三）
+Wind Seeking (3)
+寻风（四）
+Wind Seeking (4)
+寻风（终）
+Wind Seeking (Final)
+你要买 阴阳 哪一本呢？
+Which volume of Yin-Yang do you want to buy?
+阴阳（一）
+Yin-Yang (1)
+阴阳（二）
+Yin-Yang (2)
+阴阳（三）
+Yin-Yang (3)
+阴阳（四）
+Yin-Yang (4)
+阴阳（终）
+Yin-Yang (Final)
+你要买 定岳 哪一本呢？
+Which volume of Mountain Stabilization do you want to buy?
+定岳（一）
+Mountain Stabilization (1)
+定岳（二）
+Mountain Stabilization (2)
+定岳（三）
+Mountain Stabilization (3)
+定岳（四）
+Mountain Stabilization (4)
+定岳（终）
+Mountain Stabilization (Final)
+你要买 巽风 哪一本呢
+Which volume of Xun Wind do you want to buy?
+巽风（一）
+Xun Wind (1)
+巽风（二）
+Xun Wind (2)
+巽风（三）
+Xun Wind (3)
+巽风（四）
+Xun Wind (4)
+巽风（终）
+Xun Wind (Final)
+你要买 天魂鬼契 哪一本呢？
+Which volume of Heavenly Soul Ghost Contract do you want to buy?
+你要买哪本药谱呢？
+Which herbal medicine manual do you want to buy?
+永宁药谱（一套）
+Eternal Peace Herbal Manual (Set)
+华封药谱（一套）
+Hua Feng Herbal Manual (Set)
+云陌药谱（一套）
+Cloud Path Herbal Manual (Set)
+慕仙药谱（一套）
+Admire Immortal Herbal Manual (Set)
+赤幽药谱（一套）
+Crimson Abyss Herbal Manual (Set)
+你要买哪本鉴识呢？
+Which ore identification manual do you want to buy?
+永宁鉴识（一套）
+Eternal Peace Ore Identification (Set)
+华封鉴识（一套）
+Hua Feng Ore Identification (Set)
+云陌鉴识（一套）
+Cloud Path Ore Identification (Set)
+暮仙鉴识（一套）
+Dusk Immortal Ore Identification (Set)
+你要买哪本炼器谱呢？
+Which artifact refining manual do you want to buy?
+荒炎号角炼器谱
+Desolate Flame Horn Refining Manual
+斩雷晶锤炼器谱
+Thunder Slashing Crystal Hammer Refining Manual
+皇天极剑炼器谱
+Imperial Heaven's Zenith Sword Refining Manual
+青冥玄钟炼器谱
+Azure Abyss Mystic Bell Refining Manual
+血纹假面炼器谱
+Blood Pattern Mask Refining Manual
+炽阳之帜炼器谱
+Blazing Sun Banner Refining Manual
+碧海凝珠炼器谱
+Sapphire Sea Condensed Pearl Refining Manual
+噬影斗篷炼器谱
+Shadow Devouring Cloak Refining Manual
+吞天碧玺炼器谱
+Sky Devouring Jasper Refining Manual
+离尘古琴炼器谱
+Ancient Zither of Departing Dust Refining Manual
+小辈你又弄的全身遍体鳞伤，记得行事应谨慎，杀伐要果断。
+Young one, you're covered in wounds again. Remember to act cautiously and decisively in battle.
+算了不说这个了 记得有空来我小店消费哦~ (^з^)-☆ 
+Never mind, let's not talk about that. Remember to visit my shop when you have time~ (^з^)-☆
+（语毕蝶仙子便消失在原地，只留下飞舞的花瓣和几颗疗伤丹药）
+(With that, the Butterfly Fairy disappears, leaving only fluttering petals and a few healing pills.)
+(´･Д･)」
+(´･Д･)」
+此物由灵蚕丝编织而成，比一般储物戒指存储空间更大。
+This item is woven from spirit silkworm silk and has more storage space than a regular storage ring.
+储物袋【练气】
+Storage Bag [Qi Refining]
+储物袋【筑基】
+Storage Bag [Foundation Establishment]
+储物袋【结晶】
+Storage Bag [Crystallization]
+储物袋【金丹】
+Storage Bag [Golden Core]
+储物袋【具灵】
+Storage Bag [Spirit Awakening]
+储物袋【元婴】
+Storage Bag [Nascent Soul]
+储物袋【化神】
+Storage Bag [Divine Transformation]
+储物袋【悟道】
+Storage Bag [Enlightenment]
+储物袋【羽化】
+Storage Bag [Ascension]
+储物袋【登仙】
+Storage Bag [Immortal Ascension]
+俗话说，打不过就跑！千里遁行符可以让你百分百躲避敌人追杀。
+As the saying goes, if you can't win, run! The Thousand Miles Escape Talisman ensures you can evade enemy pursuit 100%.
+千里遁形符：真迹（三年）
+Thousand Miles Escape Talisman: Genuine (3 Years)
+千里遁行符：临摹（一年）
+Thousand Miles Escape Talisman: Copy (1 Year)
+你查看蝶仙子留下的丹药并无问题后，将其吞服，盘腿吐纳良久后，一股暖流席卷全身，体力充沛，灵力充盈，浑身状态恢复如初。
+After confirming that the pill left by the Butterfly Fairy is safe, you swallow it. After meditating for a long time, a warm current flows through your body, restoring your stamina, spiritual energy, and overall condition to its peak.
+休息片刻后，你便离开此地
+After resting for a while, you leave this place.
+重伤状态消失了
+The severe injury condition has disappeared.
+你要买哪些符箓呢？
+Which talismans do you want to buy?
+迅雷符
+Swift Thunder Talisman
+灵盾符
+Spirit Shield Talisman
+凶卫符
+Fierce Guard Talisman
+拘灵符
+Spirit Binding Talisman
+神目符
+Divine Eye Talisman
+瞬移符
+Teleportation Talisman
+祈天符
+Heaven's Prayer Talisman
+符箓图谱
+Talisman Manual
+你要买哪些迅雷符箓呢？
+Which Swift Thunder Talismans do you want to buy?
+残*迅雷符
+Damaged* Swift Thunder Talisman
+真*迅雷符
+Genuine* Swift Thunder Talisman
+星*迅雷符
+Star* Swift Thunder Talisman
+灵*迅雷符
+Spirit* Swift Thunder Talisman
+流*迅雷符
+Flowing* Swift Thunder Talisman
+绝*迅雷符
+Supreme* Swift Thunder Talisman
+幽*迅雷符
+Ghostly* Swift Thunder Talisman
+禁*迅雷符
+Forbidden* Swift Thunder Talisman
+苍*迅雷符
+Ancient* Swift Thunder Talisman
+道*迅雷符
+Dao* Swift Thunder Talisman
+你要买哪些灵盾符箓呢？
+Which Spirit Shield Talismans do you want to buy?
+残*灵盾符
+Damaged* Spirit Shield Talisman
+真*灵盾符
+Genuine* Spirit Shield Talisman
+星*灵盾符
+Star* Spirit Shield Talisman
+灵*灵盾符
+Spirit* Spirit Shield Talisman
+流*灵盾符
+Flowing* Spirit Shield Talisman
+绝*灵盾符
+Supreme* Spirit Shield Talisman
+幽*灵盾符
+Ghostly* Spirit Shield Talisman
+禁*灵盾符
+Forbidden* Spirit Shield Talisman
+苍*灵盾符
+Ancient* Spirit Shield Talisman
+道*灵盾符
+Dao* Spirit Shield Talisman
+你要买哪些凶卫符箓呢？
+Which Fierce Guard Talismans do you want to buy?
+残*凶卫符
+Damaged* Fierce Guard Talisman
+真*凶卫符
+Genuine* Fierce Guard Talisman
+星*凶卫符
+Star* Fierce Guard Talisman
+灵*凶卫符
+Spirit* Fierce Guard Talisman
+流*凶卫符
+Flowing* Fierce Guard Talisman
+绝*凶卫符
+Supreme* Fierce Guard Talisman
+幽*凶卫符
+Ghostly* Fierce Guard Talisman
+禁*凶卫符
+Forbidden* Fierce Guard Talisman
+苍*凶卫符
+Ancient* Fierce Guard Talisman
+道*凶卫符
+Dao* Fierce Guard Talisman
+你要买哪些拘灵符箓呢？
+Which Spirit Binding Talismans do you want to buy?
+残*拘灵符
+Damaged* Spirit Binding Talisman
+真*拘灵符
+Genuine* Spirit Binding Talisman
+星*拘灵符
+Star* Spirit Binding Talisman
+灵*拘灵符
+Spirit* Spirit Binding Talisman
+流*拘灵符
+Flowing* Spirit Binding Talisman
+绝*拘灵符
+Supreme* Spirit Binding Talisman
+幽*拘灵符
+Ghostly* Spirit Binding Talisman
+禁*拘灵符
+Forbidden* Spirit Binding Talisman
+苍*拘灵符
+Ancient* Spirit Binding Talisman
+道*拘灵符
+Dao* Spirit Binding Talisman
+你要买哪些符箓图谱呢？
+Which talisman manuals do you want to buy?
+迅雷符图谱
+Swift Thunder Talisman Manual
+灵盾符图谱
+Spirit Shield Talisman Manual
+凶卫符图谱
+Fierce Guard Talisman Manual
+拘灵符图谱
+Spirit Binding Talisman Manual
+神目符图谱
+Divine Eye Talisman Manual
+瞬移符图谱
+Teleportation Talisman Manual
+祈天符图谱
+Heaven's Prayer Talisman Manual
+你要些什么衣物材料呢？
+What clothing materials do you need?
+绕指柔
+Soft as Silk
+七彩幽草
+Seven-Colored Ghost Grass
+天青水玉
+Azure Sky Water Jade
+幻彩水玉
+Iridescent Water Jade
+可将多余的灵石存在我这哦
+You can deposit extra spirit stones with me.
+(存款后下次存款要待本次存款日期履行后再进行）
+(After depositing, the next deposit can only be made after the current deposit period is fulfilled.)
+存1年(利率10％）
+Deposit for 1 Year (10% Interest)
+存2年（利率25％）
+Deposit for 2 Years (25% Interest)
+存3年（利率40％）
+Deposit for 3 Years (40% Interest)
+存4年（利率65％）
+Deposit for 4 Years (65% Interest)
+存5年（利率100％）
+Deposit for 5 Years (100% Interest)
+存6年（利率300％）
+Deposit for 6 Years (300% Interest)
+你要存多少灵石（存一年）
+How many spirit stones do you want to deposit? (1 Year)
+五千
+Five Thousand
+一万
+Ten Thousand
+五万
+Fifty Thousand
+十万
+One Hundred Thousand
+您在蝶仙小轩所存一年五千灵石以及利润请查收，祝您修行愉快。
+Please receive the 5,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for one year. Wishing you a pleasant cultivation journey.
+——蝶仙小轩
+——Butterfly Fairy's Pavilion
+您在蝶仙小轩所存一年一万灵石以及利润请查收，祝您修行愉快。
+Please receive the 10,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for one year. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存一年五万灵石以及利润请查收，祝您修行愉快。
+Please receive the 50,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for one year. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存一年十万灵石以及利润请查收，祝您修行愉快。
+Please receive the 100,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for one year. Wishing you a pleasant cultivation journey.
+你要存多少灵石（存二年）
+How many spirit stones do you want to deposit? (2 Years)
+您在蝶仙小轩所存两年五千灵石以及利润请查收，祝您修行愉快。
+Please receive the 5,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for two years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存两年一万灵石以及利润请查收，祝您修行愉快。
+Please receive the 10,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for two years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存两年五万灵石以及利润请查收，祝您修行愉快。
+Please receive the 50,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for two years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存两年十万灵石以及利润请查收，祝您修行愉快。
+Please receive the 100,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for two years. Wishing you a pleasant cultivation journey.
+你要存多少灵石（存三年）
+How many spirit stones do you want to deposit? (3 Years)
+您在蝶仙小轩所存三年五千灵石以及利润请查收，祝您修行愉快。
+Please receive the 5,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for three years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存三年一万灵石以及利润请查收，祝您修行愉快。
+Please receive the 10,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for three years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存三年五万灵石以及利润请查收，祝您修行愉快。
+Please receive the 50,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for three years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存三年十万灵石以及利润请查收，祝您修行愉快。
+Please receive the 100,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for three years. Wishing you a pleasant cultivation journey.
+你要存多少灵石（存四年）
+How many spirit stones do you want to deposit? (4 Years)
+您在蝶仙小轩所存四年五千灵石以及利润请查收，祝您修行愉快。
+Please receive the 5,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for four years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存四年一万灵石以及利润请查收，祝您修行愉快。
+Please receive the 10,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for four years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存四年五万灵石以及利润请查收，祝您修行愉快。
+Please receive the 50,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for four years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存四年十万灵石以及利润请查收，祝您修行愉快。
+Please receive the 100,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for four years. Wishing you a pleasant cultivation journey.
+你要存多少灵石（存五年）
+How many spirit stones do you want to deposit? (5 Years)
+您在蝶仙小轩所存五年五千灵石以及利润请查收，祝您修行愉快。
+Please receive the 5,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for five years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存五年一万灵石以及利润请查收，祝您修行愉快。
+Please receive the 10,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for five years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存五年五万灵石以及利润请查收，祝您修行愉快。
+Please receive the 50,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for five years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存五年十万灵石以及利润请查收，祝您修行愉快。
+Please receive the 100,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for five years. Wishing you a pleasant cultivation journey.
+你要存多少灵石（存六年）
+How many spirit stones do you want to deposit? (6 Years)
+返回 
+Return
+您在蝶仙小轩所存六年五千灵石以及利润请查收，祝您修行愉快。
+Please receive the 5,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for six years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存六年一万灵石以及利润请查收，祝您修行愉快。
+Please receive the 10,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for six years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存六年五万灵石以及利润请查收，祝您修行愉快。
+Please receive the 50,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for six years. Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存六年十万灵石以及利润请查收，祝您修行愉快。
+Please receive the 100,000 spirit stones and interest deposited at Butterfly Fairy's Pavilion for six years. Wishing you a pleasant cultivation journey.
+你要哪本生活技能通论呢？
+Which life skill compendium do you want?
+炼丹通论
+Alchemy Compendium
+炼器通论
+Artifact Refining Compendium
+风水通论
+Feng Shui Compendium
+画符通论
+Talisman Crafting Compendium
+药材通论
+Herbal Medicine Compendium
+矿材通论
+Ore Compendium
+你要哪本炼丹通论？
+Which alchemy compendium do you want?
+炼丹通论（一）
+Alchemy Compendium (1)
+炼丹通论（二）
+Alchemy Compendium (2)
+炼丹通论（三）
+Alchemy Compendium (3)
+炼丹通论（四）
+Alchemy Compendium (4)
+炼丹通论（终）
+Alchemy Compendium (Final)
+你要哪本炼器通论？
+Which artifact refining compendium do you want?
+炼器通论（一）
+Artifact Refining Compendium (1)
+炼器通论（二）
+Artifact Refining Compendium (2)
+炼器通论（三）
+Artifact Refining Compendium (3)
+炼器通论（四）
+Artifact Refining Compendium (4)
+炼器通论（终）
+Artifact Refining Compendium (Final)
+你要哪本风水通论？
+Which feng shui compendium do you want?
+风水通论（炼气）
+Feng Shui Compendium (Qi Refining)
+风水通论（结晶）
+Feng Shui Compendium (Crystallization)
+风水通论（具灵）
+Feng Shui Compendium (Spirit Awakening)
+风水通论（化神）
+Feng Shui Compendium (Divine Transformation)
+风水通论（终）
+Feng Shui Compendium (Final)
+你要哪本画符通论？
+Which talisman crafting compendium do you want?
+画符通论（一）
+Talisman Crafting Compendium (1)
+画符通论（二）
+Talisman Crafting Compendium (2)
+画符通论（三）
+Talisman Crafting Compendium (3)
+画符通论（四）
+Talisman Crafting Compendium (4)
+画符通论（终）
+Talisman Crafting Compendium (Final)
+你要哪本药材通论？
+Which herbal medicine compendium do you want?
+药材通论（一）
+Herbal Medicine Compendium (1)
+药材通论（二）
+Herbal Medicine Compendium (2)
+药材通论（三）
+Herbal Medicine Compendium (3)
+药材通论（四）
+Herbal Medicine Compendium (4)
+药材通论（终）
+Herbal Medicine Compendium (Final)
+你要哪本矿材通论？
+Which ore compendium do you want?
+矿材通论（一）
+Ore Compendium (1)
+矿材通论（二）
+Ore Compendium (2)
+矿材通论（三）
+Ore Compendium (3)
+矿材通论（四）
+Ore Compendium (4)
+矿材通论（终）
+Ore Compendium (Final)
+你要哪些丹炉呢？
+Which alchemy furnaces do you want?
+杂铜丹炉
+Mixed Copper Alchemy Furnace
+新手丹炉（炼丹资质达到20可用）
+Novice Alchemy Furnace (Requires Alchemy Qualification of 20)
+初级丹炉（炼丹资质达到40可用）
+Beginner Alchemy Furnace (Requires Alchemy Qualification of 40)
+中级丹炉（炼丹资质达到100可用）
+Intermediate Alchemy Furnace (Requires Alchemy Qualification of 100)
+高级丹炉（炼丹资质达到200可用）
+Advanced Alchemy Furnace (Requires Alchemy Qualification of 200)
+大师级丹炉（炼丹资质达到400可用）
+Master Alchemy Furnace (Requires Alchemy Qualification of 400)
+你要哪些新手丹炉呢？
+Which novice alchemy furnaces do you want?
+明悟丹炉
+Enlightenment Alchemy Furnace
+复益丹炉
+Double Benefit Alchemy Furnace
+金角丹炉
+Golden Horn Alchemy Furnace
+升益丹炉
+Ascension Benefit Alchemy Furnace
+复元丹炉
+Restoration Alchemy Furnace
+你要哪些初级丹炉呢？
+Which beginner alchemy furnaces do you want?
+增益丹炉
+Benefit Alchemy Furnace
+增灵丹炉
+Spirit Enhancement Alchemy Furnace
+通悟丹炉
+Comprehension Alchemy Furnace
+赤益丹炉
+Red Benefit Alchemy Furnace
+水益丹炉
+Water Benefit Alchemy Furnace
+风益丹炉
+Wind Benefit Alchemy Furnace
+你要哪些中级丹炉呢？
+Which intermediate alchemy furnaces do you want?
+赤寒丹炉
+Red Cold Alchemy Furnace
+霜焰丹炉
+Frost Flame Alchemy Furnace
+白雷丹炉
+White Thunder Alchemy Furnace
+紫云丹炉
+Purple Cloud Alchemy Furnace
+青岩丹炉
+Blue Rock Alchemy Furnace
+坚核丹炉
+Solid Core Alchemy Furnace
+升元丹炉
+Ascension Origin Alchemy Furnace
+玄力丹炉
+Mysterious Power Alchemy Furnace
+升灵丹炉
+Ascension Spirit Alchemy Furnace
+幻星丹炉
+Illusion Star Alchemy Furnace
+空星丹炉
+Empty Star Alchemy Furnace
+你要哪些高级丹炉呢？
+Which advanced alchemy furnaces do you want?
+充元丹炉
+Filled Origin Alchemy Furnace
+焰露丹炉
+Flame Dew Alchemy Furnace
+雷云丹炉
+Thunder Cloud Alchemy Furnace
+岩核丹炉
+Rock Core Alchemy Furnace
+冥王丹炉
+Nether King Alchemy Furnace
+阳王丹炉
+Sun King Alchemy Furnace
+天计丹炉
+Heavenly Calculation Alchemy Furnace
+充灵丹炉
+Filled Spirit Alchemy Furnace
+圣玉丹炉
+Sacred Jade Alchemy Furnace
+慧悟丹炉
+Wisdom Enlightenment Alchemy Furnace
+你要哪些大师级丹炉呢？
+Which master alchemy furnaces do you want?
+天神丹炉
+Heavenly God Alchemy Furnace
+地仙丹炉
+Earth Immortal Alchemy Furnace
+太虚丹炉
+Great Void Alchemy Furnace
+盈元丹炉
+Full Origin Alchemy Furnace
+天道丹炉
+Heavenly Dao Alchemy Furnace
+天命丹炉
+Heavenly Mandate Alchemy Furnace
+金刚丹炉
+Diamond Alchemy Furnace
+你要哪本风水图呢？
+Which feng shui map do you want?
+风水图*人
+Feng Shui Map * Human
+风水图*地
+Feng Shui Map * Earth
+风水图*天
+Feng Shui Map * Heaven
+风水图*冥
+Feng Shui Map * Nether
+你要做哪些交易呢？
+Which transactions do you want to make?
+高阶灵石兑换
+High-Grade Spirit Stone Exchange
+存款
+Deposit
+高阶灵石不但可以等价灵石，而且可以吸收其中灵气辅助修炼。
+High-grade spirit stones are not only equivalent to spirit stones but can also be absorbed to assist in cultivation.
+中品灵石*10
+Medium-Grade Spirit Stones * 10
+上品灵石*10
+High-Grade Spirit Stones * 10
+极品灵石*10
+Top-Grade Spirit Stones * 10
+你想买些什么类型的丹药？
+What type of pills do you want to buy?
+疗伤丹药
+Healing Pills
+复灵丹药
+Spirit Recovery Pills
+瞬攻丹药
+Instant Attack Pills
+瞬防丹药
+Instant Defense Pills
+特殊丹药
+Special Pills
+重塑肉身
+Body Reconstruction
+隐匿丹
+Concealment Pill
+造化丹
+Creation Pill
+你想购买哪种丹药？
+Which pill do you want to buy?
+元阳丹
+Primordial Yang Pill
+千毒香
+Thousand Poison Incense
+天罡丸
+Heavenly Pill
+浩气丹
+Vast Qi Pill
+邪元丹
+Evil Origin Pill
+聚气丹
+Qi Gathering Pill
+鸩雨丹
+Poison Rain Pill
+冰魄丹
+Ice Soul Pill
+血阳丹
+Blood Yang Pill
+魔焰灼腚珠
+Demon Flame Burning Pearl
+幻心魔香
+Illusion Heart Demon Incense
+你想购买哪种元阳丹？（皆是一品丹药 一次购买为十颗）
+Which Primordial Yang Pill do you want to buy? (All are first-grade pills, sold in sets of ten)
+元阳丹【筑基】
+Primordial Yang Pill [Foundation Establishment]
+元阳丹【金丹】
+Primordial Yang Pill [Golden Core]
+元阳丹【元婴】
+Primordial Yang Pill [Nascent Soul]
+元阳丹【悟道】
+Primordial Yang Pill [Enlightenment]
+元阳丹【登仙】
+Primordial Yang Pill [Immortal Ascension]
+你想购买哪种千毒香？（皆是一品丹药 一次购买为十颗）
+Which Thousand Poison Incense do you want to buy? (All are first-grade pills, sold in sets of ten)
+千毒香【练气】
+Thousand Poison Incense [Qi Refining]
+千毒香【结晶】
+Thousand Poison Incense [Crystallization]
+千毒香【具灵】
+Thousand Poison Incense [Spirit Awakening]
+千毒香【化神】
+Thousand Poison Incense [Divine Transformation]
+千毒香【羽化】
+Thousand Poison Incense [Ascension]
+你想购买哪种天罡丸？（皆是一品丹药 一次购买为十颗）
+Which Heavenly Pill do you want to buy? (All are first-grade pills, sold in sets of ten)
+天罡丸【练气】
+Heavenly Pill [Qi Refining]
+天罡丸【结晶】
+Heavenly Pill [Crystallization]
+天罡丸【具灵】
+Heavenly Pill [Spirit Awakening]
+天罡丸【化神】
+Heavenly Pill [Divine Transformation]
+天罡丸【羽化】
+Heavenly Pill [Ascension]
+你想购买哪种浩气丹？（皆是一品丹药 一次购买为十颗）
+Which Vast Qi Pill do you want to buy? (All are first-grade pills, sold in sets of ten)
+浩气丹【筑基】
+Vast Qi Pill [Foundation Establishment]
+浩气丹【金丹】
+Vast Qi Pill [Golden Core]
+浩气丹【元婴】
+Vast Qi Pill [Nascent Soul]
+浩气丹【悟道】
+Vast Qi Pill [Enlightenment]
+浩气丹【登仙】
+Vast Qi Pill [Immortal Ascension]
+你想购买哪种邪元丹？（皆是一品丹药 一次购买为十颗）
+Which Evil Origin Pill do you want to buy? (All are first-grade pills, sold in sets of ten)
+邪元丹【筑基】
+Evil Origin Pill [Foundation Establishment]
+邪元丹【金丹】
+Evil Origin Pill [Golden Core]
+邪元丹【元婴】
+Evil Origin Pill [Nascent Soul]
+邪元丹【悟道】
+Evil Origin Pill [Enlightenment]
+邪元丹【登仙】
+Evil Origin Pill [Immortal Ascension]
+你想购买哪种聚气丹？（皆是一品丹药 一次购买为十颗）
+Which Qi Gathering Pill do you want to buy? (All are first-grade pills, sold in sets of ten)
+聚气丹【练气】
+Qi Gathering Pill [Qi Refining]
+聚气丹【结晶】
+Qi Gathering Pill [Crystallization]
+聚气丹【具灵】
+Qi Gathering Pill [Spirit Awakening]
+聚气丹【化神】
+Qi Gathering Pill [Divine Transformation]
+聚气丹【羽化】
+Qi Gathering Pill [Ascension]
+你想购买哪种鸩雨丹？（皆是一品丹药 一次购买为十颗）
+Which Poison Rain Pill do you want to buy? (All are first-grade pills, sold in sets of ten)
+鸩雨丹【练气】
+Poison Rain Pill [Qi Refining]
+鸩雨丹【结晶】
+Poison Rain Pill [Crystallization]
+鸩雨丹【具灵】
+Poison Rain Pill [Spirit Awakening]
+鸩雨丹【化神】
+Poison Rain Pill [Divine Transformation]
+鸩雨丹【羽化】
+Poison Rain Pill [Ascension]
+你想购买哪种冰魄丹？（皆是一品丹药 一次购买为十颗）
+Which Ice Soul Pill do you want to buy? (All are first-grade pills, sold in sets of ten)
+冰魄丹【练气】
+Ice Soul Pill [Qi Refining]
+冰魄丹【结晶】
+Ice Soul Pill [Crystallization]
+冰魄丹【具灵】
+Ice Soul Pill [Spirit Awakening]
+冰魄丹【化神】
+Ice Soul Pill [Divine Transformation]
+冰魄丹【羽化】
+Ice Soul Pill [Ascension]
+你想购买哪种血阳丹？（皆是一品丹药 一次购买为十颗）
+Which Blood Yang Pill do you want to buy? (All are first-grade pills, sold in sets of ten)
+血阳丹【练气】
+Blood Yang Pill [Qi Refining]
+血阳丹【结晶】
+Blood Yang Pill [Crystallization]
+血阳丹【具灵】
+Blood Yang Pill [Spirit Awakening]
+血阳丹【化神】
+Blood Yang Pill [Divine Transformation]
+血阳丹【羽化】
+Blood Yang Pill [Ascension]
+你想购买哪种魔焰灼腚珠？（皆是一品丹药 一次购买为十颗）
+Which Demon Flame Burning Pearl do you want to buy? (All are first-grade pills, sold in sets of ten)
+魔焰灼腚珠【练气】
+Demon Flame Burning Pearl [Qi Refining]
+魔焰灼腚珠【结晶】
+Demon Flame Burning Pearl [Crystallization]
+魔焰灼腚珠【具灵】
+Demon Flame Burning Pearl [Spirit Awakening]
+魔焰灼腚珠【化神】
+Demon Flame Burning Pearl [Divine Transformation]
+魔焰灼腚珠【羽化】
+Demon Flame Burning Pearl [Ascension]
+你想购买哪种幻心魔香？（皆是一品丹药 一次购买为十颗）
+Which Illusion Heart Demon Incense do you want to buy? (All are first-grade pills, sold in sets of ten)
+幻心魔香【练气】
+Illusion Heart Demon Incense [Qi Refining]
+幻心魔香【结晶】
+Illusion Heart Demon Incense [Crystallization]
+幻心魔香【具灵】
+Illusion Heart Demon Incense [Spirit Awakening]
+幻心魔香【化神】
+Illusion Heart Demon Incense [Divine Transformation]
+幻心魔香【羽化】
+Illusion Heart Demon Incense [Ascension]
+你想购买哪些恢复体力的疗伤丹药？（皆是一品丹药 一次购买为十颗）
+Which healing pills for restoring stamina do you want to buy? (All are first-grade pills, sold in sets of ten)
+化瘀丹【练气】
+Blood Stasis Pill [Qi Refining]
+活血丹【结晶】
+Blood Circulation Pill [Crystallization]
+复生丹【具灵】
+Revival Pill [Spirit Awakening]
+融血丹【化神】
+Blood Fusion Pill [Divine Transformation]
+九转圣阳丹【羽化】
+Nine Revolutions Holy Yang Pill [Ascension]
+你想购买哪些恢复灵力的丹药？（皆是一品丹药 一次购买为十颗）
+Which pills for restoring spiritual energy do you want to buy? (All are first-grade pills, sold in sets of ten)
+培元丹【练气】
+Qi Nurturing Pill [Qi Refining]
+玄元丹【结晶】
+Mysterious Origin Pill [Crystallization]
+复灵丹【具灵】
+Spirit Recovery Pill [Spirit Awakening]
+广陵丹【化神】
+Guangling Pill [Divine Transformation]
+幽冥饮魄丹【羽化】
+Nether Soul Drinking Pill [Ascension]
+你想购买哪些瞬间增加攻击力的丹药？（皆是一品丹药 一次购买为十颗）
+Which pills for instantly increasing attack power do you want to buy? (All are first-grade pills, sold in sets of ten)
+蓄力丹【练气】
+Power Accumulation Pill [Qi Refining]
+赤阳丹【结晶】
+Red Sun Pill [Crystallization]
+嗜血丹【具灵】
+Bloodthirsty Pill [Spirit Awakening]
+龙力丹【化神】
+Dragon Power Pill [Divine Transformation]
+血煞破阳丹【羽化】
+Blood Fiend Sun-Breaking Pill [Ascension]
+你想购买哪些瞬间增加防御力的丹药？（皆是一品丹药 一次购买为十颗）
+Which pills for instantly increasing defense power do you want to buy? (All are first-grade pills, sold in sets of ten)
+玉琼丹【练气】
+Jade Essence Pill [Qi Refining]
+子午丹【结晶】
+Midnight Pill [Crystallization]
+蜕骨丹【具灵】
+Bone Shedding Pill [Spirit Awakening]
+浑天丹【化神】
+Chaos Heaven Pill [Divine Transformation]
+真武塑体丹【羽化】
+True Martial Body Forging Pill [Ascension]
+你要买哪种莲子呢？
+Which type of lotus seed do you want to buy?
+红色莲子 (复制非心法类功法）
+Red Lotus Seed (Copies non-cultivation techniques)
+橙色莲子 (获取对方贵重物品）
+Orange Lotus Seed (Obtains valuable items from others)
+黄色莲子（增加偷窃概率）
+Yellow Lotus Seed (Increases theft probability)
+绿色莲子（略微增加魅力）
+Green Lotus Seed (Slightly increases charm)
+青色莲子（在陨幽谷必能召唤强大器灵）
+Cyan Lotus Seed (Guarantees summoning a powerful artifact spirit in the Nether Valley)
+蓝色莲子（立即刷新仙衣阁衣服）
+Blue Lotus Seed (Instantly refreshes the clothes in the Immortal Clothing Pavilion)
+紫色莲子（双修多获得道心点）
+Purple Lotus Seed (Gains more Dao Heart points during dual cultivation)
+彩色莲子（加快对方重塑肉身的速度)
+Rainbow Lotus Seed (Speeds up the target's body reconstruction)
+你想获得哪种魂状态？
+Which soul state do you want to obtain?
+雾水魂（提升魅力，吸引异性）
+Misty Water Soul (Increases charm, attracts the opposite sex)
+防盗魂（阻止对方偷窃，并获取对方一件道具）
+Anti-Theft Soul (Prevents theft and steals an item from the target)
+解意魂 （调解道侣之间的关系）
+Understanding Soul (Mediates relationships between Dao companions)
+梦萦魂 （增加自身和道侣的关系）
+Dreamy Soul (Improves relationship with Dao companions)
+武魂 （切磋时有概率领悟功法秘籍）
+Martial Soul (Chance to comprehend cultivation techniques during sparring)
+酒魂 （喝酒增益翻倍）
+Wine Soul (Doubles the benefits of drinking alcohol)
+移祸魂 （杀人可嫁祸附件三格内修士）
+Misfortune Shifting Soul (Can frame nearby cultivators within three tiles when killing)
+偷心魂（偷窃不容易被察觉，偷异性有概率增加好感）
+Heart-Stealing Soul (Harder to detect when stealing, chance to increase favor with the opposite sex)
+自持魂（只有一名道侣时拒绝他人概率增加攻击）
+Self-Restraint Soul (Increases attack when rejecting others while having only one Dao companion)
+月老魂（和对方交谈时有概率介绍自己的单身好友）
+Matchmaker Soul (Chance to introduce single friends when talking to others)
+长舌魂（交谈时有概率拆散对方道侣）
+Gossip Soul (Chance to break up the target's Dao companion relationship when talking)
+妙手魂（对战时候有概率偷取物品）
+Skilled Hand Soul (Chance to steal items during battle)
+论道魂（论道时每回答对一次有概率增加一点随机资质）
+Debate Soul (Chance to increase a random attribute when answering correctly during debates)
+转灵魂（大地图吸收灵气可获得灵石）
+Soul Conversion Soul (Absorbing spiritual energy on the world map yields spirit stones)
+道域魂  (首次使用道域不会消耗道力）
+Dao Domain Soul (First use of Dao Domain does not consume Dao power)
+买手魂（拍卖行拍卖价格翻倍）
+Buyer Soul (Doubles auction prices in the auction house)
+窃宝魂（击杀对方时获得对方数个最有价值的物品）
+Treasure Thief Soul (Gains several of the target's most valuable items when killing them)
+独秀魂（增加与异性结缘概率）
+Unique Soul (Increases the chance of forming a bond with the opposite sex)
+神通魂（释放神通有概率召唤魂释放神通）
+Divine Ability Soul (Chance to summon a soul to release a divine ability when using one)
+恭喜道友筑基成功，我此番前来是想送道友一桩机缘。八荒黑市不日就要开始，我虽有入场券，但因为最近事务繁忙无法抽身前去，就将这份机缘送于小友吧。
+Congratulations on your successful Foundation Establishment. I came here to offer you an opportunity. The Eight Desolates Black Market will soon begin. Although I have an entry ticket, I am too busy to attend, so I will give this opportunity to you.
+仙子恩情，不知如何回报。
+I don't know how to repay your kindness, Fairy.
+要说回报，今后多些来小店消费消费~
+If you want to repay me, just visit my shop more often~
+多谢仙子，在下就却之不恭了。
+Thank you, Fairy. I humbly accept.
+欢迎仙长此番光临，入内前请先出示下令牌。
+Welcome, Immortal. Please show your token before entering.
+出示令牌
+Show Token
+令牌无误，由于黑市今年宝物有限，将为您随机挑选三件宝物，请您斟酌购买。
+The token is valid. Due to limited treasures at the black market this year, three random treasures will be selected for you. Please consider your purchase carefully.
+开始吧
+Begin
+离开（结束奇遇）
+Leave (End the encounter)
+碧萤丹火：在地脉中生成的稀有丹火，修士吸收后可辅助炼丹，每次炼丹产出丹药会多一倍。
+Jade Glow Pill Flame: A rare pill flame generated in the earth's veins. Cultivators can absorb it to assist in alchemy, doubling the output of pills each time.
+下一个
+Next
+道极丹：使用后增加一百点道心点
+Dao Extreme Pill: Increases Dao Heart by 100 points upon use.
+(见一名女修被灵绳控制，双眼无神，亦然是神魂被控制)
+(You see a female cultivator controlled by spirit ropes, her eyes lifeless, her soul clearly controlled.)
+此女姿色可佳，仙长可以收做妾室可日后用来采补双修提升修为。
+This woman is quite beautiful. You can take her as a concubine and use her for dual cultivation to enhance your cultivation in the future.
+收为道侣
+Take as Dao Companion
+放她离开
+Let her go
+(见一名男修被灵绳控制，双眼无神，亦然是神魂被控制)
+(You see a male cultivator controlled by spirit ropes, his eyes lifeless, his soul clearly controlled.)
+此人姿色可佳，仙长可以收下可日后用来采补双修提升修为。
+This man is quite handsome. You can take him and use him for dual cultivation to enhance your cultivation in the future.
+放他离开
+Let him go
+黑衣人拱拱手道“恭送仙长，道途长顺。”
+The black-clad man bows and says, "Farewell, Immortal. May your path be smooth."
+说罢，你离开此地，黑衣人恢复禁制，此地消失不见。
+With that, you leave the place, and the black-clad man restores the barrier, causing the place to vanish.
+黑衣人按你所说为其松绑，松解对其的神识控制，对方对你感激不尽拜谢后离去。
+The black-clad man unties them as you instructed, releasing their spiritual control. They thank you profusely before leaving.
+你要哪种胡萝卜？
+Which type of carrot do you want?
+味丹胡萝卜
+Flavorful Pill Carrot
+鼓风胡萝卜
+Wind-Drumming Carrot
+相地胡萝卜
+Earth-Sensing Carrot
+灵生胡萝卜
+Spirit-Growing Carrot
+脉石胡萝卜
+Vein Stone Carrot
+绘符胡萝卜
+Talisman-Drawing Carrot
+你想挑选哪类武技？
+Which type of martial skill do you want to choose?
+法修
+Spell Cultivation
+体修
+Body Cultivation
+你想购买哪种元素类灵技？
+Which elemental spiritual skill do you want to buy?
+火修灵技
+Fire Cultivation Spiritual Skill
+水修灵技
+Water Cultivation Spiritual Skill
+木修灵技
+Wood Cultivation Spiritual Skill
+雷修灵技
+Thunder Cultivation Spiritual Skill
+风修灵技
+Wind Cultivation Spiritual Skill
+土修灵技
+Earth Cultivation Spiritual Skill
+你想购买哪种体修类武技？
+Which body cultivation martial skill do you want to buy?
+剑修武技
+Sword Cultivation Martial Skill
+拳修武技
+Fist Cultivation Martial Skill
+刀修武技
+Blade Cultivation Martial Skill
+掌修武技
+Palm Cultivation Martial Skill
+枪修武技
+Spear Cultivation Martial Skill
+指修武技
+Finger Cultivation Martial Skill
+你想买哪种火系灵技？
+Which fire-based spiritual skill do you want to buy?
+火丸术
+Fireball Technique
+焰火术
+Flame Technique
+豪火术
+Blazing Fire Technique
+你想购买哪个境界的</color></color>火丸术？<color=#FF0000><color=#FF0000>（本店所售功法皆为一品）</color></color>
+Which realm of Fireball Technique do you want to buy? <color=#FF0000><color=#FF0000>(All techniques sold here are first-grade)</color></color>
+<color=#808080>练气期</color>
+Qi Refining Stage
+有概率产出秘籍
+Chance to produce a manual
+<color=#00FF00>筑基期</color>
+Foundation Establishment Stage
+<color=#FF69B4>结晶期</color>
+Crystallization Stage
+<color=#FFFF00>金丹期</color>
+Golden Core Stage
+<color=#000080><color=#0000FF><color=#00FFFF>具灵期</color></color></color>
+Spirit Awakening Stage
+<color=#FF00FF>元婴期</color>
+Nascent Soul Stage
+<color=#FF6347><color=#6A5ACD>化神期</color></color>
+Divine Transformation Stage
+<color=#FFA500>悟道期</color>
+Enlightenment Stage
+<color=#FF6347>羽化期</color>
+Ascension Stage
+<color=#FF0000>登仙期</color>
+Immortal Ascension Stage
+你想购买哪个境界的</color></color>焰火术？<color=#FF0000><color=#FF0000>（本店所售功法皆为一品）</color></color>
+Which realm of Flame Technique do you want to buy? <color=#FF0000><color=#FF0000>(All techniques sold here are first-grade)</color></color>
+你想购买哪个境界的</color></color>豪火术？<color=#FF0000><color=#FF0000>（本店所售功法皆为一品）</color></color>
+Which realm of Blazing Fire Technique do you want to buy? <color=#FF0000><color=#FF0000>(All techniques sold here are first-grade)</color></color>
+你想买哪种水系灵技？
+Which water-based spiritual skill do you want to buy?
+水灵术
+Water Spirit Technique
+灵流术
+Spirit Flow Technique
+冰晶爆
+Ice Crystal Burst
+你想购买哪个境界的</color>水灵术？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Water Spirit Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+<color=#000080><color=#00FFFF>具灵期</color></color>
+Spirit Awakening Stage
+<color=#6A5ACD>化神期</color>
+Divine Transformation Stage
+你想购买哪个境界的</color>灵流术？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Spirit Flow Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想购买哪个境界的</color>冰晶爆？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Ice Crystal Burst do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种木系灵技？
+Which wood-based spiritual skill do you want to buy?
+灵叶术
+Spirit Leaf Technique
+飞花术
+Flying Flower Technique
+绽花术
+Blooming Flower Technique
+你想购买哪个境界的灵叶术？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Spirit Leaf Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+<color=#00FFFF>具灵期</color>
+Spirit Awakening Stage
+你想购买哪个境界的飞花术？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Flying Flower Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想购买哪个境界的绽花术？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Blooming Flower Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种雷系灵技？
+Which thunder-based spiritual skill do you want to buy?
+雷光术
+Thunder Light Technique
+疾雷闪
+Swift Thunder Flash
+紫电闪
+Purple Lightning Flash
+你想购买哪个境界的雷光术？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Thunder Light Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想购买哪个境界的雷光术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Thunder Light Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)
+你想购买哪个境界的</color>疾雷闪？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Swift Thunder Flash do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想购买哪个境界的</color>紫电闪？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Purple Lightning Flash do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种风系灵技？
+Which wind-based spiritual skill do you want to buy?
+风球术
+Wind Ball Technique
+风刃术
+Wind Blade Technique
+风切术 
+Wind Slash Technique
+你想购买哪个境界的风球术？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Wind Ball Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想购买哪个境界的风球术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Wind Ball Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)
+你想购买哪个境界的</color>风刃术？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Wind Blade Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想购买哪个境界的</color>风切术 ？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Wind Slash Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种土系灵技？
+Which earth-based spiritual skill do you want to buy?
+土球术
+Earth Ball Technique
+落石术
+Falling Rock Technique
+震地术
+Earthquake Technique
+你想购买哪个境界的土球术？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Earth Ball Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想购买哪个境界的土球术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Earth Ball Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)
+你想购买哪个境界的</color>落石术？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Falling Rock Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想购买哪个境界的</color>震地术？<color=#FF0000>（本店所售功法皆为一品）</color>
+Which realm of Earthquake Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+店内有可洗髓伐经的灵液，可以改变现拥有逆天改命，但是价格不菲哦~
+The shop has spiritual liquid that can cleanse the marrow and meridians, allowing you to change your current Heaven-Defying Destiny, but it is quite expensive~
+无铭逆天改命
+Nameless Heaven-Defying Destiny
+高阶逆天改命
+High-Grade Heaven-Defying Destiny
+你想要替换哪些逆天改命？（一）
+Which Heaven-Defying Destiny do you want to replace? (1)
+水力四射
+Water Power Radiant
+火力四射
+Fire Power Radiant
+木力四射
+Wood Power Radiant
+风力四射
+Wind Power Radiant
+雷力四射
+Thunder Power Radiant
+四灵共生
+Four Spirits Symbiosis
+黄巾天师
+Yellow Turban Heavenly Master
+跑的很帅
+Run Very Handsome
+你想要替换哪些逆天改命？（二）
+Which Heaven-Defying Destiny do you want to replace? (2)
+水木长生
+Water and Wood Longevity
+地火明夷
+Earth Fire Bright Decline
+风雷擎天
+Wind and Thunder Upholding Heaven
+兵刃专精
+Weapon Mastery
+徒手专精
+Unarmed Mastery
+天地精华
+Heaven and Earth Essence
+红尘剑魂
+Mortal World Sword Soul
+归一真诀
+Unity True Art
+下一页 
+Next Page
+你想要替换哪些逆天改命？（三）
+Which Heaven-Defying Destiny do you want to replace? (3)
+鬼修精通
+Ghost Cultivation Mastery
+武神残诀
+Martial God Fragment Art
+青帝遗录
+Green Emperor's Legacy
+疯魔战意
+Mad Demon Battle Will
+血魇大法
+Blood Nightmare Great Art
+疾速代谢
+Rapid Metabolism
+双修大法
+Dual Cultivation Great Art
+肉搏之交
+Close Combat Friendship
+你想要替换哪些逆天改命？（四）
+Which Heaven-Defying Destiny do you want to replace? (4)
+妖术精通
+Demon Art Mastery
+大跟屁虫
+Big Follower
+大李飞剑
+Big Li Flying Sword
+大宝的盾
+Big Bao's Shield
+媚骨
+Alluring Bone
+煞气
+Killing Intent
+菊花残
+Chrysanthemum Wither
+咸猪手
+Lecherous Hand
+你想要替换哪些逆天改命？（五）
+Which Heaven-Defying Destiny do you want to replace? (5)
+妒火中烧
+Jealousy Burning
+灵果馈赠
+Spirit Fruit Gift
+老而弥坚
+Old but Stronger
+物尽其用
+Make the Most of Everything
+察言观色
+Read the Room
+传承道缘
+Inherited Dao Fate
+先受后攻
+First Defend, Then Attack
+脚底抹油
+Slippery Feet
+你想要替换哪些逆天改命？（六）
+Which Heaven-Defying Destiny do you want to replace? (6)
+通天之眼
+Heaven-Piercing Eye
+灵蝶化茧
+Spirit Butterfly Cocoon
+星耀九霄
+Stars Shine Across the Heavens
+鸡中霸王
+Chicken Overlord
+伴生蘑灵
+Companion Mushroom Spirit
+蘑灵仙力
+Mushroom Spirit Immortal Power
+蘑灵神力
+Mushroom Spirit Divine Power
+李四来也！
+Li Si is Here!
+你想要替换哪些逆天改命？（七）
+Which Heaven-Defying Destiny do you want to replace? (7)
+潜能精通
+Potential Mastery
+盾灵精通
+Shield Spirit Mastery
+武法精通
+Martial Art Mastery
+灵法精通
+Spiritual Art Mastery
+体力之树
+Stamina Tree
+灵力之树
+Spiritual Power Tree
+金蝉血影
+Golden Cicada Blood Shadow
+幸运星
+Lucky Star
+你想要替换哪些逆天改命？（八）
+Which Heaven-Defying Destiny do you want to replace? (8)
+速读秘法
+Speed Reading Secret Art
+钻研秘术
+Diligent Research Secret Art
+苦中寻乐
+Find Joy in Suffering
+灵光一闪
+Flash of Inspiration
+开心果
+Happy Nut
+机灵鬼
+Clever Ghost
+生龙活虎
+Full of Vigor
+强健体魄
+Strong Physique
+上一页 
+Previous Page
+你想要替换哪些逆天改命？（九）
+Which Heaven-Defying Destiny do you want to replace? (9)
+猎灵
+Spirit Hunter
+猎精
+Essence Hunter
+剑灵精通
+Sword Spirit Mastery
+灵能之潮
+Spiritual Energy Tide
+血灵精通
+Blood Spirit Mastery
+血祭精通
+Blood Sacrifice Mastery
+幻灵锅
+Illusion Spirit Pot
+高级幻灵锅
+Advanced Illusion Spirit Pot
+你想要替换哪些逆天改命？（十）
+Which Heaven-Defying Destiny do you want to replace? (10)
+化物
+Material Transformation
+随心而御
+Control at Will
+炼器宗师
+Artifact Refining Grandmaster
+天地同寿
+Heaven and Earth Longevity
+隔山打牛
+Strike Through Mountains
+夺命真气
+Life-Stealing True Qi
+天瞳之刃
+Heavenly Eye Blade
+噬魔体
+Demon Devouring Body
+你想要替换哪些逆天改命？（十一）
+Which Heaven-Defying Destiny do you want to replace? (11)
+天级幻灵锅
+Heavenly Illusion Spirit Pot
+悬壶御妖
+Hanging Pot Demon Control
+灵丹妙药
+Miraculous Spirit Pill
+丹精药髓
+Pill Essence and Medicine Marrow
+药毒同源
+Medicine and Poison Share the Same Origin
+玉液归元
+Jade Liquid Return to Origin
+花蕴流丹
+Flower Essence Flowing Pill
+碧蕊含灵
+Jade Stamen Containing Spirit
+你想要替换哪些逆天改命？（十二）
+Which Heaven-Defying Destiny do you want to replace? (12)
+逍遥游
+Carefree Wanderer
+鬼影迷踪
+Ghost Shadow Maze
+振奋鼓舞
+Inspire and Encourage
+你想要替换哪些逆天改命？（壹）
+Which Heaven-Defying Destiny do you want to replace? (1)
+踏雪无痕
+Tread Snow Without Trace
+穿云电闪
+Pierce Clouds and Flash Lightning
+载物无疆
+Carry Things Without Limit
+烈火燎原
+Blazing Fire Across the Plains
+虎魄龙魂
+Tiger Soul and Dragon Spirit
+凝元寂灭
+Condensed Origin Extinction
+排山倒海
+Move Mountains and Drain Seas
+杀心骤起
+Sudden Killing Intent
+你想要替换哪些逆天改命？（贰）
+Which Heaven-Defying Destiny do you want to replace? (2)
+炉火纯青
+Perfect Mastery
+天外有天
+There is Always a Higher Heaven
+摄神寒光
+Soul-Snatching Cold Light
+寒灵冰脉
+Cold Spirit Ice Veins
+大漠狂刀
+Desert Mad Blade
+归劲分元
+Return Strength and Divide Origin
+透体化劲
+Penetrate Body and Transform Strength
+金针刺穴
+Golden Needle Acupuncture
+你想要替换哪些逆天改命？（叁）
+Which Heaven-Defying Destiny do you want to replace? (3)
+厚德载物
+Virtue Bears All
+悬壶济世
+Hanging Pot Saves the World
+炎火刚鬣
+Blazing Fire Strong Bristles
+青丘之主
+Lord of Qingqiu
+浮生泡影
+Fleeting Life Bubble
+追影奇丸
+Chasing Shadow Miracle Pill
+天雷滚滚
+Heavenly Thunder Rolling
+风起灵动
+Wind Rises, Spirit Moves
+你想要替换哪些逆天改命？（肆）
+Which Heaven-Defying Destiny do you want to replace? (4)
+天人合一
+Heaven and Man as One
+天罡步法
+Heavenly Step Technique
+震天怒啸
+Heaven-Shaking Roar
+聚雷尖戟
+Thunder Gathering Halberd
+宿命之引
+Destiny's Guidance
+潜龙觉醒（御龙山庄）
+Hidden Dragon Awakening (Dragon Taming Villa)
+亢龙化生（御龙山庄）
+Soaring Dragon Transformation (Dragon Taming Villa)
+柔龙聚合（御龙山庄）
+Gentle Dragon Fusion (Dragon Taming Villa)
+你想要替换哪些逆天改命？（伍）
+Which Heaven-Defying Destiny do you want to replace? (5)
+七星剑瀑
+Seven Stars Sword Cascade
+冥河之主
+Lord of the Underworld River
+地魇鬼斩
+Earth Nightmare Ghost Slash
+天舞风杀
+Heavenly Dance Wind Kill
+为人为己
+For Others and Oneself
+北冥飞霜
+North Sea Flying Frost
+烟罗幻瘴
+Mist Illusion Miasma
+神火天星
+Divine Fire Heavenly Star
+你想要替换哪些逆天改命？（陆）
+Which Heaven-Defying Destiny do you want to replace? (6)
+神霄净尘
+Divine Sky Pure Dust
+豪炎灼日
+Blazing Sun Scorching Day
+掌内乾坤
+Palm Within the Universe
+养颜丹
+Beauty Preservation Pill
+赶路途中，偶遇一女子拦在身前。此女身材窈窕修长，黑衣黑裙，头戴兜帽，兜帽下坠着裙摆一样的面纱，遮挡面部，看不清容貌。
+While traveling, you encounter a woman blocking your path. She has a slender figure, dressed in black clothes and a black skirt, wearing a hood with a veil-like skirt hanging down, covering her face, making her appearance unclear.
+请问，你是？
+May I ask, who are you?
+不要紧张，在下蝶仙子是赤幽洲的一名修士，吾素来爱收集稀有之物，固在八荒各处开设小轩，店内有各种稀有之物，汝若有足够的灵石皆可兑之。
+Don't be nervous. I am Butterfly Fairy, a cultivator from the Crimson Abyss Continent. I have always loved collecting rare items, so I have set up pavilions in various parts of the Eight Desolates. The shops contain various rare items, and if you have enough spirit stones, you can exchange for them.
+吾观汝才智出众，潜力非凡，将来必是羽化登仙之人。吾店内材料必有汝所要之物，对汝修行之路事半功倍。
+I see that you are exceptionally talented and have extraordinary potential. You will surely become an immortal in the future. The materials in my shop will surely have what you need, greatly aiding your cultivation journey.
+喏，给你此物，此物可在各地主城区点亮蝶仙小轩的位置。(回头见咯，语毕，女子便消失不见）
+Here, take this item. It can reveal the location of Butterfly Fairy's Pavilion in various main cities. (See you later, she says, and then disappears.)
+收下
+Accept
+你想买哪种剑系技能？
+Which sword-based skill do you want to buy?
+清风剑
+Gentle Wind Sword
+孤星剑
+Lone Star Sword
+月影剑
+Moon Shadow Sword
+</color>你想购买哪个境界的清风剑？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Gentle Wind Sword do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的孤星剑？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Lone Star Sword do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的月影剑？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Moon Shadow Sword do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种刀系技能？
+Which blade-based skill do you want to buy?
+半月刀
+Half-Moon Blade
+烈火刀
+Blazing Fire Blade
+旋风刀
+Whirlwind Blade
+</color>你想购买哪个境界的半月刀？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Half-Moon Blade do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的烈火刀？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Blazing Fire Blade do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的旋风刀？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Whirlwind Blade do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种枪系技能？
+Which spear-based skill do you want to buy?
+穿心矛
+Heart-Piercing Spear
+飞龙枪
+Flying Dragon Spear
+贯龙枪
+Dragon-Piercing Spear
+</color>你想购买哪个境界的穿心矛？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Heart-Piercing Spear do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的飞龙枪？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Flying Dragon Spear do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的贯龙枪？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Dragon-Piercing Spear do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种拳系技能？
+Which fist-based skill do you want to buy?
+定气拳
+Qi-Stabilizing Fist
+裂地拳
+Earth-Splitting Fist
+震天拳
+Heaven-Shaking Fist
+</color>你想购买哪个境界的定气拳？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Qi-Stabilizing Fist do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的裂地拳？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Earth-Splitting Fist do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的震天拳？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Heaven-Shaking Fist do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种掌系技能？
+Which palm-based skill do you want to buy?
+青涛掌 
+Blue Wave Palm
+排云掌
+Cloud-Pushing Palm
+凌波掌
+Ripple Palm
+</color>你想购买哪个境界的青涛掌？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Blue Wave Palm do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的排云掌？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Cloud-Pushing Palm do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的凌波掌？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Ripple Palm do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种指系技能？
+Which finger-based skill do you want to buy?
+轮回指
+Reincarnation Finger
+两仪指
+Two Forms Finger
+无相指
+Formless Finger
+</color>你想购买哪个境界的轮回指？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Reincarnation Finger do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的两仪指？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Two Forms Finger do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的无相指？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Formless Finger do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想挑选哪些类型的功法？
+Which types of techniques do you want to choose?
+武技
+Martial Skills
+绝技
+Ultimate Skills
+身法
+Movement Techniques
+神通
+Divine Abilities
+心法
+Cultivation Techniques
+界元石
+Boundary Stone
+你想挑选哪类身法？
+Which type of movement technique do you want to choose?
+你想购买哪种元素类身法？
+Which elemental movement technique do you want to buy?
+火修身法
+Fire Cultivation Movement Technique
+水修身法
+Water Cultivation Movement Technique
+木修身法
+Wood Cultivation Movement Technique
+雷修身法
+Thunder Cultivation Movement Technique
+风修身法
+Wind Cultivation Movement Technique
+土修身法
+Earth Cultivation Movement Technique
+你想购买哪种体修类身法？
+Which body cultivation movement technique do you want to buy?
+剑修身法
+Sword Cultivation Movement Technique
+拳修身法
+Fist Cultivation Movement Technique
+刀修身法
+Blade Cultivation Movement Technique
+掌修身法
+Palm Cultivation Movement Technique
+枪修身法
+Spear Cultivation Movement Technique
+指修身法
+Finger Cultivation Movement Technique
+</color>你想购买哪个境界的火身法？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Fire Movement Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的水身法？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Water Movement Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的木身法？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Wood Movement Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的雷身法？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Thunder Movement Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的风身法？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Wind Movement Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的土身法？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Earth Movement Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的剑身法？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Sword Movement Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的刀身法？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Blade Movement Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的枪身法？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Spear Movement Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的拳身法？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Fist Movement Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的掌身法？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Palm Movement Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你想购买哪个境界的指身法？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Finger Movement Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想挑选哪类绝技？
+Which type of ultimate skill do you want to choose?
+元素类绝技
+Elemental Ultimate Skills
+体修类绝技
+Body Cultivation Ultimate Skills
+你想购买哪种元素类绝技？
+Which elemental ultimate skill do you want to buy?
+火修绝技
+Fire Cultivation Ultimate Skill
+水修绝技
+Water Cultivation Ultimate Skill
+木修绝技
+Wood Cultivation Ultimate Skill
+雷修绝技
+Thunder Cultivation Ultimate Skill
+风修绝技
+Wind Cultivation Ultimate Skill
+土修绝技
+Earth Cultivation Ultimate Skill
+你想购买哪种体修类绝技？
+Which body cultivation ultimate skill do you want to buy?
+剑修绝技
+Sword Cultivation Ultimate Skill
+拳修绝技
+Fist Cultivation Ultimate Skill
+刀修绝技
+Blade Cultivation Ultimate Skill
+掌修绝技
+Palm Cultivation Ultimate Skill
+枪修绝技
+Spear Cultivation Ultimate Skill
+指修绝技
+Finger Cultivation Ultimate Skill
+你想买哪种火修绝技？
+Which fire-based ultimate skill do you want to buy?
+地火术
+Earth Fire Technique
+离火术
+Separate Fire Technique
+阳炎爆
+Solar Flame Burst
+业火术
+Karmic Fire Technique
+火环术
+Fire Ring Technique
+踏火术
+Fire Treading Technique
+</color>你要买哪种境界的地火术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Earth Fire Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的离火术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Separate Fire Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的阳炎爆？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Solar Flame Burst do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的业火术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Karmic Fire Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的火环术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Fire Ring Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的踏火术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Fire Treading Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种水修绝技？
+Which water-based ultimate skill do you want to buy?
+寒霜爆
+Frost Burst
+冰气术
+Ice Qi Technique
+冰刺术
+Ice Spike Technique
+冰封术
+Ice Seal Technique
+霜灵爆
+Frost Spirit Burst
+噬灵术
+Soul Devouring Technique
+</color>你要买哪种境界的寒霜爆？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Frost Burst do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的冰气术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Ice Qi Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的冰刺术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Ice Spike Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的冰封术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Ice Seal Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的霜灵爆？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Frost Spirit Burst do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的噬灵术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Soul Devouring Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种木修绝技？
+Which wood-based ultimate skill do you want to buy?
+荆棘术
+Thorn Technique
+活元术
+Living Origin Technique
+毒沼术
+Poison Swamp Technique
+活灵术
+Living Spirit Technique
+活力术
+Vitality Technique
+</color>你要买哪种境界的荆棘术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Thorn Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的活元术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Living Origin Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的毒沼术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Poison Swamp Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的活灵术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Living Spirit Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的活力术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Vitality Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种雷修绝技？
+Which thunder-based ultimate skill do you want to buy?
+雷鸣术
+Thunder Roar Technique
+奔雷术
+Rushing Thunder Technique
+雷云术
+Thunder Cloud Technique
+暗雷术
+Dark Thunder Technique
+落雷阵
+Falling Thunder Array
+灵雷术
+Spirit Thunder Technique
+</color>你要买哪种境界的雷鸣术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Thunder Roar Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的奔雷术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Rushing Thunder Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的雷云术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Thunder Cloud Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的暗雷术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Dark Thunder Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的落雷阵？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Falling Thunder Array do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的灵雷术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Spirit Thunder Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种风修绝技？
+Which wind-based ultimate skill do you want to buy?
+风缚术
+Wind Binding Technique
+风啸术
+Wind Howl Technique
+飞沙术
+Flying Sand Technique
+狂风术
+Gale Technique
+掠风术
+Wind Plundering Technique
+风瘴术
+Wind Miasma Technique
+</color>你要买哪种境界的风缚术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Wind Binding Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的风啸术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Wind Howl Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的飞沙术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Flying Sand Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的狂风术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Gale Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的掠风术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Wind Plundering Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的风瘴术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Wind Miasma Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种土修绝技？
+Which earth-based ultimate skill do you want to buy?
+震地波
+Earthquake Wave
+陨石阵
+Meteor Array
+滚岩术
+Rolling Rock Technique
+石傀术
+Stone Puppet Technique
+流沙术
+Quicksand Technique
+聚石阵
+Stone Gathering Array
+</color>你要买哪种境界的震地波？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Earthquake Wave do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的陨石阵？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Meteor Array do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的滚岩术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Rolling Rock Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的石傀术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Stone Puppet Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的流沙术？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Quicksand Technique do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你要买哪种境界的聚石阵？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Stone Gathering Array do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的聚石阵？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Stone Gathering Array do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种剑修绝技？
+Which sword-based ultimate skill do you want to buy?
+绝影剑
+Shadowless Sword
+疾风剑
+Swift Wind Sword
+碎心剑
+Heart-Shattering Sword
+落日剑
+Setting Sun Sword
+斩天剑
+Heaven-Slashing Sword
+灭空剑
+Void-Destroying Sword
+</color>你要买哪种境界的绝影剑？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Shadowless Sword do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的疾风剑？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Swift Wind Sword do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的碎心剑？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Heart-Shattering Sword do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的落日剑？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Setting Sun Sword do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的斩天剑？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Heaven-Slashing Sword do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的灭空剑？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Void-Destroying Sword do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种刀修绝技？
+Which blade-based ultimate skill do you want to buy?
+狂血斩
+Frenzied Blood Slash
+怒血斩
+Furious Blood Slash
+断斩
+Severing Slash
+绝斩
+Ultimate Slash
+邪刃
+Evil Blade
+横扫刀
+Sweeping Blade
+</color>你要买哪种境界的狂血斩？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Frenzied Blood Slash do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的怒血斩？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Furious Blood Slash do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的断斩？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Severing Slash do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的绝斩？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Ultimate Slash do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的邪刃？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Evil Blade do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的横扫刀？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Sweeping Blade do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+你想买哪种枪修绝技？
+Which spear-based ultimate skill do you want to buy?
+碎玉枪
+Jade-Shattering Spear
+真龙破
+True Dragon Break
+破阵枪
+Formation-Breaking Spear
+啸龙破
+Roaring Dragon Break
+擎龙破
+Upholding Dragon Break
+疾龙破
+Swift Dragon Break
+</color>你要买哪种境界的碎玉枪？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Jade-Shattering Spear do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的真龙破？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of True Dragon Break do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的破阵枪？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Formation-Breaking Spear do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的啸龙破？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Roaring Dragon Break do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的擎龙破？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Upholding Dragon Break do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+</color>你要买哪种境界的疾龙破？<color=#FF0000>（本店所售功法皆为一品）
+Which realm of Swift Dragon Break do you want to buy? <color=#FF0000>(All techniques sold here are first-grade)</color>
+破体拳
+Body Shattering Fist
+狮吼拳
+Lion’s Roar Fist
+摧心拳
+Heart Crushing Fist
+崩山拳
+Mountain Breaking Fist
+金刚拳
+Diamond Fist
+轰天拳
+Sky Shaking Fist
+暴风掌
+Storm Palm
+断崖掌
+Cliff Severing Palm
+摧山掌
+Mountain Destroying Palm
+惊鸿掌
+Swan’s Grace Palm
+破浪掌
+Wave Splitting Palm
+定海掌
+Sea Calming Palm
+七星指
+Seven Star Finger
+封魔指
+Demon Sealing Finger
+灵虚爆
+Spirit Void Explosion
+封灵爆
+Spirit Sealing Explosion
+幽空爆
+Void Explosion
+灵影指
+Spirit Shadow Finger
+神火核
+Divine Fire Core
+烈火凤
+Blazing Fire Phoenix
+冰天眼
+Frozen Heaven Eye
+覆灵雨
+Spirit Covering Rain
+毒龙花
+Poison Dragon Flower
+花妖后
+Flower Demon Queen
+天雷劫
+Heavenly Thunder Calamity
+雷罚阵
+Thunder Punishment Array
+极风暴
+Extreme Storm
+逆空界
+Inverse Void Realm
+裂山崩
+Mountain Splitting Collapse
+巨灵神
+Giant Spirit God
+骤天剑
+Sudden Heaven Sword
+万神剑
+Ten Thousand Gods Sword
+魔煞刀
+Demon Slaying Blade
+霸道斩
+Tyrant’s Slash
+鬼狱枪
+Ghost Prison Spear
+天龙阵
+Heavenly Dragon Array
+霸王盾
+Overlord’s Shield
+巨王拳
+Giant King Fist
+归神掌
+Spirit Returning Palm
+魔印掌
+Demon Seal Palm
+冲虚指
+Void Piercing Finger
+神脉指
+Divine Vein Finger
+劲
+Strength (Attack)
+经
+Stamina (Health)
+式
+Form (Defense)
+诀
+Art (Spiritual Power)
+录
+Record (Divine Sense)
+火秘卷
+Fire Secret Scroll
+火神功
+Fire Divine Art
+火大法
+Fire Great Technique
+水秘卷
+Water Secret Scroll
+水神功
+Water Divine Art
+水大法
+Water Great Technique
+木秘卷
+Wood Secret Scroll
+木神功
+Wood Divine Art
+木大法
+Wood Great Technique
+雷秘卷
+Thunder Secret Scroll
+雷神功
+Thunder Divine Art
+雷大法
+Thunder Great Technique
+风秘卷
+Wind Secret Scroll
+风神功
+Wind Divine Art
+风大法
+Wind Great Technique
+土秘卷
+Earth Secret Scroll
+土神功
+Earth Divine Art
+土大法
+Earth Great Technique
+剑秘卷
+Sword Secret Scroll
+剑神功
+Sword Divine Art
+剑大法
+Sword Great Technique
+刀秘卷
+Blade Secret Scroll
+刀神功
+Blade Divine Art
+刀大法
+Blade Great Technique
+枪秘卷
+Spear Secret Scroll
+枪神功
+Spear Divine Art
+枪大法
+Spear Great Technique
+拳秘卷
+Fist Secret Scroll
+拳神功
+Fist Divine Art
+拳大法
+Fist Great Technique
+掌秘卷
+Palm Secret Scroll
+掌神功
+Palm Divine Art
+掌大法
+Palm Great Technique
+指秘卷
+Finger Secret Scroll
+指神功
+Finger Divine Art
+指大法
+Finger Great Technique
+蝶仙子
+Butterfly Fairy
+蝶
+Butterfly
+仙子
+Fairy
+正道值（+100）
+Righteousness Value (+100)
+魔道值（+100）
+Demonic Value (+100)
+正道值（-100）
+Righteousness Value (-100)
+魔道值（-100）
+Demonic Value (-100)
+沙棠果
+Sand Pear Fruit
+洛水之泉
+Luo River Spring
+招募记名弟子x10
+Recruit 10 Disciples
+增加宗门繁荣度x1000
+Increase Sect Prosperity by 1000
+招募记名弟子x100
+Recruit 100 Disciples
+增加宗门繁荣度x10000
+Increase Sect Prosperity by 10000
+(见一名男修被灵绳控制，双眼无神，亦然是神魂被控制)
+(You see a male cultivator bound by spirit ropes, his eyes lifeless, clearly under mental control.)
+此人姿色可佳，仙长可以收下可日后用来采补双修提升修为。
+This man is quite handsome. Immortal Master, you may take him for future dual cultivation to enhance your cultivation.
+黑衣人拱拱手道“恭送仙长，道途长顺。”
+The black-clad figure bows and says, “Farewell, Immortal Master. May your path be long and smooth.”
+说罢，你离开此地，黑衣人恢复禁制，此地消失不见。
+With that, you leave the area. The black-clad figure restores the restrictions, and the place vanishes.
+黑衣人按你所说为其松绑，松解对其的神识控制，对方对你感激不尽拜谢后离去。
+The black-clad figure unties them as you instructed and releases their mental control. They bow in gratitude and leave.
+风切术
+Wind Cutting Technique
+下一页
+Next Page
+上一页
+Previous Page
+不要紧张，在下蝶仙子是赤幽洲的一名修士，吾素来爱收集稀有之物，固在八荒各处开设小轩，店内有各种稀有之物，汝若有足够的灵石皆可兑之。
+Do not be nervous. I am Butterfly Fairy, a cultivator from the Red Nether Continent. I have always loved collecting rare items, so I have established small shops across the Eight Desolates. If you have enough spirit stones, you can exchange for any rare item in my shop.
+吾观汝才智出众，潜力非凡，将来必是羽化登仙之人。吾店内材料必有汝所要之物，对汝修行之路事半功倍。
+I see that you are exceptionally talented and have extraordinary potential. You are destined to ascend to immortality. The materials in my shop will surely aid your cultivation journey.
+喏，给你此物，此物可在各地主城区点亮蝶仙小轩的位置。(回头见咯，语毕，女子便消失不见）
+Here, take this item. It will mark the location of Butterfly Fairy’s Pavilion in major cities. (See you later! With that, the woman disappears.)
+青涛掌
+Azure Wave Palm
+返回
+Return
+你想买哪种拳修绝技？
+Which fist cultivation technique would you like to buy?
+破体拳
+Body Shattering Fist
+狮吼拳
+Lion’s Roar Fist
+摧心拳
+Heart Crushing Fist
+崩山拳
+Mountain Breaking Fist
+金刚拳
+Diamond Fist
+轰天拳
+Sky Shaking Fist
+你想买哪种掌修绝技？
+Which palm cultivation technique would you like to buy?
+暴风掌
+Storm Palm
+断崖掌
+Cliff Severing Palm
+摧山掌
+Mountain Destroying Palm
+惊鸿掌
+Swan’s Grace Palm
+破浪掌
+Wave Splitting Palm
+定海掌
+Sea Calming Palm
+你想买哪种指修绝技？
+Which finger cultivation technique would you like to buy?
+七星指
+Seven Star Finger
+封魔指
+Demon Sealing Finger
+灵虚爆
+Spirit Void Explosion
+封灵爆
+Spirit Sealing Explosion
+幽空爆
+Void Explosion
+灵影指
+Spirit Shadow Finger
+你想挑选哪类神通？
+Which type of divine ability would you like to choose?
+元素类神通
+Elemental Divine Abilities
+体修类神通
+Physical Cultivation Divine Abilities
+你想购买哪种元素类神通？
+Which elemental divine ability would you like to purchase?
+火神通
+Fire Divine Ability
+水神通
+Water Divine Ability
+木神通
+Wood Divine Ability
+雷神通
+Thunder Divine Ability
+风神通
+Wind Divine Ability
+土神通
+Earth Divine Ability
+你想购买哪种体修类神通？
+Which physical cultivation divine ability would you like to purchase?
+剑神通
+Sword Divine Ability
+拳神通
+Fist Divine Ability
+刀神通
+Blade Divine Ability
+掌神通
+Palm Divine Ability
+枪神通
+Spear Divine Ability
+指神通
+Finger Divine Ability
+你想挑选哪类心法？
+Which type of cultivation method would you like to choose?
+劲 经 式
+Strength, Stamina, Form
+诀 录
+Art, Record
+法修心法
+Spell Cultivation Methods
+体修心法
+Physical Cultivation Methods
+</color>你要买哪种境界的破体拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Body Shattering Fist would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的破体拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Body Shattering Fist would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的狮吼拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Lion’s Roar Fist would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的狮吼拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Lion’s Roar Fist would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的摧心拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Heart Crushing Fist would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的摧心拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Heart Crushing Fist would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的崩山拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Mountain Breaking Fist would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的崩山拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Mountain Breaking Fist would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的金刚拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Diamond Fist would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的金刚拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Diamond Fist would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的轰天拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Sky Shaking Fist would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的轰天拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Sky Shaking Fist would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的暴风掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Storm Palm would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的暴风掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Storm Palm would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的断崖掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Cliff Severing Palm would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的断崖掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Cliff Severing Palm would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的摧山掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Mountain Destroying Palm would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的摧山掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Mountain Destroying Palm would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的惊鸿掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Swan’s Grace Palm would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的惊鸿掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Swan’s Grace Palm would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的破浪掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Wave Splitting Palm would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的破浪掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Wave Splitting Palm would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的定海掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Sea Calming Palm would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的定海掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Sea Calming Palm would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的七星指？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Seven Star Finger would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的七星指？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Seven Star Finger would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的封魔指？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Demon Sealing Finger would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的封魔指？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Demon Sealing Finger would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的灵虚爆？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spirit Void Explosion would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的灵虚爆？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spirit Void Explosion would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的封灵爆？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spirit Sealing Explosion would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的封灵爆？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spirit Sealing Explosion would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的幽空爆？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Void Explosion would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的幽空爆？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Void Explosion would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的灵影指？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spirit Shadow Finger would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你要买哪种境界的灵影指？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spirit Shadow Finger would you like to buy?<color=#FF0000>（All techniques sold in this store are first-grade.）
+您在蝶仙小轩所存四年五千灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n  ——蝶仙小轩
+Please check the 5,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for four years. \n\n\n\n\n\n\n\n\n\n Wishing you a pleasant cultivation journey.
+您在蝶仙小轩所存四年一万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n  ——蝶仙小轩
+Please check the 10,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for four years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存四年五万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n  ——蝶仙小轩
+Please check the 50,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for four years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存四年十万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n  ——蝶仙小轩
+Please check the 100,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for four years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存五年五千灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n  ——蝶仙小轩
+Please check the 5,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for five years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存五年一万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n  ——蝶仙小轩
+Please check the 10,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for five years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存五年五万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n  ——蝶仙小轩
+Please check the 50,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for five years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存五年十万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n  ——蝶仙小轩
+Please check the 100,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for five years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存六年五千灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n  ——蝶仙小轩
+Please check the 5,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for six years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存六年一万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n  ——蝶仙小轩
+Please check the 10,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for six years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存六年五万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n  ——蝶仙小轩
+Please check the 50,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for six years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存六年十万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n  ——蝶仙小轩
+Please check the 100,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for six years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+(见一名女修被灵绳控制，双眼无神，亦然是神魂被控制)\n此女姿色可佳，仙长可以收做妾室可日后用来采补双修提升修为。\n
+(You see a female cultivator bound by spirit ropes, her eyes lifeless, clearly under mental control.)\nThis woman is quite beautiful. Immortal Master, you may take her as a concubine for future dual cultivation to enhance your cultivation.\n
+(见一名男修被灵绳控制，双眼无神，亦然是神魂被控制)\n此人姿色可佳，仙长可以收下可日后用来采补双修提升修为。
+(You see a male cultivator bound by spirit ropes, his eyes lifeless, clearly under mental control.)\nThis man is quite handsome. Immortal Master, you may take him for future dual cultivation to enhance your cultivation.
+黑衣人拱拱手道“恭送仙长，道途长顺。”\n说罢，你离开此地，黑衣人恢复禁制，此地消失不见。
+The black-clad figure bows and says, “Farewell, Immortal Master. May your path be long and smooth.”\nWith that, you leave the area. The black-clad figure restores the restrictions, and the place vanishes.
+黑衣人按你所说为其松绑，松解对其的神识控制，对方对你感激不尽拜谢后离去。\n黑衣人拱拱手道“恭送仙长，道途长顺。”\n说罢，你离开此地，黑衣人恢复禁制，此地消失不见。
+The black-clad figure unties them as you instructed and releases their mental control. They bow in gratitude and leave.\nThe black-clad figure bows and says, “Farewell, Immortal Master. May your path be long and smooth.”\nWith that, you leave the area. The black-clad figure restores the restrictions, and the place vanishes.
+不要紧张，在下蝶仙子是赤幽洲的一名修士，吾素来爱收集稀有之物，固在八荒各处开设小轩，店内有各种稀有之物，汝若有足够的灵石皆可兑之。\n吾观汝才智出众，潜力非凡，将来必是羽化登仙之人。吾店内材料必有汝所要之物，对汝修行之路事半功倍。\n喏，给你此物，此物可在各地主城区点亮蝶仙小轩的位置。(回头见咯，语毕，女子便消失不见）
+Do not be nervous. I am Butterfly Fairy, a cultivator from the Red Nether Continent. I have always loved collecting rare items, so I have established small shops across the Eight Desolates. If you have enough spirit stones, you can exchange for any rare item in my shop.\nI see that you are exceptionally talented and have extraordinary potential. You are destined to ascend to immortality. The materials in my shop will surely aid your cultivation journey.\nHere, take this item. It will mark the location of Butterfly Fairy Pavilion in major cities. (See you later! With that, the woman disappears.)
+你想买哪种火修神通？
+Which fire cultivation divine ability would you like to buy?
+</color>你想购买哪个境界的神火核？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Divine Fire Core would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的神火核？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Divine Fire Core would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的烈火凤？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Blazing Fire Phoenix would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的烈火凤？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Blazing Fire Phoenix would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种水修神通？
+Which water cultivation divine ability would you like to buy?
+</color>你想购买哪个境界的冰天眼？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Frozen Heaven Eye would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的冰天眼？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Frozen Heaven Eye would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的覆灵雨？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spirit Covering Rain would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的覆灵雨？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spirit Covering Rain would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种木修神通？
+Which wood cultivation divine ability would you like to buy?
+</color>你想购买哪个境界的毒龙花？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Poison Dragon Flower would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的毒龙花？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Poison Dragon Flower would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的花妖后？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Flower Demon Queen would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的花妖后？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Flower Demon Queen would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种雷修神通？
+Which thunder cultivation divine ability would you like to buy?
+</color>你想购买哪个境界的天雷劫？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Heavenly Thunder Calamity would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的天雷劫？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Heavenly Thunder Calamity would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的雷罚阵？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Thunder Punishment Array would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的雷罚阵？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Thunder Punishment Array would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种风修神通？
+Which wind cultivation divine ability would you like to buy?
+</color>你想购买哪个境界的极风暴？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Extreme Storm would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的极风暴？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Extreme Storm would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的逆空界？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Inverse Void Realm would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的逆空界？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Inverse Void Realm would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种土修神通？
+Which earth cultivation divine ability would you like to buy?
+</color>你想购买哪个境界的裂山崩？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Mountain Splitting Collapse would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的裂山崩？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Mountain Splitting Collapse would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的巨灵神？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Giant Spirit God would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的巨灵神？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Giant Spirit God would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种剑修神通？
+Which sword cultivation divine ability would you like to buy?
+</color>你想购买哪个境界的骤天剑？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Sudden Heaven Sword would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的骤天剑？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Sudden Heaven Sword would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的万神剑？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Ten Thousand Gods Sword would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的万神剑？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Ten Thousand Gods Sword would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种刀修神通？
+Which blade cultivation divine ability would you like to buy?
+</color>你想购买哪个境界的魔煞刀？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Demon Slaying Blade would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的魔煞刀？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Demon Slaying Blade would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的霸道斩？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Tyrant’s Slash would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的霸道斩？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Tyrant’s Slash would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种枪修神通？
+Which spear cultivation divine ability would you like to buy?
+</color>你想购买哪个境界的鬼狱枪？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Ghost Prison Spear would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的鬼狱枪？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Ghost Prison Spear would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的天龙阵？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Heavenly Dragon Array would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的天龙阵？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Heavenly Dragon Array would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种拳修神通？
+Which fist cultivation divine ability would you like to buy?
+</color>你想购买哪个境界的霸王盾？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Overlord’s Shield would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的霸王盾？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Overlord’s Shield would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的巨王拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Giant King Fist would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的巨王拳？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Giant King Fist would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种掌修神通？
+Which palm cultivation divine ability would you like to buy?
+</color>你想购买哪个境界的归神掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spirit Returning Palm would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的归神掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spirit Returning Palm would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的魔印掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Demon Seal Palm would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的魔印掌？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Demon Seal Palm would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种指修神通？
+Which finger cultivation divine ability would you like to buy?
+</color>你想购买哪个境界的冲虚指？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Void Piercing Finger would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的冲虚指？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Void Piercing Finger would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的神脉指？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Divine Vein Finger would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想购买哪个境界的神脉指？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Divine Vein Finger would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买劲 经 式哪种心法 ？
+Which type of cultivation method would you like to buy: Strength, Stamina, or Form?
+劲<color=#FF0000><color=#FFFF00>（攻击）</color></color>
+Strength<color=#FF0000><color=#FFFF00>（Attack）</color></color>
+经<color=#FF0000>（体力）</color>
+Stamina<color=#FF0000>（Health）</color>
+式<color=#00FFFF><color=#00FF00><color=#6A5ACD><color=#808000><color=#008080><color=#00FF00>（防御）</color></color></color></color></color></color>
+Form<color=#00FFFF><color=#00FF00><color=#6A5ACD><color=#808000><color=#008080><color=#00FF00>（Defense）</color></color></color></color></color></color>
+你想买诀 录哪种心法 ？
+Which type of cultivation method would you like to buy: Art or Record?
+诀<color=#00FFFF>（灵力）</color>
+Art<color=#00FFFF>（Spiritual Power）</color>
+录<color=#FFA500><color=#FFA500></color></color><color=#FFA500><color=#00FF00><color=#7FFF00>（神识）</color></color></color>
+Record<color=#FFA500><color=#FFA500></color></color><color=#FFA500><color=#00FF00><color=#7FFF00>（Divine Sense）</color></color></color>
+你想买哪种法修心法？
+Which type of spell cultivation method would you like to buy?
+火修心法
+Fire Cultivation Method
+水修心法
+Water Cultivation Method
+木修心法
+Wood Cultivation Method
+雷修心法
+Thunder Cultivation Method
+风修心法
+Wind Cultivation Method
+土修心法
+Earth Cultivation Method
+你想买哪种体修心法？
+Which type of physical cultivation method would you like to buy?
+剑修心法
+Sword Cultivation Method
+拳修心法
+Fist Cultivation Method
+刀修心法
+Blade Cultivation Method
+掌修心法
+Palm Cultivation Method
+枪修心法
+Spear Cultivation Method
+指修心法
+Finger Cultivation Method
+</color>你想买哪个境界的劲心法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Strength cultivation method would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的经心法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Stamina cultivation method would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪个境界的式心法？<color=#FF0000>（本店所售功法皆为一品）
+Which level of Form cultivation method would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的式心法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Form cultivation method would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的诀心法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Art cultivation method would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的录心法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Record cultivation method would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种类型的火修心法？<color=#FF0000><color=#00FFFF><color=#FFFF00>（秘法：灵抗 神功：功抗 大法：会心）</color></color></color>
+Which type of fire cultivation method would you like to buy?<color=#FF0000><color=#00FFFF><color=#FFFF00>（Secret Method: Spirit Resistance, Divine Art: Skill Resistance, Great Technique: Critical Hit）</color></color></color>
+</color>你想买哪个境界的火秘卷？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Fire Secret Scroll would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的火神功？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Fire Divine Art would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的火大法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Fire Great Technique would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种类型的水修心法？<color=#FFFF00>（秘法：灵抗 神功：功抗 大法：会心）</color>
+Which type of water cultivation method would you like to buy?<color=#FFFF00>（Secret Method: Spirit Resistance, Divine Art: Skill Resistance, Great Technique: Critical Hit）</color>
+</color>你想买哪个境界的水秘卷？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Water Secret Scroll would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的水神功？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Water Divine Art would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的水大法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Water Great Technique would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种类型的木修心法？<color=#FFFF00>（秘法：灵抗 神功：功抗 大法：会心）
+Which type of wood cultivation method would you like to buy?<color=#FFFF00>（Secret Method: Spirit Resistance, Divine Art: Skill Resistance, Great Technique: Critical Hit）
+</color>你想买哪个境界的木秘卷？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Wood Secret Scroll would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的木神功？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Wood Divine Art would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的木大法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Wood Great Technique would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种类型的雷修心法？<color=#FFFF00>（秘法：灵抗 神功：功抗 大法：会心）
+Which type of thunder cultivation method would you like to buy?<color=#FFFF00>（Secret Method: Spirit Resistance, Divine Art: Skill Resistance, Great Technique: Critical Hit）
+</color>你想买哪个境界的雷秘卷？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Thunder Secret Scroll would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的雷神功？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Thunder Divine Art would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的雷大法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Thunder Great Technique would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种类型的风修心法？<color=#FFFF00>（秘法：灵抗 神功：功抗 大法：会心）
+Which type of wind cultivation method would you like to buy?<color=#FFFF00>（Secret Method: Spirit Resistance, Divine Art: Skill Resistance, Great Technique: Critical Hit）
+</color>你想买哪个境界的风秘卷？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Wind Secret Scroll would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的风神功？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Wind Divine Art would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的风大法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Wind Great Technique would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种类型的土修心法？<color=#FFFF00>（秘法：灵抗 神功：功抗 大法：会心）
+Which type of earth cultivation method would you like to buy?<color=#FFFF00>（Secret Method: Spirit Resistance, Divine Art: Skill Resistance, Great Technique: Critical Hit）
+</color>你想买哪个境界的土秘卷？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Earth Secret Scroll would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的土神功？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Earth Divine Art would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的土大法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Earth Great Technique would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种类型的剑修心法？<color=#FFFF00>（秘法：灵抗 神功：功抗 大法：会心）
+Which type of sword cultivation method would you like to buy?<color=#FFFF00>（Secret Method: Spirit Resistance, Divine Art: Skill Resistance, Great Technique: Critical Hit）
+</color>你想买哪个境界的剑秘卷？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Sword Secret Scroll would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的剑神功？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Sword Divine Art would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的剑大法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Sword Great Technique would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种类型的刀修心法？<color=#FFFF00>（秘法：灵抗 神功：功抗 大法：会心）
+Which type of blade cultivation method would you like to buy?<color=#FFFF00>（Secret Method: Spirit Resistance, Divine Art: Skill Resistance, Great Technique: Critical Hit）
+</color>你想买哪个境界的刀秘卷？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Blade Secret Scroll would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的刀神功？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Blade Divine Art would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的刀大法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Blade Great Technique would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种类型的枪修心法？<color=#FFFF00>（秘法：灵抗 神功：功抗 大法：会心）
+Which type of spear cultivation method would you like to buy?<color=#FFFF00>（Secret Method: Spirit Resistance, Divine Art: Skill Resistance, Great Technique: Critical Hit）
+</color>你想买哪个境界的枪秘卷？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spear Secret Scroll would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的枪神功？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spear Divine Art would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的枪大法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Spear Great Technique would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种类型的拳修心法？<color=#FFFF00>（秘法：灵抗 神功：功抗 大法：会心）
+Which type of fist cultivation method would you like to buy?<color=#FFFF00>（Secret Method: Spirit Resistance, Divine Art: Skill Resistance, Great Technique: Critical Hit）
+</color>你想买哪个境界的拳秘卷？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Fist Secret Scroll would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的拳神功？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Fist Divine Art would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的拳大法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Fist Great Technique would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种类型的掌修心法？<color=#FFFF00>（秘法：灵抗 神功：功抗 大法：会心）
+Which type of palm cultivation method would you like to buy?<color=#FFFF00>（Secret Method: Spirit Resistance, Divine Art: Skill Resistance, Great Technique: Critical Hit）
+</color>你想买哪个境界的掌秘卷？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Palm Secret Scroll would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的掌神功？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Palm Divine Art would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的掌大法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Palm Great Technique would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+你想买哪种类型的指修心法？<color=#FFFF00>（秘法：灵抗 神功：功抗 大法：会心）
+Which type of finger cultivation method would you like to buy?<color=#FFFF00>（Secret Method: Spirit Resistance, Divine Art: Skill Resistance, Great Technique: Critical Hit）
+</color>你想买哪个境界的指秘卷？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Finger Secret Scroll would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的指神功？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Finger Divine Art would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+</color>你想买哪个境界的指大法？<color=#FF0000>（本店所售功法皆为一品）
+</color>Which level of Finger Great Technique would you like to purchase?<color=#FF0000>（All techniques sold in this store are first-grade.）
+蝶仙子的玉佩发出短暂的光芒，在你的神识里标记了白源区蝶仙小轩的位置。
+Butterfly Fairy’s jade pendant glows briefly, marking the location of Butterfly Fairy Pavilion in the Baiyuan District within your divine sense.
+标记位置
+Mark Location
+蝶仙子的玉佩发出短暂的光芒，在你的神识里标记了永宁洲蝶仙小轩的位置。
+Butterfly Fairy’s jade pendant glows briefly, marking the location of Butterfly Fairy Pavilion in the Yongning Continent within your divine sense.
+蝶仙子的玉佩发出短暂的光芒，在你的神识里标记了华封洲蝶仙小轩的位置。
+Butterfly Fairy’s jade pendant glows briefly, marking the location of Butterfly Fairy Pavilion in the Huafeng Continent within your divine sense.
+蝶仙子的玉佩发出短暂的光芒，在你的神识里标记了云陌洲蝶仙小轩的位置。
+Butterfly Fairy’s jade pendant glows briefly, marking the location of Butterfly Fairy Pavilion in the Yunmo Continent within your divine sense.
+蝶仙子的玉佩发出短暂的光芒，在你的神识里标记了暮仙洲蝶仙小轩的位置。
+Butterfly Fairy’s jade pendant glows briefly, marking the location of Butterfly Fairy Pavilion in the Muxian Continent within your divine sense.
+蝶仙子的玉佩发出短暂的光芒，在你的神识里标记了赤幽洲蝶仙小轩的位置。
+Butterfly Fairy’s jade pendant glows briefly, marking the location of Butterfly Fairy Pavilion in the Red Nether Continent within your divine sense.
+蝶仙小轩出现在了城外
+Butterfly Fairy Pavilion has appeared outside the city.
+你要洗掉还是增加你的正魔值呢？
+Do you want to decrease or increase your righteousness and demonic values?
+你要购买哪种夸父剧情道具？
+Which Kuafu storyline item would you like to purchase?
+你要用灵石升级宗门哪项事务。
+Which sect matter would you like to upgrade using spirit stones?
+您在蝶仙小轩所存四年一万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n ——蝶仙小轩
+Please check the 10,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for four years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存四年五万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n ——蝶仙小轩
+Please check the 50,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for four years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存四年十万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n ——蝶仙小轩
+Please check the 100,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for four years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存五年五千灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n ——蝶仙小轩
+Please check the 5,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for five years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存五年一万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n ——蝶仙小轩
+Please check the 10,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for five years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存五年五万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n ——蝶仙小轩
+Please check the 50,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for five years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存五年十万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n ——蝶仙小轩
+Please check the 100,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for five years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存六年五千灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n ——蝶仙小轩
+Please check the 5,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for six years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存六年一万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n ——蝶仙小轩
+Please check the 10,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for six years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存六年五万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n ——蝶仙小轩
+Please check the 50,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for six years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
+您在蝶仙小轩所存六年十万灵石以及利润请查收，祝您修行愉快。\n\n\n\n\n\n\n\n\n\n ——蝶仙小轩
+Please check the 100,000 spirit stones and profits you have stored at Butterfly Fairy Pavilion for six years. Wishing you a pleasant cultivation journey.\n\n\n\n\n\n\n\n\n\n ——Butterfly Fairy Pavilion
