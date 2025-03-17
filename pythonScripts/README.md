@@ -55,7 +55,7 @@ These scripts are used to add English translations to decrypted ModExportData fi
 * Replaces `\n` with `\\n` in the English translations.
 * **Note:** Color tags and extra backslashes might require manual correction.
 
-###addEN2.py
+### addEN2.py
 
 * Check for en key in the items field
 * Reads Chinese-English pairs from a text file and adds them to `ModExportData.json`.
