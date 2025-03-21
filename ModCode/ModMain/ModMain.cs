@@ -2,86 +2,93 @@
 using EGameTypeData;
 using Il2CppSystem.Collections.Generic;
 using MelonLoader;
+using MelonLoader.TinyJSON;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.IO;
-
 namespace KrunchyToMAuto {
     public class ModMain {
-        private static int excelMID = -1382759740;
-
-        private EffectBase effectCloseCollider;
-
+        //Harmony
         private static HarmonyLib.Harmony harmony;
-
+        //Event Hooks
         private Il2CppSystem.Action<ETypeData> callOpenUIEnd;
         private Il2CppSystem.Action<ETypeData> onBattleStart;
         private Il2CppSystem.Action<ETypeData> onBattleExit;
         private Il2CppSystem.Action<ETypeData> onBattleEnd;
-
-        //Auto Battle
+        private Il2CppSystem.Action<ETypeData> onWorldRunEnd;
+        //Auto Battle Coroutines
         private TimerCoroutine corUpdateInBattleStart;
         private TimerCoroutine corUpdate;
+        private TimerCoroutine corCheat;
         private TimerCoroutine corAutoPlayerMoveAndSkill;
         private TimerCoroutine corAutoMoveChecking;
-
-        //Task Master
-        private TimerCoroutine corTaskMaster;
         private TimerCoroutine corGetSchoolTask;
+        private TimerCoroutine corFairyLeagueTasks;
+        private TimerCoroutine corHandleUI;
+
+        //Task Master Coroutines
+        private TimerCoroutine corSchoolMaster;
         private TimerCoroutine corGetTaskHall;
         private TimerCoroutine corWaitBattleEndUI;
         private TimerCoroutine corGoNextMonth;
-
         //Auto Battle
+        private static bool enableAuto = false;
+        private EffectBase effectCloseCollider;
         private GameObject goEffect;
+        private bool gameEnded;
         private int skillFlag;
         private int propGetDis = 1500;
         private int autoDropDis = 8000;
-        private GetPointsOnMovingArc getPointsOnMovingArc;
-        private Vector2 playerLasPosi;
-        private CameraCtrl.OrthoSizeData curSize;
-        private static bool enableAuto = false;
+        private int zhenlongCount;
         private int moveFlag;
+        private Vector2 playerLasPosi;
+        private GetPointsOnMovingArc getPointsOnMovingArc;
+        private CameraCtrl.OrthoSizeData curSize;
         private SettingData settingData;
         private BattleRoomNode firstRoomNode;
         private UIBattleInfo uIBattleInfo;
-        private int zhenlongCount;
-        public static DataStruct<TimeScaleType, DataStruct<float>> changeSpeed;
-        public static float gameSpeed = 1f;
-        private bool gameEnded;
-
         //MartialLearn
         private int count = 0;
         private int originalCount = 20;
-
-        //Task Master
+        //School Task
         private bool getTasks = false;
-        private bool toggleTaskMaster;
-        private TaskDataBase currentTask;
-        private UISchoolTaskLobby currentTaskLobby = null;
-        private int missionRuns = 0;
+        private bool toggleSchoolMaster = false;
         private bool nextMonthPressed = false;
         private bool nextMonthYesPressed = false;
-        private int lastmonth;
+        private bool hasFinishedQuest = false;
         private bool monthLogClosed = false;
-
+        private int missionRuns = 0;
+        private int lastmonth;
+        private TaskFromHallStep getTaskFromHallStep = TaskFromHallStep.CheckFinishedQuest;
+        private UISchoolTaskLobby currentTaskLobby = null;
+        //Fairy League Task
+        private int townLevel;
+        public Vector2Int nearTown;
+        private bool toggleFairyLeagueTasks;
+        private int finishedQuestCount = 0;
+        private bool isAutoTasking = false;
+        //UI Stuff
         private HashSet<string> dramaUINames = new HashSet<string>();
         private HashSet<string> invalidTaskDescriptions = new HashSet<string>();
-        private SchoolTaskStep getSchoolTaskStep = SchoolTaskStep.CheckHealthAndEnergy;
-        private TaskFromHallStep getTaskFromHallStep = TaskFromHallStep.CheckFinishedQuest;
-
-
-        private bool hasFinishedQuest = false;
-        private bool gameSpeedToggle;
-
-
-        public static string valKey = "2a;ad.,&fSf^SX.,:12@D";
-
+        //Others
         private bool toggleDebateSkip;
+        private bool gameSpeedToggle;
+        //Gamespeed
+        public static DataStruct<TimeScaleType, DataStruct<float>> changeSpeed;
+        public static float gameSpeed = 1f;
+        //MID
+        private static int excelMID = -1382759740;
+        //
+        private bool isGetTask;
+        private int tasksSkipped;
+        private bool enableCheats;
+
+
+
+
+        //public static string valKey = "2a;ad.,&fSf^SX.,:12@D";
+
 
         internal static bool IsEnableAutoSkills() {
             return enableAuto;
@@ -99,6 +106,8 @@ namespace KrunchyToMAuto {
 
             harmony.PatchAll(Assembly.GetExecutingAssembly());
             corUpdate = g.timer.Frame((Il2CppSystem.Action)OnUpdate, 1, loop: true);
+            corCheat = g.timer.Frame((Il2CppSystem.Action)OnUpdateCheat, 120, loop: true);
+
             callOpenUIEnd = (Il2CppSystem.Action<ETypeData>)OnOpenUIEnd;
             g.events.On(EGameType.OpenUIEnd, callOpenUIEnd, 0);
             onBattleStart = (Il2CppSystem.Action<ETypeData>)OnBattleStart;
@@ -107,10 +116,11 @@ namespace KrunchyToMAuto {
             g.events.On(EBattleType.BattleExit, onBattleExit, 0);
             onBattleEnd = (Il2CppSystem.Action<ETypeData>)OnBattleEnd;
             g.events.On(EBattleType.BattleEnd, onBattleEnd, 0);
+            onWorldRunEnd = (Il2CppSystem.Action<ETypeData>)WorldRunEnd;
+            g.events.On(EGameType.WorldRunEnd, onWorldRunEnd, 0);
 
             FixXuliLimitTime();
             CreateUITypeHashSet();
-            //ModExportTool.Export(MOD_PArbBb,);
 
         }
 
@@ -138,10 +148,14 @@ namespace KrunchyToMAuto {
         }
 
         private void OnOpenUIEnd(ETypeData e) {
+            if (g.ui.GetUI<UIMartialLearnGame>(UIType.MartialLearnGame)) {
+                ClickBallsMartialLearn(g.ui.GetUI<UIMartialLearnGame>(UIType.MartialLearnGame));
+                return;
+            }
             if (uIBattleInfo == null) {
                 return;
             }
-            OpenUIEnd openUIEnd = e.Cast<OpenUIEnd>();
+            EGameTypeData.OpenUIEnd openUIEnd = e.Cast<EGameTypeData.OpenUIEnd>();
             if (openUIEnd.uiType.uiName == UIType.BattleExit.uiName) {
                 FixUIBattleExit();
             } else if (enableAuto) {
@@ -156,8 +170,16 @@ namespace KrunchyToMAuto {
                 }
             }
         }
-                
-            
+        public void WorldRunEnd(ETypeData e) {
+            if (toggleFairyLeagueTasks) {
+                if (corFairyLeagueTasks != null) {
+                    corFairyLeagueTasks.Stop();
+                    corFairyLeagueTasks = null;
+                }
+                FairyLeagueCor();
+            }
+        }
+
 
         #region Auto Battler
         private void FixUIBattleExit() {
@@ -352,8 +374,16 @@ namespace KrunchyToMAuto {
             if (corUpdateInBattleStart != null) {
                 g.timer.Stop(corUpdateInBattleStart);
             }
-            if (corTaskMaster != null) {
-                g.timer.Stop(corTaskMaster);
+            if (corSchoolMaster != null) {
+                g.timer.Stop(corSchoolMaster);
+            }
+            if (corFairyLeagueTasks != null) {
+                g.timer.Stop(corFairyLeagueTasks);
+                corFairyLeagueTasks = null;
+            }
+            if (corHandleUI != null) {
+                corHandleUI.Stop();
+                corHandleUI = null;
             }
             if (g.world.battle.data.dungeonBaseItem.id == 15 || g.world.battle.data.dungeonBaseItem.id == 126) {
                 return;
@@ -382,24 +412,33 @@ namespace KrunchyToMAuto {
         }
 
         private void OnBattleEnd(ETypeData e) {
-            if (toggleTaskMaster) {
+            if (toggleSchoolMaster || toggleFairyLeagueTasks) {
                 if (corWaitBattleEndUI != null) {
                     g.timer.Stop(corWaitBattleEndUI);
                     corWaitBattleEndUI = null;
                 }
                 corWaitBattleEndUI = g.timer.Frame((System.Action)delegate {
                     if (g.ui.GetUI<UIBattleEnd>(UIType.BattleEnd)) {
-                        g.ui.GetUI<UIBattleEnd>(UIType.BattleEnd).isClickEnd = true;
-                        if (g.ui.GetUI<UIBattleEnd>(UIType.BattleEnd).btnOK != null) {
-                            g.ui.GetUI<UIBattleEnd>(UIType.BattleEnd).btnOK.Press();
+                        UIBattleEnd battleUI = g.ui.GetUI<UIBattleEnd>(UIType.BattleEnd);
+                        battleUI.isClickEnd = true;
+                        if (battleUI.btnOK != null) {
+                            battleUI.btnOK.Press();
 
                         }
                     }
                     if (SceneType.map != null && g.world.playerUnit != null) {
-                        if (corTaskMaster != null) {
-                            StopTaskMasterCor();
+                        if (toggleSchoolMaster) {
+                            if (corSchoolMaster != null) {
+                                StopSchoolMasterCor();
+                            }
+                            StartSchoolMasterCor();
+                        } else if (toggleFairyLeagueTasks) {
+                            if (corFairyLeagueTasks != null) {
+                                corFairyLeagueTasks.Stop();
+                            }
+                            FairyLeagueCor();
+                            corWaitBattleEndUI.Stop();
                         }
-                        StartTaskMasterCor();
                     }
                 }, 1, loop: true);
             }
@@ -470,7 +509,7 @@ namespace KrunchyToMAuto {
                     DaojieMoveCenter();
                 }
             };
-            if (g.world.battle.data.dungeonBaseItem.type == 65 || g.world.battle.data.dungeonBaseItem.type == 56 || !settingData.AutoStart || BigFightExtensions.currentSystem.monthsToNext == 0) {
+            if (g.world.battle.data.dungeonBaseItem.type == 65 || g.world.battle.data.dungeonBaseItem.type == 56 || !settingData.AutoStart || BigFightExtensions.currentSystem.monthsToNext == 0 || g.world.battle.data.dungeonBaseItem.type == 77) {
                 return;
             }
 
@@ -1147,7 +1186,7 @@ namespace KrunchyToMAuto {
 
         public System.Collections.Generic.List<BattleRoomNode> FindPathToUnfinishedRoom(BattleRoomNode currentRoom) {
             System.Collections.Generic.Dictionary<Vector2Int, BattleRoomNode> dictionary = new System.Collections.Generic.Dictionary<Vector2Int, BattleRoomNode>();
-            Il2CppSystem.Collections.Generic.Queue<BattleRoomNode> queue = new Il2CppSystem.Collections.Generic.Queue<BattleRoomNode>();
+            Queue<BattleRoomNode> queue = new Queue<BattleRoomNode>();
             System.Collections.Generic.HashSet<Vector2Int> hashSet = new System.Collections.Generic.HashSet<Vector2Int>();
             queue.Enqueue(currentRoom);
             hashSet.Add(currentRoom.point);
@@ -1274,10 +1313,9 @@ namespace KrunchyToMAuto {
                     result = false;
                 }
             }
-
             return result;
         }
-
+        
         private void DaojieMoveCenter() {
             SceneType.battle.battleMap.playerUnitCtrl.move.StopMove();
             if ((double)Vector2.Distance(SceneType.battle.battleMap.roomCenterPosi, SceneType.battle.battleMap.playerUnitCtrl.move.lastPosi) > 0.5) {
@@ -1292,58 +1330,112 @@ namespace KrunchyToMAuto {
 
 
         #region Auto Martial Study
-        public void ClickBallsMartialLearn2() {
-            UIMartialLearnGame uiLearn = g.ui.GetUI<UIMartialLearnGame>(UIType.MartialLearnGame);
-            if (uiLearn != null && uiLearn.ballDatas != null && gameEnded == false) {
+        public void ClickBallsMartialLearn(UIMartialLearnGame uiLearn) {
+            TimerCoroutine corClickBalls = null;
+            System.Action action = delegate {
+                if (uiLearn != null && uiLearn.ballDatas != null && gameEnded == false) {
 
-                count = uiLearn.ballDatas.Count;
-                if (count > 30) {
-                    originalCount = count;
-                }
-                //uiLearn.;
-                //uiLearn.upRate = 100f;
-                for (int i = uiLearn.ballDatas.Count - 1; i >= 0; i--) {
-                    UIMartialLearnGame.BallData ball = uiLearn.ballDatas[i];
+                    count = uiLearn.ballDatas.Count;
+                    if (count > 30) {
+                        originalCount = count;
+                    }
+                    //uiLearn.;
+                    //uiLearn.upRate = 100f;
+                    for (int i = uiLearn.ballDatas.Count - 1; i >= 0; i--) {
+                        UIMartialLearnGame.BallData ball = uiLearn.ballDatas[i];
 
-                    if (ball != null) {
-                        //MelonLogger.Msg($"Ball State: {ball.state} IsUp: {ball.isUp}");
-                        if (ball.state == 1) {
-                            if (ball.isUp) {
-                                uiLearn.OnUpClick(ball);
-                                GameObject goBall = ball.go;
-                                Object.Destroy(goBall);
-                                uiLearn.ballDatas.RemoveAt(i);
-                            } else {
-                                GameObject goBall = ball.go;
-                                Object.Destroy(goBall);
-                                uiLearn.ballDatas.RemoveAt(i);
+                        if (ball != null) {
+                            //MelonLogger.Msg($"Ball State: {ball.state} IsUp: {ball.isUp}");
+                            if (ball.state == 1) {
+                                if (ball.isUp) {
+                                    uiLearn.OnUpClick(ball);
+                                    GameObject goBall = ball.go;
+                                    Object.Destroy(goBall);
+                                    uiLearn.ballDatas.RemoveAt(i);
+                                } else {
+                                    GameObject goBall = ball.go;
+                                    Object.Destroy(goBall);
+                                    uiLearn.ballDatas.RemoveAt(i);
+                                }
+
                             }
-
                         }
                     }
+                    if (uiLearn.upCount >= originalCount && uiLearn.ballDatas.Count <= 0) {
+                        gameEnded = true;
+                        uiLearn.GameEnd();
+                        uiLearn = null;
+                        corClickBalls.Stop();
+                        corClickBalls = null;
+                    }
                 }
-                if (uiLearn.upCount >= originalCount && uiLearn.ballDatas.Count <= 0) {
-                    gameEnded = true;
-                    uiLearn.GameEnd();
-                }
-            }
-            if (uiLearn.upCount == 0) {
-                gameEnded = false;
+                if (uiLearn.upCount == 0) {
+                    gameEnded = false;
 
-            }
+                }
+            };
+            corClickBalls = SceneType.map.timer.Time(action, 0.6f, loop: true);
         }
         #endregion
 
+        public void DebateSkipToggle() {
 
-        #region Task Master
-        private Vector2Int GetPlayerTaskLocation() {
-            Il2CppSystem.Collections.Generic.List<TaskBase> playerTasks = g.world.playerUnit.GetTask(TaskType.School);
+            toggleDebateSkip = !toggleDebateSkip;
+            TimerCoroutine corDebateSkip = null;
+            corDebateSkip = g.timer.Time((System.Action)delegate {
+                if (!toggleDebateSkip) {
+                    corDebateSkip.Stop();
+                    corDebateSkip = null;
+                }
+                UIDramaDialogue uiDrama = g.ui.GetUI<UIDramaDialogue>(UIType.DramaDialogue);
+                if (uiDrama == null) return;
+
+                DramaData dramaData1 = uiDrama.dramaData;
+                if (dramaData1 == null || dramaData1.dialogueOptionsAddText == null) return;
+
+                foreach (KeyValuePair<int, string> pair in dramaData1.dialogueOptionsAddText) {
+                    int key = pair.Key;
+
+                    if (uiDrama.activeOptionsData != null && uiDrama.activeOptionsData.Count > 0) {
+                        List<ConfDramaOptionsItem> activeOptions = uiDrama.activeOptionsData;
+
+                        for (int i = 0; i < activeOptions.Count; i++) {
+                            //If option contains Desired Option, comes from some soul stuff...
+                            if (activeOptions[i] != null && activeOptions[i].id == key) {
+                                uiDrama.ClickOption(activeOptions[i]);
+                                return;
+                            } else {
+                                //click whatever option we are on...Need to get dialoge selection some how...
+                                uiDrama.ClickOption(activeOptions[i]);
+                            }
+                        }
+                    }
+                }
+            }, 0.8f, true);
+        }
+
+        #region School Tasks
+        private bool GetNeedHeal() {
+            WorldUnitDynData dynData = g.world.playerUnit.data.dynUnitData;
+            int playerEnergy = dynData.mp.value;
+            int playerMaxEnergy = dynData.mp.maxValue;
+            int playerHealth = dynData.hp.value;
+            int playerMaxHealth = dynData.hp.maxValue;
+
+            float healthThresholdPercentage = 0.20f; // 20%
+
+            return playerHealth <= playerMaxHealth * healthThresholdPercentage ||
+                   playerEnergy <= playerMaxEnergy * healthThresholdPercentage;
+        }
+
+        private Vector2Int GetSchoolTaskLoc() {
+            List<TaskBase> playerTasks = g.world.playerUnit.GetTask(TaskType.School);
 
             if (playerTasks.Count > 0) {
                 var enumerator = playerTasks.GetEnumerator();
                 try {
                     while (enumerator.MoveNext()) {
-                        //Skip collection tasks for now///
+                        //Skip collection tasks for now
                         if (enumerator.current.data.GetDesc().Contains("Collect")) {
                             continue;
                         }
@@ -1355,7 +1447,6 @@ namespace KrunchyToMAuto {
                         if (enumerator.current != null) {
                             Vector2Int taskLocation = enumerator.current.data.destination;
                             enumerator.current.data.uiPath = true;
-                            currentTask = enumerator.current.data;
                             return taskLocation;
                         }
                     }
@@ -1367,8 +1458,9 @@ namespace KrunchyToMAuto {
             return g.world.playerUnit.data.school.GetNamePoint();
         }
 
-        private void MovePlayerToTask() {
-            Vector2Int taskLocation = GetPlayerTaskLocation();
+        private void MoveToSchoolTask() {
+
+            Vector2Int taskLocation = GetSchoolTaskLoc();
 
             MoveUIEvents();
 
@@ -1378,20 +1470,21 @@ namespace KrunchyToMAuto {
             }
             if (g.world == null || g.world.playerUnit == null) { return; }
             if (SceneType.map.world.isMove) { return; }
-            if (!SceneType.map.world.IsCanMove()) {  return; }
+            if (!SceneType.map.world.IsCanMove()) { return; }
 
             if (g.ui.GetUI<UICheckPopup>(UIType.CheckPopup)) {
                 if (g.ui.GetUI<UICheckPopup>(UIType.CheckPopup).textTitle.text.Contains("Not enough days")) {
                     StartGoNextMonthCor();
                 }
             } else {
-                HandleMovement(taskLocation);
+                HandleSchoolMove(taskLocation);
             }
         }
 
         private void HandleDramaDialogue(UIDramaDialogue uiDrama) {
             if (uiDrama.activeOptionsData != null) {
                 if (uiDrama.activeOptionsData.Count == 0) {
+                    uiDrama.btnNext.Press();
                     uiDrama.btnNext.Press();
                 }
                 if (uiDrama.activeOptionsData.Count > 0) {
@@ -1416,11 +1509,22 @@ namespace KrunchyToMAuto {
         public void MoveUIEvents() {
             if (g.ui.GetUI<UIMonthLogBig>(UIType.MonthLogBig)) {
                 g.ui.GetUI<UIMonthLogBig>(UIType.MonthLogBig).btnClost.Press();
-                if (g.ui.GetUI<UICheckPopup>(UIType.CheckPopup)) {
-                    g.ui.GetUI<UICheckPopup>(UIType.CheckPopup).OnYesClick();
-                    monthLogClosed = true;
-                    return;
+            }
+            if (g.ui.GetUI<UICheckPopup>(UIType.CheckPopup)) {
+                UICheckPopup popup = g.ui.GetUI<UICheckPopup>(UIType.CheckPopup);
+                if (popup.textTitle.text.Contains("Not enough days")) {
+                    if (corFairyLeagueTasks != null) {
+                        corFairyLeagueTasks.Stop();
+                        corFairyLeagueTasks = null;
+                    }
+                } else if (popup.textTitle.text.Contains("Skip the current month?")) {
+                    if (corFairyLeagueTasks != null) {
+                        corFairyLeagueTasks.Stop();
+                        corFairyLeagueTasks = null;
+                    }
                 }
+                popup.OnYesClick();
+                return;
             }
             if (g.ui.GetUI<UIGetReward>(UIType.GetReward)) {
                 g.ui.GetUI<UIGetReward>(UIType.GetReward).btnOK.Press();
@@ -1446,7 +1550,7 @@ namespace KrunchyToMAuto {
                 g.ui.GetUI<UIMapBattlePre>(UIType.MapBattlePre).btnBattle.Press();
             }
         }
-        
+
         private void HandleFortuitousEvent(UIDramaFortuitous fortuitousUI) {
             List<ConfDramaOptionsItem> activeOptions = fortuitousUI.activeOptionsData;
 
@@ -1460,8 +1564,8 @@ namespace KrunchyToMAuto {
             }
         }
 
-        private void HandleMovement(Vector2Int taskLocation) {
-            if (GetPlayerTaskLocation() == SceneType.map.world.playerPoint) {
+        private void HandleSchoolMove(Vector2Int taskLocation) {
+            if (GetSchoolTaskLoc() == SceneType.map.world.playerPoint) {
                 if (g.world.playerUnit.data.school.GetNamePoint() == taskLocation && !SceneType.map.world.isMove && SceneType.map.world.IsCanMove()) {
                     SceneType.map.world.MovePlayerPosi(taskLocation + new Vector2Int(0, 1));
                 }
@@ -1479,7 +1583,6 @@ namespace KrunchyToMAuto {
                 SceneType.map.world.MovePlayerPosi(taskLocation);
             }
         }
-
         private void GoNextMonth() {
             if (corGoNextMonth != null) {
                 StopGoNextMonthCor();
@@ -1506,12 +1609,14 @@ namespace KrunchyToMAuto {
                     nextMonthYesPressed = false;
                     nextMonthPressed = false;
                     monthLogClosed = false;
-                    if (corTaskMaster != null) {
-                        StopTaskMasterCor();
+                    if (corSchoolMaster != null) {
+                        StopSchoolMasterCor();
                     }
-                    StartTaskMasterCor();
+                    if (toggleSchoolMaster) {
+                        StartSchoolMasterCor();
+                    }
                 } else {
-                    if (!toggleTaskMaster) {
+                    if (!toggleSchoolMaster) {
                         corWaitTimer.Stop();
                         corWaitTimer = null;
                     }
@@ -1538,14 +1643,14 @@ namespace KrunchyToMAuto {
                             monthLogClosed = true;
                         }
                     } else if (g.data.world.curMonthLog.month > lastmonth) {
-                        monthLogClosed = true;  
+                        monthLogClosed = true;
                     }
                 }
             };
             corWaitTimer = SceneType.map.timer.Time(action, 0.6f, loop: true);
         }
 
-        private Transform OpenMissionHall(UISchool playerSchool) {
+        private Transform OpenTaskLobby(UISchool playerSchool) {
             if (playerSchool != null) {
                 //Game/UIRoot/Canvas/Root/UI/School/Root/Posi/G:goPosiRoot/G:goPosi(Clone)/Fix/1003/G:goBuildItem_En(Clone)/
                 Transform buildItemTransform = playerSchool.goPosiRoot.transform;
@@ -1567,15 +1672,12 @@ namespace KrunchyToMAuto {
             return null;
         }
 
-        private Transform OpenHospital(UISchool playerSchool) {
+        private Transform OpenSchoolHospital(UISchool playerSchool) {
             if (playerSchool != null) {
-                //Game/UIRoot/Canvas/Root/UI/School/Root/Posi/G:goPosiRoot/G:goPosi(Clone)/Fix/1003/G:goBuildItem_En(Clone)/
                 Transform buildItemTransform = playerSchool.goPosiRoot.transform;
-
                 Transform[] allTransforms = buildItemTransform.GetComponentsInChildren<Transform>();
 
                 foreach (Transform childTransform in allTransforms) {
-
                     if (childTransform.name == "Text" && childTransform.parent != null && childTransform.parent.name == "Name") {
                         //Clone -> Icon -> Name
                         Text textComponent = childTransform.GetComponent<Text>();
@@ -1623,7 +1725,7 @@ namespace KrunchyToMAuto {
 
                 case TaskFromHallStep.ProcessTasks:
                     if (currentTaskLobby && !g.ui.GetUI<UISchoolPubMessage>(UIType.SchoolPubMessage) && !g.ui.GetUI<UIGetReward>(UIType.GetReward)) {
-                        if (ProcessTasks(currentTaskLobby)) {
+                        if (ProcessSchoolTasks(currentTaskLobby)) {
                             getTaskFromHallStep = TaskFromHallStep.CloseUI;
                         } else {
                             StopGetTaskFromHallCor();
@@ -1640,13 +1742,16 @@ namespace KrunchyToMAuto {
                         getTasks = false;
                         missionRuns++;
                         StopGetTaskFromHallCor();
-                        StartTaskMasterCor();
+                        isGetTask = false;
+                        if (toggleSchoolMaster) {
+                            StartSchoolMasterCor();
+                        }
                     }
                     break;
             }
         }
 
-        private bool ProcessTasks(UISchoolTaskLobby taskLobby) {
+        private bool ProcessSchoolTasks(UISchoolTaskLobby taskLobby) {
             if (taskLobby.normalTaskDic == null) {
                 MelonLogger.Msg("taskLobby.normalTaskDic is null.");
                 return false;
@@ -1682,124 +1787,267 @@ namespace KrunchyToMAuto {
                 }
             }
         }
+        private void GoGetSchoolTask() {
+            if (corSchoolMaster != null) {
+                StopSchoolMasterCor();
+            }
+            corGetSchoolTask = SceneType.map.timer.Time((System.Action)delegate {
+                if (!toggleSchoolMaster) {
+                    corGetSchoolTask.Stop();
+                    corGetSchoolTask = null;
+                }
+                UISchool playerSchool = g.ui.GetUI<UISchool>(UIType.School);
+                if (playerSchool == null) return;
+                isGetTask = true;
+                bool needHeal = GetNeedHeal();
+                UISchoolHospital hospitalUI = g.ui.GetUI<UISchoolHospital>(UIType.SchoolHospital);
+                UISchoolTaskLobby taskLobbyUI = g.ui.GetUI<UISchoolTaskLobby>(UIType.SchoolTaskLobby);
 
-        private enum SchoolTaskStep {
-            CheckHealthAndEnergy,
-            CheckTaskLobby,
-            WaitForTaskLobbyOrHospital,
-            StartTaskFromLobby,
-            HandleHospital
+                if (needHeal) {
+                    if (hospitalUI == null && needHeal) {
+                        OpenSchoolHospital(playerSchool);
+                        return;
+                    }
+                }
+                if (hospitalUI != null && !needHeal) {
+                    hospitalUI.btnClose1.Press();
+                }
+                if (hospitalUI == null && !needHeal && taskLobbyUI == null) {
+                    OpenTaskLobby(playerSchool);
+                    return;
+                } else if (taskLobbyUI != null) {
+                    StartGetTaskFromHallCor(taskLobbyUI);
+                    corGetSchoolTask.Stop();
+                    corGetSchoolTask = null;
+                }
+            }, 1.0f, true);
+        }
+        #endregion School Tasks
+        #region Fairly League Tasks
+        private void FairyLeagueCor() {
+            if (corFairyLeagueTasks != null) {
+                corFairyLeagueTasks.Stop();
+                corFairyLeagueTasks = null;
+            }
+            corFairyLeagueTasks = g.timer.Time((System.Action)delegate {
+                if (toggleFairyLeagueTasks) {
+                    if (SceneType.map.world != null && SceneType.map != null) {
+                        isAutoTasking = true;
+                        if (nearTown != null && nearTown != Vector2Int.zero) {
+                            if (corHandleUI == null && !getTasks) {
+                                HandleUIWhileTasking();
+                            }
+                            Vector2Int taskLoc = GetFairyLeagueTaskLoc();
+                            if (taskLoc == nearTown && SceneType.map.world.playerPoint == nearTown) {
+                                if (g.ui.GetUI<UITown>(UIType.Town) != null && !getTasks) {
+                                    if (corHandleUI != null) {
+                                        corHandleUI.Stop();
+                                        corHandleUI = null;
+                                    }
+                                    GetFairyLeagueTasks(g.ui.GetUI<UITown>(UIType.Town));
+                                    getTasks = true;
+                                    isAutoTasking = false;
+                                    corFairyLeagueTasks.Stop();
+                                    corFairyLeagueTasks = null;
+                                    return;
+                                } else if (g.ui.GetUI<UITown>(UIType.Town) == null && !getTasks && !SceneType.map.world.isMove) {
+                                    SceneType.map.world.MovePlayerPosi(nearTown + new Vector2Int(0, 1));
+                                    return;
+                                }
+                            } else if (g.world.playerUnit.GetTaskInType(TaskType.Town).Count > finishedQuestCount && SceneType.map.world.playerPoint != taskLoc && !SceneType.map.world.isMove) {
+                                MoveToTownTask(GetFairyLeagueTaskLoc());
+                            } else if (!SceneType.map.world.isMove) {
+                                MoveToTownTask(nearTown);
+                            }else {
+                                MelonLogger.Error("nearTown found, unable to move forward.");
+                            }
+
+                        } else {
+                            GetNearestTown();
+                        }
+                    }
+                } else {
+                    corFairyLeagueTasks.Stop();
+                    corFairyLeagueTasks = null;
+                }
+            }, 0.8f, true);
+        }
+        private void GetFairyLeagueTasks(UITown uITown) {
+            if (!toggleFairyLeagueTasks) { corFairyLeagueTasks.Stop(); corFairyLeagueTasks = null; return; }
+            TimerCoroutine corHeal = null;
+            TimerCoroutine corGetTownTasks = null;
+            corGetTownTasks = SceneType.map.timer.Time((System.Action)delegate {
+                if (GetNeedHeal() && corHeal == null) {
+                    corHeal = SceneType.map.timer.Time((System.Action)delegate {
+                        UITownHotel townHotel = g.ui.GetUI<UITownHotel>(UIType.TownHotel);
+                        if (townHotel == null) {
+                            uITown.goPosiRoot.transform.GetChild(0).FindChild("Fix").FindChild("2004").GetChild(0).FindChild("Icon").GetComponent<Button>().Press();
+                        } else if (townHotel != null && GetNeedHeal()) {
+                            townHotel.OnOkClick();
+                        } else if (!GetNeedHeal()) {
+                            townHotel.btnClose1.Press();
+                            corHeal.Stop();
+                            corHeal = null;
+                        }else if (!toggleFairyLeagueTasks) { corHeal.Stop(); corHeal = null; return; }
+                    }, 0.6f, true);
+                } else if (corHeal != null) {
+                    return;
+                }
+                UIFairyLeagueTaskLobby taskLobby = g.ui.GetUI<UIFairyLeagueTaskLobby>(UIType.FairyLeagueTaskLobby);
+                UITaskCompleteList taskCompleteList = g.ui.GetUI<UITaskCompleteList>(UIType.TaskCompleteList);
+                UIPropSelectCount propSelect = g.ui.GetUI<UIPropSelectCount>(UIType.PropSelectCount);
+                if (uITown != null && taskLobby == null && taskCompleteList == null && propSelect == null) {
+                    uITown.goPosiRoot.transform.GetChild(0).FindChild("Fix").FindChild("2015").GetChild(0).FindChild("Icon").GetComponent<Button>().Press();
+                } else if (taskCompleteList && propSelect == null) {
+                    taskCompleteList.goTaskRoot.transform.GetChild(0).FindChild("Button").GetComponent<Button>().Press();
+                } else if (propSelect) {
+                    propSelect.btnOK.Press();
+                } else if (g.ui.GetUI<UIGetReward>(UIType.GetReward)) {
+                    g.ui.GetUI<UIGetReward>(UIType.GetReward).btnOK.Press();
+                } else if (taskLobby != null && taskCompleteList == null && propSelect == null) {
+
+                    List<UIFairyLeagueTaskLobby.UITaskItem> taskList = taskLobby.allTaskItems;
+
+                    foreach (UIFairyLeagueTaskLobby.UITaskItem uITask in taskList) {
+                        uITask.tglSelect.isOn = true;
+                        taskLobby.uITaskDesc.btnGetTask.Press();
+                    }
+                    if (taskLobby.allTaskItems.Count == tasksSkipped) {
+                        //townPoint = uITown.town.GetOpenBuildPoints().First<Vector2Int>();
+                        taskLobby.btnClose.Press();
+                        uITown.btnClose.Press();
+                        getTasks = false;
+                        finishedQuestCount = 0;
+                    }
+                } else if (uITown == null) {
+                    tasksSkipped = 0;
+                    FairyLeagueCor();
+                    corGetTownTasks.Stop();
+                    corGetTownTasks = null;
+                    return;
+                }
+            }, 0.8f, true);
+        }
+        private Vector2Int GetFairyLeagueTaskLoc() {
+            List<TaskBase> playerTasks = g.world.playerUnit.GetTask(TaskType.Town);
+            if (playerTasks.Count > 0) {
+                Vector2Int playerLoc = SceneType.map.world.playerPoint;
+                TaskBase closestTask = null;
+                float closestDistance = float.MaxValue;
+
+                foreach (TaskBase task in playerTasks) {
+                    if (task == null || task.data == null) continue;
+
+                    Vector2Int dest = task.data.destination;
+
+                    if (task.data.GetDesc().Contains("Progress: 1/1")) {
+                        finishedQuestCount++;
+                        continue;
+                    }
+
+                    float distance = Vector2Int.Distance(playerLoc, dest);
+
+                    if (distance < closestDistance) {
+                        closestDistance = distance;
+                        closestTask = task;
+                    }
+                }
+
+                if (closestTask != null) {
+                    closestTask.data.uiPath = true;
+                    return closestTask.data.destination;
+                }
+            }
+            return nearTown; // Return nearTown if no valid tasks are found
         }
 
+        private void MoveToTownTask(Vector2Int taskLoc) {
+            if (!toggleFairyLeagueTasks) { corFairyLeagueTasks.Stop(); corFairyLeagueTasks = null; return; }
+            if (SceneType.map.world.isMove) { return; }
+            if (!SceneType.map.world.IsCanMove()) { return; }
 
-        private void GetSchoolTaskAction() {
-            
-            if (!g.ui.GetUI<UISchool>(UIType.School)) return;
-
-            UISchool playerSchool = g.ui.GetUI<UISchool>(UIType.School);
-
-            switch (getSchoolTaskStep) {
-                case SchoolTaskStep.CheckHealthAndEnergy:
-                    if (GetNeedHeal()) {
-                        OpenHospital(playerSchool);
-                        getSchoolTaskStep = SchoolTaskStep.HandleHospital;
-                    } else {
-                        getSchoolTaskStep = SchoolTaskStep.CheckTaskLobby;
+            if (townLevel == 5) {
+                HandleFairyLeagueMove(taskLoc);
+            } else if (townLevel < 5) {
+                //GetNormalTownTasks();
+                //Need to add lower level town stuffs...
+            } else {
+                MelonLogger.Error($"Town Level unkown {townLevel.ToString()}");
+            }
+        }
+        private void HandleFairyLeagueMove(Vector2Int taskLoc) {
+            if (SceneType.map.world.IsCanMove()) {
+                SceneType.map.world.MovePlayerPosi(taskLoc);
+            }
+        }
+        public void GetNearestTown() {
+            List<MapBuildTown> towns = g.world.build.GetBuilds<MapBuildTown>();
+            MelonLogger.Error($"GetNearestTown Called");
+            if (towns != null && g.world.playerUnit.data.unitData.pointGridData != null) {
+                foreach (MapBuildTown build in towns) {
+                    if (g.world.playerUnit.data.unitData.pointGridData.areaBaseID == build.gridData.areaBaseID) {
+                        if (build.buildData.level == 5) {
+                            if (build.buildTownData.isFairyLeague) {
+                                townLevel = build.buildData.level;
+                                nearTown = build.GetOpenBuildPoints().First<Vector2Int>();
+                            }
+                        } else if (build.buildData.level > 0 && build.buildData.level < 5) {
+                            if (build.buildTownData.isMainTown) {
+                                townLevel = build.buildData.level;
+                                nearTown = build.GetOpenBuildPoints().First<Vector2Int>();
+                            }
+                        } else {
+                            nearTown = Vector2Int.zero;
+                            MelonLogger.Error($"Nearest town not found even though player areaBasedID = build areaBaseID");
+                        }
                     }
-                    break;
-
-                case SchoolTaskStep.CheckTaskLobby:
-                    UISchoolTaskLobby taskLobbyUI = g.ui.GetUI<UISchoolTaskLobby>(UIType.SchoolTaskLobby);
-                    if (taskLobbyUI == null && !GetNeedHeal()) {
-                        OpenMissionHall(playerSchool);
-                        getSchoolTaskStep = SchoolTaskStep.StartTaskFromLobby;
-                    } else {
-                        getSchoolTaskStep = SchoolTaskStep.WaitForTaskLobbyOrHospital;
-                    }
-                    break;
-
-                case SchoolTaskStep.WaitForTaskLobbyOrHospital:
-                    if (g.ui.GetUI<UISchoolTaskLobby>(UIType.SchoolTaskLobby) != null) {
-                        getSchoolTaskStep = SchoolTaskStep.StartTaskFromLobby;
-                    } else if (g.ui.GetUI<UISchoolHospital>(UIType.SchoolHospital) != null && GetNeedHeal()) {
-                        getSchoolTaskStep = SchoolTaskStep.HandleHospital;
-                    } else if (GetNeedHeal()) {
-                        getSchoolTaskStep = SchoolTaskStep.CheckHealthAndEnergy;
-                    } else {
-                        getSchoolTaskStep = SchoolTaskStep.CheckTaskLobby;
-                    }
-                    break;
-
-                case SchoolTaskStep.StartTaskFromLobby:
-                    UISchoolTaskLobby lobbyUI = g.ui.GetUI<UISchoolTaskLobby>(UIType.SchoolTaskLobby);
-                    if (lobbyUI != null) {
-                        StopGetSchoolTaskCor();
-                        StartGetTaskFromHallCor(lobbyUI);
-                    }
-                    break;
-
-                case SchoolTaskStep.HandleHospital:
-                    UISchoolHospital hospitalUI = g.ui.GetUI<UISchoolHospital>(UIType.SchoolHospital);
-                    if (hospitalUI != null) {
-                        hospitalUI.btnOK.Press();
-                        hospitalUI.btnClose1.Press();
-                        getSchoolTaskStep = SchoolTaskStep.CheckTaskLobby;
-                    }
-                    break;
+                }
+            }
+        }
+        private void HandleUIWhileTasking() {
+            if (corHandleUI != null) {
+                corHandleUI.Stop();
+                corHandleUI = null;
+            }
+            corHandleUI = null;
+            corHandleUI = g.timer.Time((System.Action)delegate {
+                MoveUIEvents();
+            }, 1.2f, true);
+        }
+        private void FinishMonth() {
+            if (g.ui.GetUI<UIMapMain>(UIType.MapMain).playerInfo.btnNextMonth) {
+                g.ui.GetUI<UIMapMain>(UIType.MapMain).playerInfo.btnNextMonth.Press();
+                nextMonthPressed = true;
+            }
+            if (g.ui.GetUI<UICheckPopup>(UIType.CheckPopup)) {
+                g.ui.GetUI<UICheckPopup>(UIType.CheckPopup).OnYesClick();
             }
         }
 
-        private bool GetNeedHeal() {
-            int playerEnergy = g.world.playerUnit.data.dynUnitData.energy.value;
-            int playerMaxEnergy = g.world.playerUnit.data.dynUnitData.energy.maxValue;
-            int playerHealth = g.world.playerUnit.data.dynUnitData.health.value;
-            int playerMaxHealth = g.world.playerUnit.data.dynUnitData.health.maxValue;
+        #endregion Fairy League Tasks
 
-            float healthThresholdPercentage = 0.20f; // 20%
 
-            return playerHealth <= playerMaxHealth * healthThresholdPercentage ||
-                   playerEnergy <= playerMaxEnergy * healthThresholdPercentage;
-        }
-
+        #region Task Master Coroutines
         private void StartGoNextMonthCor() {
             corGoNextMonth = SceneType.map.timer.Time((System.Action)delegate {
                 GoNextMonth();
-                if (corTaskMaster != null) {
-                    StopTaskMasterCor();
+                if (corSchoolMaster != null) {
+                    StopSchoolMasterCor();
                 }
             }, 0.6f, true);
         }
-
         private void StopGoNextMonthCor() {
             if (corGoNextMonth != null) {
                 corGoNextMonth.Stop();
                 corGoNextMonth = null;
             }
         }
-
-        private void StartGetSchoolTaskCor() {
-            if (corTaskMaster != null) {
-                StopTaskMasterCor();
-            }
-            corGetSchoolTask = g.timer.Time((System.Action)delegate {
-                GetSchoolTaskAction();
-            }, 0.8f, true);
-        }
-
-        private void StopGetSchoolTaskCor() {
-            if (corGetSchoolTask != null) {
-                SceneType.map.timer.Stop(corGetSchoolTask);
-                corGetSchoolTask = null;
-                getSchoolTaskStep = 0;
-            }
-        }
-
         private void StartGetTaskFromHallCor(UISchoolTaskLobby taskLobby) {
             getTaskFromHallStep = 0;
             currentTaskLobby = taskLobby;
             corGetTaskHall = SceneType.map.timer.Time((System.Action)delegate {
                 GetTaskFromHallAction();
-            }, 0.8f, true);
+            }, 1.0f, true);
         }
 
         private void StopGetTaskFromHallCor() {
@@ -1807,48 +2055,72 @@ namespace KrunchyToMAuto {
                 SceneType.map.timer.Stop(corGetTaskHall);
                 corGetTaskHall = null;
                 currentTaskLobby = null;
+                isGetTask = false;
             }
         }
 
-        private void ToggleTaskMaster() {
-            toggleTaskMaster = !toggleTaskMaster;
+        private void ToggleFairyLeagueTasks() {
+            toggleFairyLeagueTasks = !toggleFairyLeagueTasks;
 
-            if (toggleTaskMaster) {
-                StartTaskMasterCor();
+            if (toggleFairyLeagueTasks) {
+                if (corFairyLeagueTasks != null) {
+                    corFairyLeagueTasks.Stop();
+                    corFairyLeagueTasks = null;
+                }
+                UITipItem.AddTip(GameTool.LS("TaskMasterText_1"), 2f);
+                FairyLeagueCor();
             } else {
-                StopTaskMasterCor();
+                UITipItem.AddTip(GameTool.LS("TaskMasterText_2"), 2f);
+                if (corFairyLeagueTasks != null) {
+                    corFairyLeagueTasks.Stop();
+                    corFairyLeagueTasks = null;
+                }
+                if (corHandleUI != null) {
+                    corHandleUI.Stop();
+                    corHandleUI = null;
+                }
             }
         }
 
-        private void StartTaskMasterCor() {
-            if (corTaskMaster != null) {
-                StopTaskMasterCor();
+        private void ToggleSchoolMaster() {
+            toggleSchoolMaster = !toggleSchoolMaster;
+
+            if (toggleSchoolMaster) {
+                StartSchoolMasterCor();
+                UITipItem.AddTip(GameTool.LS("TaskMasterText_1"), 2f);
+            } else {
+                StopSchoolMasterCor();
+                UITipItem.AddTip(GameTool.LS("TaskMasterText_2"), 2f);
+            }
+        }
+
+
+
+        private void StartSchoolMasterCor() {
+            if (corSchoolMaster != null) {
+                StopSchoolMasterCor();
             }
             if (corWaitBattleEndUI != null) {
                 g.timer.Stop(corWaitBattleEndUI);
                 corWaitBattleEndUI = null;
             }
-            if (toggleTaskMaster) {
-                corTaskMaster = g.timer.Time((System.Action)delegate {
-                    TaskMasterAction();
+
+            if (toggleSchoolMaster) {
+                corSchoolMaster = g.timer.Time((System.Action)delegate {
+                    SchoolMaster();
                 }, 0.6f, true);
             } else {
-                MelonLogger.Warning("Something tried calling StartTaskMasterCor while toggle disabled...");
+                MelonLogger.Warning("Something tried calling StartSchoolMasterCor while toggle disabled...");
             }
         }
 
-        private void StopTaskMasterCor() {
-            if (corTaskMaster != null) {
-                g.timer.Stop(corTaskMaster);
-                corTaskMaster = null;
-            }
-            if (corGetSchoolTask != null) {
-                StopGetSchoolTaskCor();
+        private void StopSchoolMasterCor() {
+            if (corSchoolMaster != null) {
+                g.timer.Stop(corSchoolMaster);
+                corSchoolMaster = null;
             }
             if (corGetTaskHall != null) {
                 StopGetTaskFromHallCor();
-                corGetTaskHall = null;
-                currentTaskLobby = null;
             }
             if (corWaitBattleEndUI != null) {
                 g.timer.Stop(corWaitBattleEndUI);
@@ -1860,7 +2132,7 @@ namespace KrunchyToMAuto {
             }
         }
 
-        private void TaskMasterAction() {
+        private void SchoolMaster() {
             if (g.world == null || g.world.playerUnit == null) { return; }
             if (corWaitBattleEndUI != null) {
                 g.timer.Stop(corWaitBattleEndUI);
@@ -1869,20 +2141,20 @@ namespace KrunchyToMAuto {
             if (missionRuns == 2) {
                 StartGoNextMonthCor();
             }
-            if (getTasks) {
-                StartGetSchoolTaskCor();
+            if (getTasks && !isGetTask) {
+                GoGetSchoolTask();
             } else if (corGetSchoolTask != null) {
                 return;
 
             } else if (corGetTaskHall != null) {
                 return;
             } else {
-                MovePlayerToTask();
+                MoveToSchoolTask();
             }
 
         }
 
-        #endregion
+        #endregion Task Master Coroutines
 
         private void ToggleGameSpeed() {
             gameSpeedToggle = !gameSpeedToggle;
@@ -1894,136 +2166,86 @@ namespace KrunchyToMAuto {
                 changeSpeed = new DataStruct<TimeScaleType, DataStruct<float>>(TimeScaleType.SlowTime, new DataStruct<float>(5f));
                 GameTool.timeScales.Add(changeSpeed);
                 GameTool.SetTimeScale(GameTool.GetMinTimeScale());
-            }
-            else {ResetGameSpeed();}
+            } else { ResetGameSpeed(); }
         }
 
-        public void LuckTesting() {
-            g.world.playerUnit.data.dynUnitData.talent.mMaxValue = 500;
-        }
 
 
         public void TestingHotkey() {
+            if (corFairyLeagueTasks != null) {
+                corFairyLeagueTasks.Stop();
+                corFairyLeagueTasks = null;
+            }
 
-            toggleDebateSkip = !toggleDebateSkip;
-            TimerCoroutine corDebateSkip = null;
-            corDebateSkip = g.timer.Time((System.Action)delegate {
-                if (!toggleDebateSkip) {
-                    corDebateSkip.Stop();
-                    corDebateSkip = null;
-                }
-                UIDramaDialogue uiDrama = g.ui.GetUI<UIDramaDialogue>(UIType.DramaDialogue);
-                if (uiDrama == null) return; // Add a null check for uiDrama
-
-                DramaData dramaData1 = uiDrama.dramaData;
-                if (dramaData1 == null || dramaData1.dialogueOptionsAddText == null) return; // Add null checks for dramaData1 and dialogueOptionsAddText
-
-                foreach (KeyValuePair<int, string> pair in dramaData1.dialogueOptionsAddText) {
-                    int key = pair.Key;
-
-                    if (uiDrama.activeOptionsData != null && uiDrama.activeOptionsData.Count > 0) {
-                        List<ConfDramaOptionsItem> activeOptions = uiDrama.activeOptionsData;
-
-                        for (int i = 0; i < activeOptions.Count; i++) {
-                            if (activeOptions[i] != null && activeOptions[i].id == key) {
-                                uiDrama.ClickOption(activeOptions[i]);
-                                return;
-                            }
-                        }
-                    }
-                }
-            }, 0.8f, true);
         }
 
         public void CheatStuff() {
+            enableCheats = false;
+            if (g.world.playerUnit.data.dynUnitData != null && SceneType.map.world != null) {
+                WorldUnitDynData unitDataHuman = g.world.playerUnit.data.dynUnitData;
 
-            if (g.world.playerUnit.data.dynUnitData.luck.value < g.world.playerUnit.data.dynUnitData.luck.maxValue) {
-                g.world.playerUnit.data.dynUnitData.luck.baseValue = g.world.playerUnit.data.dynUnitData.luck.maxValue;
-            }
-            if (g.world.playerUnit.data.dynUnitData.talent.value < 500) {
-                g.world.playerUnit.data.dynUnitData.talent = new DynInt(500);
-            }
-            if (g.world.playerUnit.data.dynUnitData.beauty.value < g.world.playerUnit.data.dynUnitData.beauty.maxValue) {
-                g.world.playerUnit.data.dynUnitData.beauty.baseValue = g.world.playerUnit.data.dynUnitData.talent.maxValue;
-            }
-        }
-
-        public void DumpDataStruct() {
-            ModExportData.Data data = ModImportTool.LoadModExportData("C:\\Games\\Tale of Immortal\\ModExportData\\3431563983\\ModExportData.cache");
-            DataStruct<ModExportData.Data, string> dataStruct = ModImportTool.LoadModExportDataToConf(data, "C:\\Games\\Tale of Immortal\\ModExportData\\3431563983\\ModExportData.cache");
-            string dumpFileName = "modDump.json"; // Include the extension
-            string contents;
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), dumpFileName);
-
-            JToken jt = JToken.Parse(CommonTool.ObjectToJson(dataStruct));
-            contents = jt.ToString(Formatting.Indented);
-            File.WriteAllText(filePath, contents);
-
-            try {
-                // File.Move will overwrite the destination file if it exists.
-                // No need to delete first.
-                File.Move(filePath, filePath);
-            } catch (FileNotFoundException ex) {
-                MelonLogger.Error($"File not found: {ex.Message}");
-            } catch (IOException ex) {
-                MelonLogger.Error($"IO Exception: {ex.Message}");
-            } catch (System.Exception ex) {
-                MelonLogger.Error($"An error occurred: {ex.Message}");
+                if (unitDataHuman.luck.value < unitDataHuman.luck.maxValue) {
+                    enableCheats = true;
+                } else if (unitDataHuman.talent.value < 500) {
+                    enableCheats = true;
+                } else if (SceneType.map.world.playerMoveSpeed < 8f) {
+                    enableCheats = true;
+                } else if (unitDataHuman.playerView.value < 20) {
+                    enableCheats = true;
+                } else if (unitDataHuman.beauty.value < unitDataHuman.beauty.maxValue) {
+                    enableCheats = true;
+                } else { enableCheats = false; }
+                if (enableCheats && SceneType.map.world != null && g.world.playerUnit.data.dynUnitData != null) {
+                    unitDataHuman.luck.baseValue = unitDataHuman.luck.maxValue;
+                    unitDataHuman.talent = new DynInt(500);
+                    if (SceneType.map.world.playerMoveSpeed != 8f) {
+                        SceneType.map.world.playerMoveSpeed = 8f;
+                    } else if (unitDataHuman.playerView.baseValue != 20) {
+                        unitDataHuman.playerView.baseValue = 20;
+                    }
+                    unitDataHuman.beauty.baseValue = unitDataHuman.talent.maxValue;
+                }
             }
         }
+        
 
         public void Destroy() {
             RecoverXuliLimitTime();
             g.timer.Stop(corUpdate);
+            g.timer.Stop(corCheat);
             g.events.Off(EGameType.OpenUIEnd, callOpenUIEnd);
             g.events.Off(EBattleType.BattleStart, onBattleStart);
             g.events.Off(EBattleType.BattleExit, onBattleExit);
             g.events.Off(EBattleType.BattleEnd, onBattleEnd);
-
         }
 
+        private void OnUpdateCheat() {
+            //if (SceneType.battle != null || SceneType.battle.battleMap != null) { return; }
+            if (SceneType.map != null) {
+                if (SceneType.map.world != null) {
+                    CheatStuff();
+                }
+                //MelonLogger.Msg("Called OnUpdateCheat");
+            }
+            //CheatStuff();
+        }
         public void OnUpdate() {
-            if (g.world != null) {
-                if (SceneType.map != null) {
-                    if ((SceneType.map.world.playerMoveSpeed < 8f)) {
-                        SceneType.map.world.playerMoveSpeed = 8f;
-                    } else if (g.world.playerUnit.data.dynUnitData.playerView.value < 20) {
-                        g.world.playerUnit.data.dynUnitData.playerView.baseValue = 20;
-                    }
-
-                }
-            }
-
             if (Input.GetKeyDown(KeyCode.F7)) {
-                ToggleTaskMaster();
-                MelonLogger.Msg($"Task Master = {toggleTaskMaster.ToString()}");
+                ToggleSchoolMaster();
+            }else if (Input.GetKeyDown(KeyCode.F8)) {
+                
+            }else if (Input.GetKeyDown(KeyCode.F9)) {
+                ToggleFairyLeagueTasks();
             }
-
-            if (Input.GetKeyDown(KeyCode.F8)) {
-                ToggleGameSpeed();
-            }
-
-            if (Input.GetKeyDown(KeyCode.F9)) {
-                TestingHotkey();
-            }
-
             if (SceneType.battle == null || SceneType.battle.battleMap == null) {
-                if (g.ui.GetUI<UIMartialLearnGame>(UIType.MartialLearnGame) != null) {
-                    ClickBallsMartialLearn2();
-                } else {
-                    return;
-                }
-
+                return;
             }
-
             if (!settingData.AutoMove || !enableAuto) {
                 DestroyYanwu();
             }
-
             if (!enableAuto || SceneType.battle.battleMap.playerUnitCtrl.isDie || SceneType.battle.battleMap.isPassRoom) {
                 return;
             }
-
             if (settingData.AutoLeft) {
                 if (SceneType.battle.battleMap.playerUnitCtrl != null) {
                     UnitCtrlPlayer localPlayer = SceneType.battle.battleMap.playerUnitCtrl;
@@ -2039,16 +2261,13 @@ namespace KrunchyToMAuto {
                     }
                 }
             }
-
             if (!settingData.AutoDevilDemonAbsorb || SceneType.battle.battleMap.playerUnitCtrl.devilDemonSkill == null) {
                 return;
             }
-
             DevilDemonAbsorb devilDemonAbsorb = SceneType.battle.battleMap.playerUnitCtrl.devilDemonSkill.devilDemonAbsorb;
             if (!devilDemonAbsorb.QTEStart) {
                 return;
             }
-
             Il2CppSystem.Collections.Generic.List<UnitCtrlMonst>.Enumerator enumerator = devilDemonAbsorb.absorbPreUnit.GetEnumerator();
             while (enumerator.MoveNext()) {
                 UnitCtrlMonst current = enumerator.Current;

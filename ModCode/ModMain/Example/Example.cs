@@ -240,3 +240,29 @@ namespace KrunchyToMAuto
         }
     }
 }
+
+
+
+/*
+public void DumpDataStruct() {
+    ModExportData.Data data = ModImportTool.LoadModExportData("C:\\Games\\Tale of Immortal\\ModExportData\\3431563983\\ModExportData.cache");
+    DataStruct<ModExportData.Data, string> dataStruct = ModImportTool.LoadModExportDataToConf(data, "C:\\Games\\Tale of Immortal\\ModExportData\\3431563983\\ModExportData.cache");
+    string dumpFileName = "modDump.json"; // Include the extension
+    string contents;
+    string filePath = Path.Combine(Directory.GetCurrentDirectory(), dumpFileName);
+
+    JToken jt = JToken.Parse(CommonTool.ObjectToJson(dataStruct));
+    contents = jt.ToString(Formatting.Indented);
+    File.WriteAllText(filePath, contents);
+
+    try {
+        File.Move(filePath, filePath);
+    } catch (FileNotFoundException ex) {
+        MelonLogger.Error($"File not found: {ex.Message}");
+    } catch (IOException ex) {
+        MelonLogger.Error($"IO Exception: {ex.Message}");
+    } catch (System.Exception ex) {
+        MelonLogger.Error($"An error occurred: {ex.Message}");
+    }
+}
+*/
